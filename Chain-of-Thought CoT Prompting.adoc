@@ -1,0 +1,143 @@
+= Chain-of-Thought (CoT) Prompting
+
+== What It Is
+Chain-of-Thought (CoT) prompting means asking the model to reason step by step, similar to how a human would solve a problem.
+
+It improves clarity, structure, and reliability in complex tasks.
+
+== Why Use CoT?
+
+* Improves accuracy in logic, math, and multi-step tasks
+* Makes reasoning clearer and easier to debug
+* Produces more structured and predictable outputs
+* Helps with automation and agent-based workflows
+
+== Three Levels of CoT
+
+=== 1. Basic CoT
+
+Add a simple instruction like:
+
+----
+Think step by step.
+----
+
+* Fast and minimal
+* Good for quick reasoning improvements
+
+=== 2. Guided CoT
+
+Explicitly define the reasoning steps.
+
+Example:
+
+----
+1. Understand the problem
+2. Identify constraints
+3. Evaluate possible solutions
+4. Provide final answer
+----
+
+* Better for structured analysis
+* Improves consistency
+
+=== 3. Structured CoT
+
+Use structured tags to separate reasoning sections.
+
+Example:
+
+----
+<context>Problem background</context>
+<analysis>Step-by-step reasoning</analysis>
+<answer>Final answer</answer>
+----
+
+* Best for applications, agents, automation
+* Easy to parse and validate
+* Clean separation of reasoning and final output
+
+== Extended Structured CoT Tags
+
+=== Core Reasoning Tags
+
+----
+<context>Problem background</context>
+<assumptions>Explicit assumptions</assumptions>
+<analysis>Detailed reasoning</analysis>
+<alternatives>Other possible approaches</alternatives>
+<decision>Chosen solution and rationale</decision>
+<answer>Final answer</answer>
+----
+
+=== Engineering / Architecture Tags
+
+----
+<requirements>Functional and non-functional requirements</requirements>
+<constraints>Technical or business constraints</constraints>
+<options>Candidate solutions</options>
+<tradeoffs>Pros and cons comparison</tradeoffs>
+<risks>Potential risks</risks>
+<mitigation>Risk mitigation plan</mitigation>
+<implementation>High-level implementation plan</implementation>
+<answer>Final recommendation</answer>
+----
+
+=== Code Review Tags
+
+----
+<summary>What the code does</summary>
+<issues>Problems found</issues>
+<severity>Critical / Major / Minor</severity>
+<suggestions>Improvements</suggestions>
+<security>Security concerns</security>
+<performance>Performance concerns</performance>
+<answer>Overall review conclusion</answer>
+----
+
+=== Test Generation Tags
+
+----
+<scenario>User scenario</scenario>
+<preconditions>Required setup</preconditions>
+<steps>Execution steps</steps>
+<assertions>Expected outcomes</assertions>
+<edge_cases>Edge cases</edge_cases>
+<test_code>Generated test</test_code>
+----
+
+=== Agent / Automation Tags
+
+----
+<input>User input</input>
+<plan>Execution plan</plan>
+<actions>Tool calls or steps</actions>
+<output>Structured output</output>
+<errors>Detected issues</errors>
+<next_steps>What to do next</next_steps>
+----
+
+=== Risk / Security Analysis Tags
+
+----
+<threat_model>Attack surface</threat_model>
+<vulnerabilities>Identified weaknesses</vulnerabilities>
+<impact>Business impact</impact>
+<likelihood>Probability assessment</likelihood>
+<mitigation>Fix strategy</mitigation>
+<residual_risk>Remaining risk</residual_risk>
+----
+
+== Easy Recall Formula
+
+Simple → Guided → Structured
+
+Better reasoning → Clear steps → Controlled output
+
+== When to Apply CoT
+
+* Product feedback analysis
+* Planning and prioritization
+* Code reviews or bug triage
+* Architecture design decisions
+* Any logic-heavy workflow
