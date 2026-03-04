@@ -44,3 +44,52 @@
 |AI as an Add-on: AI capabilities are powerful but integrated into a pre-existing automation tool, not AI-native
 |Specialization: Less versatile for general, non-AI-related workflow automation compared to n8n
 |===
+
+
+[cols="1,1,1,1,1,1",options="header"]
+|===
+|Category
+|Lovable
+|Firebase Studio
+|bolt.new
+|n8n
+|lyzr
+
+|Ideal Use Case
+|Validating startup ideas, building MVPs, creating internal tools and client portals.
+|Building AI-powered web apps that are deeply integrated with the Google Cloud ecosystem.
+|Quick prototypes, simple web apps, and scaffolding the basic structure of a project for beginners.
+|Complex internal/backend process automation, data synchronization, and building custom multi-agent systems.
+|Automating core business functions (Sales, HR, Support) with secure, scalable, and compliant AI agents.
+
+|Deployment Model
+|Cloud (via integrations like Netlify and Vercel)
+|Firebase App Hosting
+|Cloud (via Netlify, Vercel) or download for self-hosting
+|Cloud or Self-Hosted (via Docker)
+|Cloud or On-Premise
+
+|Customization
+|High: Full code ownership and GitHub sync allows for unlimited customization after generation.
+|Very High: It is a full-fledged, customizable cloud IDE.
+|Low (in-tool): Requires exporting the code to a traditional IDE for significant customization.
+|Very High: Any workflow can be extended with custom JavaScript or Python code.
+|High: Offers a comprehensive Python SDK and API for deep customization and integration.
+
+|Notes / Strengths
+|
+• Good for little demos & MVPs
+• Increasingly replacing traditional mockups
+• Figma integration next step
+|
+• For Google-affine developers
+|
+• Prototypes and apps
+|
+• Powerful workflow automation
+• Next-level intelligent automation tool
+|
+• Full-stack agent development system
+
+|===
+
