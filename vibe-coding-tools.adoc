@@ -1,0 +1,46 @@
+[cols="1,1,1,1,1,1", options="header"]
+|===
+|Category |Lovable |Firebase Studio |bolt.new |n8n |lyzr
+
+|Primary Paradigm
+|AI App Generation
+|Agentic IDE / AI App Generation
+|AI App Generation
+|Workflow Automation
+|Agent Infrastructure
+
+|Target Audience
+|Founders, Prototypers, Agencies
+|Professional Developers, Teams in Google Ecosystem
+|Beginners, Non-technical Users, Solopreneurs
+|Technical Teams (ITOps, DevOps, Developers)
+|Enterprises, Developers, & Business Users
+
+|Core Technology
+|React, Node.js, Tailwind CSS, Supabase/Stripe Integration
+|Next.js, Gemini AI, Code OSS (VS Code base)
+|React, Node.js, PostgreSQL with Prisma
+|Visual Node Editor, extensible with JavaScript/Python
+|AI-native, Python SDK, Low-Code "Agent Studio"
+
+|Ease of Use
+|High: Conversational and intuitive interface
+|Medium: Requires familiarity with IDEs and the Firebase ecosystem
+|Very High: Designed to feel like a simple chatbot
+|Medium to High: Accessible UI, but complex workflows require technical expertise
+|High: Dual interface for both no-code users and developers
+
+|Key Strength
+|Speed to MVP: Fastest way to get a functional, full-stack prototype with code ownership
+|Deep Ecosystem Integration: Unmatched native connection to all Google Cloud and Firebase services
+|Extreme Simplicity: The most accessible and fastest tool for generating simple apps from a prompt
+|Ultimate Flexibility & Control: Highly extensible, source-available, and can be self-hosted for complete data privacy
+|Enterprise-Grade AI: Built from the ground up for security, governance, and deploying a scalable "AI workforce"
+
+|Primary Limitation
+|Complex Logic: Requires manual coding for highly custom or advanced business logic
+|Ecosystem Lock-in: Deep integration makes migrating away from Google Cloud difficult
+|Scalability: Best for simple apps and prototypes; not ideal for complex, scalable applications
+|AI as an Add-on: AI capabilities are powerful but integrated into a pre-existing automation tool, not AI-native
+|Specialization: Less versatile for general, non-AI-related workflow automation compared to n8n
+|===
