@@ -38,7 +38,6 @@ Goal::
 Explore how reasoning instructions affect the structure and explanation of the generated recipe.
 
 Role + Goal Prompt (Persona Style)::
-Role + Goal Prompt (Persona Style)
 
 [source,text]
 ----
