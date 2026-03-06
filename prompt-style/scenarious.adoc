@@ -8,7 +8,7 @@ Each scenario uses the same task: *generate a healthy carrot-based recipe (high-
 2. Run Prompt
 [source,text]
 ----
-Create a recipe with the vegetable from an image are one of the main ingredients.
+Create a recipe with the banana are one of the main ingredients.
 ----
 
 == Scenario 2: Work with image
