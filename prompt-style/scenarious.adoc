@@ -50,10 +50,10 @@ You are a chef and nutrition expert.
 Task:
 Create a healthy carrot-based recipe that is high in protein and low in carbohydrates.
 
-First: 
-1. Analyze attached images
-2. Select a vegetable what makes the dish spicy and hot.
-3. Explain your selection
+First:
+1. Analyze what is banana
+2. Identify what it main flavour characteristics what makes the dish spicy and hot.
+3. Explain what it uniqueness for cooking
 
 Second:
 1. Identify suitable protein sources.
