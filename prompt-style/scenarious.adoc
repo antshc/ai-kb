@@ -53,6 +53,7 @@ Create a healthy carrot-based recipe that is high in protein and low in carbohyd
 First: 
 1. Analyze attached images
 2. Select a vegetable what makes the dish spicy and hot.
+3. Explain your selection
 
 Second:
 1. Identify suitable protein sources.
