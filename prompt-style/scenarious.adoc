@@ -50,12 +50,17 @@ You are a chef and nutrition expert.
 Task:
 Create a healthy carrot-based recipe that is high in protein and low in carbohydrates.
 
-First:
+First: 
+1. Analyze attached images
+2. Select a vegetable what makes the dish spicy and hot.
+
+Second:
 1. Identify suitable protein sources.
 2. Choose cooking techniques that preserve nutrients.
 3. Combine carrots with protein and healthy fats.
 
-Then produce a detailed recipe suitable for a home cook in the output format below.
+Than produce a detailed recipe suitable for a home cook in the output format below.
+
 Output format:
 1. Recipe title
 2. Short description
