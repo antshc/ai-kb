@@ -17,7 +17,7 @@ Create a recipe with the vegetable from an image are one of the main ingredients
 3. Run Prompt
 [source,text]
 ----
-Create a recipe with the vegetable from an image are one of the main ingredients.
+Create a recipe with the vegetable from an image are one of the main ingredients from the pdf recipe book.
 ----
 
 == Scenario 2: Prompt styles
@@ -55,7 +55,16 @@ First:
 2. Choose cooking techniques that preserve nutrients.
 3. Combine carrots with protein and healthy fats.
 
-Then produce a detailed recipe suitable for a home cook.
+Then produce a detailed recipe suitable for a home cook in the output format below.
+Output format:
+1. Recipe title
+2. Short description
+3. Ingredients with metric quantities
+4. Step-by-step instructions
+5. Cooking time and temperature
+6. Nutrition estimate per serving (protein, carbs, fat, calories)
+7. Tips to improve healthiness
+8. Optional variations
 ----
 
 Evaluation Criteria::
