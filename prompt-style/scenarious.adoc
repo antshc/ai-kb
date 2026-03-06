@@ -58,7 +58,7 @@ First:
 Second:
 1. Identify suitable protein sources.
 2. Choose cooking techniques that preserve nutrients.
-3. Combine carrots with protein and healthy fats.
+3. Combine the fruit or vegetable from `first` with protein and healthy fats.
 
 Than produce a detailed recipe suitable for a home cook in the output format below.
 
