@@ -48,7 +48,7 @@ Step-Reasoning Prompt (Chain-of-Thought)::
 You are a chef and nutrition expert.
 
 Task:
-Create a healthy carrot-based recipe that is high in protein and low in carbohydrates.
+Create a healthy recipe that is high in protein and low in carbohydrates.
 
 First:
 1. Analyze what is banana
