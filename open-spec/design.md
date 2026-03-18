@@ -1,3 +1,61 @@
+## What Is Context in a Design Document
+
+Context is the **"why now" and "what exists"** section. It gives a reader everything they need to understand the design decisions without having to read the codebase first.
+
+It answers three questions:
+
+| Question | What to write |
+|---|---|
+| **What is the current state?** | How the system works today, before this change |
+| **What is the problem?** | Why the current state is insufficient |
+| **What already exists that we will build on?** | Code, patterns, or constraints the design must work within |
+
+---
+
+## How It Is Used
+
+**By the design author** — written first, before decisions. Forces you to articulate the problem clearly before proposing solutions. If you can't write the context, the problem isn't understood yet.
+
+**By reviewers** — lets them evaluate decisions without needing codebase knowledge. They can immediately see whether a decision fits the constraints.
+
+**By implementers** — tells them which existing code to touch and which to leave alone, before they open any files.
+
+**By future readers** — six months later, when someone asks "why was this done?", the context is the answer.
+
+---
+
+## The Three Parts of Context
+**Current state:** How the system works today.
+Be specific — name the class, method, or config that owns the behavior.
+
+**Problem:** Why the current state is insufficient.
+One or two sentences. If you need more, the problem isn't clear yet.
+
+**Existing code** What you will build on — and what you will NOT touch.
+to build on: "X already does Y — no structural changes required there"
+is just as important as "we will add Z".
+
+
+
+---
+
+## The Failure Mode Without Context
+
+Without it, a reviewer seeing a decision has no idea:
+- why the current approach was insufficient,
+- whether existing components need changes,
+- what backward compatibility constraints exist.
+
+They either approve blindly or ask questions that the context section would have answered upfront.
+
+---
+
+## The Test
+
+> *"Can a reviewer evaluate my decisions without opening a single source file?"*  
+> If yes — context is sufficient. If no — something is missing.
+
+
 ## Goals / Non-Goals
 
 **Goals** declare what this design commits to delivering — each one maps to code you will write.  
