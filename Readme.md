@@ -26,3 +26,6 @@
 
 - **State persistence**  
   Saving the agent’s progress, memory, and decisions so it can continue across multiple steps or sessions. This is important for long-running tasks, recovery after failure, and maintaining continuity.
+
+- **Hooks**
+Hooks enable automated workflows triggered by specific events during GitHub Copilot coding agent sessions, such as session start, session end, user prompts, and tool usage.
