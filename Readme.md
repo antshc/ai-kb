@@ -29,3 +29,9 @@
 
 - **Hooks**
 Hooks enable automated workflows triggered by specific events during GitHub Copilot coding agent sessions, such as session start, session end, user prompts, and tool usage.
+
+- **HITL (Human In The Loop):** 
+A work slice that requires a human decision, review, or approval before it can continue or be completed.
+
+- **AFK (Away From Keyboard):** 
+A work slice that can be implemented, tested, and merged automatically without needing human intervention.
