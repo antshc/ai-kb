@@ -35,3 +35,6 @@ A work slice that requires a human decision, review, or approval before it can c
 
 - **AFK (Away From Keyboard):** 
 A work slice that can be implemented, tested, and merged automatically without needing human intervention.
+
+- **TL;DR stands for "Too Long; Didn't Read".: ** 
+It's internet slang used to introduce a brief summary of a longer text. In context, it means: "to summarize the 'tracer bullets' concept in one sentence — build a small end-to-end slice first, then expand."
