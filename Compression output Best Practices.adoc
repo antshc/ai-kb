@@ -154,56 +154,28 @@ Total document must not exceed 200–300 words
 
 [source,text]
 ----
-Act as a senior software architect.
+Generate a compressed, high-density, implementation-focused PRD.
 
-Generate a compressed, high-density, zero-fluff PRD.
+Compress wording, not meaning.
 
-Rules:
+Preserve:
+- architectural decisions
+- integration constraints
+- edge cases
+- operational behavior
+- business invariants
+- assumptions required for implementation
 
-* Bullet points only (no paragraphs)
-* Max 250 words total
-* Max 5–8 bullets per section
-* No repetition
-* No generic statements
-* Only implementation-relevant details
-* Preserve full context required for task breakdown
+Remove:
+- filler
+- explanations
+- marketing wording
+- repetition
+- generic statements
 
-Each bullet must include:
-
-* subject
-* action
-* condition (if applicable)
-
-If information is missing:
-
-* do NOT invent
-* mark as "TBD"
-
-Requirements must be independently implementable units (vertical slices)
-
-Follow this structure exactly:
-[insert TL;DR PRD template]
+Use:
+- bullet points only
+- short technical statements
+- implementation-oriented language
+- explicit behavior rules
 ----
-
-== Summary
-
-Effective PRD generation =
-
-* Compressed
-* High-Density
-* Structured
-* Constrained
-
-Not:
-
-* "short"
-* "summary"
-* "TL;DR" alone
-
-== Outcome
-
-Using this guideline ensures:
-
-* Faster human review
-* Better Copilot outputs
-* Direct compatibility with AFK coding workflows
