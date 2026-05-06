@@ -14,74 +14,76 @@ It should answer:
 * How components interact?
 * Why this approach (briefly)?
 
----
+'''
 
 == Compact Design Decision Format (Recommended)
 
 Use one block per decision, minimal but structured:
 
-## [source,adoc]
-
+[source,adoc]
+----
 == Decision: <short name>
 
 === Context
+
 <1–2 lines problem or constraint>
 
 === Change
 
 * Class: `<ClassName>`
 * Methods:
+** `<MethodA>(...)` -> <purpose>
+** `<MethodB>(...)` -> <purpose>
 
-  * `<MethodA>(...)` -> <purpose>
-  * `<MethodB>(...)` -> <purpose>
 * Dependencies:
-
-  * `<InterfaceA>` used for <reason>
+** `<InterfaceA>` used for <reason>
 
 === Flow
-<1–3 bullets or simple steps>
+
+* <step 1>
+* <step 2>
+* <step 3>
 
 === Alternatives (optional)
 
 * `<Option>` -> rejected because <reason>
+----
 
----
-
----
+'''
 
 == Example (Minimal, Realistic)
 
-## [source,adoc]
-
+[source,adoc]
+----
 == Decision: Add order creation orchestration
 
 === Context
+
 Order creation requires validation + payment + persistence.
 
 === Change
 
 * Class: `OrderService`
+
 * Methods:
+** `CreateOrderAsync(request)` -> orchestrates flow
 
-  * `CreateOrderAsync(request)` -> orchestrates flow
 * Dependencies:
-
-  * `IPaymentService` -> process payment
-  * `IOrderRepository` -> save order
+** `IPaymentService` -> process payment
+** `IOrderRepository` -> save order
 
 === Flow
 
-1. Validate request
-2. Call `IPaymentService`
-3. Save via `IOrderRepository`
+. Validate request
+. Call `IPaymentService`
+. Save via `IOrderRepository`
 
 === Alternatives
 
 * Controller orchestration -> rejected (breaks separation of concerns)
+----
 
----
-
----
+'''
 
 == Level of Detail (What is “Just Right”)
 
@@ -89,9 +91,10 @@ Think in three levels:
 
 === Too Low (Bad)
 
-## [source,adoc]
-
-## Use service to handle orders
+[source,adoc]
+----
+Use service to handle orders
+----
 
 Problem:
 
@@ -99,31 +102,31 @@ Problem:
 * No methods
 * Cannot map to code
 
----
+'''
 
 === Too Detailed (Also Bad)
 
-## [source,adoc]
-
-## Use try/catch, logging, async/await, null checks...
+[source,adoc]
+----
+Use try/catch, logging, async/await, null checks...
+----
 
 Problem:
 
 * Implementation noise
 * Reduces clarity
 
----
+'''
 
 === Just Right (Target)
 
-## [source,adoc]
-
+[source,adoc]
+----
 * Class: `OrderService`
 * Method: `CreateOrderAsync`
 * Uses: `IPaymentService`, `IOrderRepository`
 * Flow: validate -> pay -> save
-
----
+----
 
 Why:
 
@@ -131,18 +134,18 @@ Why:
 * Leaves freedom for implementation
 * Enables task generation
 
----
+'''
 
 == What MUST Be Included (High Value)
 
 Always include:
 
-* Class names → anchor to codebase
-* Method names → enable code generation
-* Dependencies (interfaces) → define boundaries
-* Flow (short) → describe orchestration
+* Class names -> anchor to codebase
+* Method names -> enable code generation
+* Dependencies (interfaces) -> define boundaries
+* Flow (short) -> describe orchestration
 
----
+'''
 
 == What to Avoid
 
@@ -150,25 +153,24 @@ Do NOT include:
 
 * Low-level code (loops, try/catch, logging)
 * Framework noise (DI config, attributes unless critical)
-* Generic statements ("ensure scalability", "handle errors")
+* Generic statements (`ensure scalability`, `handle errors`)
 * Long paragraphs
 
----
+'''
 
 == Ultra-Compact Variant
 
 For maximum brevity:
 
-## [source,adoc]
-
+[source,adoc]
+----
 == Decision: Order creation
 
 * Class: `OrderService`
 * Method: `CreateOrderAsync`
 * Uses: `IPaymentService`, `IOrderRepository`
 * Flow: validate -> pay -> save
-
----
+----
 
 Best for:
 
@@ -176,7 +178,7 @@ Best for:
 * Fast iteration
 * AI-assisted workflows
 
----
+'''
 
 == Why This Works
 
@@ -185,7 +187,7 @@ Best for:
 * Easy to scan in reviews
 * Shows architecture without over-explaining
 
----
+'''
 
 == Rule of Thumb
 
