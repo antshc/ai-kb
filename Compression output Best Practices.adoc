@@ -2,14 +2,6 @@
 :toc:
 :toclevels: 2
 
-== Purpose
-
-Define a consistent way to instruct Copilot to generate minimal, high-density PRDs that:
-
-* Preserve full implementation context
-* Are fast to review (≤ 2 minutes)
-* Can be directly broken into development tasks
-
 == Key Instruction Phrases
 
 Use strong, unambiguous phrases:
@@ -20,6 +12,16 @@ Use strong, unambiguous phrases:
 * `bullet-only PRD`
 * `implementation-focused PRD`
 * `review-in-2-minutes PRD`
+
+
+== Purpose
+
+Define a consistent way to instruct Copilot to generate minimal, high-density PRDs that:
+
+* Preserve full implementation context
+* Are fast to review (≤ 2 minutes)
+* Can be directly broken into development tasks
+
 
 == Core Principle
 
