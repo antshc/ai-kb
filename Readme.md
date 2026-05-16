@@ -24,6 +24,9 @@
 - **Multi-agent coding**  
   Using multiple agents with different responsibilities to solve a coding task together. For example, one agent may write code, another may review it, and another may run tests or validate architecture decisions.
 
+- **Agents consilium**  
+  A structured council of specialized agents used to discuss, challenge, and improve a decision before implementation. Each agent contributes a different perspective, such as architecture, coding, testing, security, or product impact, and the final decision is made from the combined recommendations.
+
 - **State persistence**  
   Saving the agent’s progress, memory, and decisions so it can continue across multiple steps or sessions. This is important for long-running tasks, recovery after failure, and maintaining continuity.
 
