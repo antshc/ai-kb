@@ -1,0 +1,37 @@
+= Trending Skills Libraries
+
+Parsed from the image and matched with GitHub repositories.
+
+== List
+
+. Addy Osmani — Agent Skills
++
+GitHub repository: https://github.com/addyosmani/agent-skills[addyosmani/agent-skills]
+
+. Matt Pocock — Skills
++
+GitHub repository: https://github.com/mattpocock/skills[mattpocock/skills]
+
+. Garry Tan — Gstack
++
+GitHub repository: https://github.com/garrytan/gstack[garrytan/gstack]
+
+. Affaan Mustafa — Everything Claude Code
++
+GitHub repository: https://github.com/affaan-m/ECC[affaan-m/ECC]
+
+== Copy-paste repository list
+
+[source,text]
+----
+https://github.com/addyosmani/agent-skills
+https://github.com/mattpocock/skills
+https://github.com/garrytan/gstack
+https://github.com/affaan-m/ECC
+----
+
+== Notes
+
+* The image says `Gary Tan — Gtack`, but the likely correct match is `Garry Tan — Gstack`.
+* The image says `Affraan Mustafa`, but the likely correct match is `Affaan Mustafa`.
+* `Everything Claude Code` appears to match the repository `affaan-m/ECC`.
