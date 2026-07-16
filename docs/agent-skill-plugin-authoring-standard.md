@@ -8,4 +8,6 @@ Follow:
 
 - [Custom agent guidelines](https://github.com/github/awesome-copilot/blob/main/instructions/agents.instructions.md)
 - [Agent skill guidelines](https://github.com/github/awesome-copilot/blob/main/instructions/agent-skills.instructions.md)
-- [
+- [Repository and plugin contribution guidelines](https://github.com/github/awesome-copilot/blob/main/AGENTS.md)
+
+## 
