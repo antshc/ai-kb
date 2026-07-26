@@ -4239,6 +4239,209 @@
         }
       ],
       "ingestion_date": "2026-07-26T20:07:52.470863+00:00"
+    },
+    "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8": {
+      "id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "title": "Karpathy LLM Wiki: Knowledge-Base Skill Comparison",
+      "source": "sources/karpathy-llm-wiki-knowledge-base.md",
+      "content": "# Karpathy LLM Wiki: Knowledge-Base Skill Comparison\n\n> Research snapshot: 2026-07-27\n\n## Summary\n\nFor a GitHub Copilot-based knowledge repository, **`mini-context-graph` is the best-fit Karpathy LLM Wiki skill**.\n\nIt directly implements the core pattern as an installable Agent Skill:\n\n- persistent, LLM-maintained Markdown wiki;\n- structured knowledge graph;\n- immutable raw sources;\n- provenance and source evidence;\n- incremental ingestion;\n- wiki search, graph queries, linting, and contradiction handling.\n\nThe strongest alternatives serve different use cases:\n\n| Project | Best for | Assessment |\n|---|---|---|\n| [`mini-context-graph`](https://awesome-copilot.github.com/skill/mini-context-graph/) | GitHub Copilot Agent Skills | Best fit for this repository |\n| [`atomicstrata/llm-wiki-compiler`](https://github.com/atomicstrata/llm-wiki-compiler) | Full standalone knowledge compiler | Most complete implementation reviewed |\n| [`ussumant/llm-wiki-compiler`](https://github.com/ussumant/llm-wiki-compiler) | Claude Code and Codex workflows | Strong plugin-first compilation workflow |\n| [`Graphify`](https://github.com/Graphify-Labs/graphify) | Codebase understanding | Best code-first graph tool; not primarily an LLM Wiki |\n\n## Karpathy's LLM Wiki Pattern\n\nAndrej Karpathy describes an LLM Wiki as a persistent, interlinked Markdown knowledge base maintained by an LLM agent.\n\nUnlike conventional retrieval-augmented generation, which retrieves raw chunks and reconstructs an answer for each query, the LLM Wiki compiles knowledge during ingestion. The resulting synthesis is retained, updated, cross-linked, and reused.\n\n### Core layers\n\n```text\nRaw sources\n    \u2193\nPersistent wiki\n    \u2193\nAgents and users\n```\n\nKarpathy's original architecture includes three conceptual layers:\n\n1. **Raw sources** \u2014 immutable, human-curated source material.\n2. **Wiki** \u2014 LLM-generated summaries, entity pages, concept pages, comparisons, and syntheses.\n3. **Schema** \u2014 instructions defining structure, conventions, ingestion, querying, and maintenance.\n\nImplementations may add a knowledge graph and search index:\n\n```text\nImmutable sources\n    \u2193\nPersistent wiki\n    \u2193\nKnowledge graph and search index\n    \u2193\nEvidence-backed agent queries\n```\n\n### Main operations\n\n- **Ingest:** read a source, create its summary, update related pages, add cross-references, and record provenance.\n- **Query:** search existing synthesis first, inspect supporting evidence as needed, and optionally preserve valuable answers as new wiki content.\n- **Lint:** detect contradictions, stale claims, orphan pages, missing links, weak coverage, and unresolved research gaps.\n\nSource: [Andrej Karpathy \u2014 LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)\n\n## Why `mini-context-graph` Is the Best Copilot Skill\n\n`mini-context-graph` closely matches the LLM Wiki pattern while adding structured retrieval and provenance.\n\n### Architecture\n\n1. **Wiki layer** \u2014 persistent summaries, entity pages, and topic syntheses.\n2. **Graph layer** \u2014 entities and relations extracted once for structural traversal.\n3. **Raw-source layer** \u2014 immutable source documents and chunks retained for evidence retrieval.\n\n### Strengths\n\n- Distributed as a native Agent Skill in `github/awesome-copilot`.\n- Works naturally with repository-local `SKILL.md` workflows.\n- Keeps the human-readable wiki as the primary synthesis artifact.\n- Adds graph traversal without replacing Markdown with an opaque database.\n- Preserves exact source evidence for claims and relations.\n- Supports search, evidence retrieval, graph queries, document listing, and linting.\n- Fits Git-based review, history, branching, and collaboration.\n\n### Trade-offs\n\n- Ingestion remains agent-guided rather than a fully autonomous compiler pipeline.\n- Graph quality depends on disciplined ontology and extraction rules.\n- Larger corpora may eventually require stronger semantic retrieval and reranking.\n\nReferences:\n\n- [Mini Context Graph skill](https://awesome-copilot.github.com/skill/mini-context-graph/)\n- [Awesome GitHub Copilot repository](https://github.com/github/awesome-copilot)\n\n## Alternative Implementations\n\n### `atomicstrata/llm-wiki-compiler`\n\nThe most complete standalone implementation reviewed.\n\nNotable capabilities:\n\n- typed wiki pages such as concepts, entities, comparisons, and overviews;\n- paragraph- and claim-level citations;\n- semantic embeddings and incremental content hashing;\n- BM25 reranking;\n- wiki-link graph expansion;\n- multiple model providers, including GitHub Copilot;\n- CLI and agent-oriented workflows.\n\nChoose it when retrieval quality, compilation automation, provider portability, and a complete standalone runtime matter more than keeping the implementation as a lightweight repository skill.\n\nReference: [`atomicstrata/llm-wiki-compiler`](https://github.com/atomicstrata/llm-wiki-compiler)\n\n### `ussumant/llm-wiki-compiler`\n\nA plugin-first implementation for Claude Code and Codex.\n\nNotable capabilities:\n\n- topic-based knowledge compilation;\n- knowledge-project and codebase modes;\n- concept discovery and schema generation;\n- coverage and staleness workflows;\n- knowledge-graph visualization;\n- Claude Code and Codex-compatible packaging.\n\nChoose it when the primary environment is Claude Code or Codex and the desired interaction model is a guided compiler workflow.\n\nReference: [`ussumant/llm-wiki-compiler`](https://github.com/ussumant/llm-wiki-compiler)\n\n### Graphify\n\nGraphify is a strong codebase-understanding tool rather than a direct LLM Wiki implementation.\n\nNotable capabilities:\n\n- deterministic AST parsing with Tree-sitter;\n- queryable code and document knowledge graph;\n- explicit distinction between extracted and inferred edges;\n- no required vector database for code structure;\n- optional Markdown wiki generation;\n- integrations with Copilot, Claude Code, Codex, Cursor, and other agents.\n\nChoose it when the primary problem is understanding code structure, dependencies, schemas, and architecture. Combine it with an LLM Wiki when both code intelligence and durable research synthesis are required.\n\nReference: [`Graphify-Labs/graphify`](https://github.com/Graphify-Labs/graphify)\n\n## Decision\n\nUse **`mini-context-graph`** for this repository because it provides the best balance of:\n\n- direct alignment with Karpathy's pattern;\n- native GitHub Copilot skill integration;\n- persistent Markdown synthesis;\n- graph-based structural queries;\n- immutable evidence and provenance;\n- lightweight, repository-local operation.\n\nConsider `atomicstrata/llm-wiki-compiler` if the repository outgrows the current retrieval model and requires semantic top-K retrieval, reranking, automated compilation, or broader provider support.\n\n## Skill-Design Notes\n\nEffective Agent Skills should remain concise, use progressive disclosure, provide specific discovery metadata, separate detailed references from the main `SKILL.md`, and include validation loops for fragile workflows.\n\nThe current `mini-context-graph` structure follows this model by keeping the skill entry point focused and moving ingestion, ontology, retrieval, and linting details into reference files and scripts.\n\nReference: [Anthropic \u2014 Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)\n",
+      "chunks": [
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_000",
+          "index": 0,
+          "text": "# Karpathy LLM Wiki: Knowledge-Base Skill Comparison\n\n> Research snapshot: 2026-07-27\n\n## Summary\n\nFor a GitHub Copilot-based knowledge repository, **`mini-context-graph` is the best-fit Karpathy LLM Wiki skill**.\n\nIt directly implements the core pattern as an installable Agent Skill:\n\n- persistent, LLM-maintained Markdown wiki;\n- structured knowledge graph;\n- immutable raw sources;\n- provenance and source evidence;\n- incremental ingestion;\n- wiki search, graph queries, linting, and contradictio"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_001",
+          "index": 1,
+          "text": "nd source evidence;\n- incremental ingestion;\n- wiki search, graph queries, linting, and contradiction handling.\n\nThe strongest alternatives serve different use cases:\n\n| Project | Best for | Assessment |\n|---|---|---|\n| [`mini-context-graph`](https://awesome-copilot.github.com/skill/mini-context-graph/) | GitHub Copilot Agent Skills | Best fit for this repository |\n| [`atomicstrata/llm-wiki-compiler`](https://github.com/atomicstrata/llm-wiki-compiler) | Full standalone knowledge compiler | Most"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_002",
+          "index": 2,
+          "text": "er`](https://github.com/atomicstrata/llm-wiki-compiler) | Full standalone knowledge compiler | Most complete implementation reviewed |\n| [`ussumant/llm-wiki-compiler`](https://github.com/ussumant/llm-wiki-compiler) | Claude Code and Codex workflows | Strong plugin-first compilation workflow |\n| [`Graphify`](https://github.com/Graphify-Labs/graphify) | Codebase understanding | Best code-first graph tool; not primarily an LLM Wiki |\n\n## Karpathy's LLM Wiki Pattern\n\nAndrej Karpathy describes an LLM"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_003",
+          "index": 3,
+          "text": "tool; not primarily an LLM Wiki |\n\n## Karpathy's LLM Wiki Pattern\n\nAndrej Karpathy describes an LLM Wiki as a persistent, interlinked Markdown knowledge base maintained by an LLM agent.\n\nUnlike conventional retrieval-augmented generation, which retrieves raw chunks and reconstructs an answer for each query, the LLM Wiki compiles knowledge during ingestion. The resulting synthesis is retained, updated, cross-linked, and reused.\n\n### Core layers\n\n```text\nRaw sources\n    \u2193\nPersistent wiki\n    \u2193\nAg"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_004",
+          "index": 4,
+          "text": "ated, cross-linked, and reused.\n\n### Core layers\n\n```text\nRaw sources\n    \u2193\nPersistent wiki\n    \u2193\nAgents and users\n```\n\nKarpathy's original architecture includes three conceptual layers:\n\n1. **Raw sources** \u2014 immutable, human-curated source material.\n2. **Wiki** \u2014 LLM-generated summaries, entity pages, concept pages, comparisons, and syntheses.\n3. **Schema** \u2014 instructions defining structure, conventions, ingestion, querying, and maintenance.\n\nImplementations may add a knowledge graph and search"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_005",
+          "index": 5,
+          "text": "entions, ingestion, querying, and maintenance.\n\nImplementations may add a knowledge graph and search index:\n\n```text\nImmutable sources\n    \u2193\nPersistent wiki\n    \u2193\nKnowledge graph and search index\n    \u2193\nEvidence-backed agent queries\n```\n\n### Main operations\n\n- **Ingest:** read a source, create its summary, update related pages, add cross-references, and record provenance.\n- **Query:** search existing synthesis first, inspect supporting evidence as needed, and optionally preserve valuable answers"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_006",
+          "index": 6,
+          "text": "ng synthesis first, inspect supporting evidence as needed, and optionally preserve valuable answers as new wiki content.\n- **Lint:** detect contradictions, stale claims, orphan pages, missing links, weak coverage, and unresolved research gaps.\n\nSource: [Andrej Karpathy \u2014 LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)\n\n## Why `mini-context-graph` Is the Best Copilot Skill\n\n`mini-context-graph` closely matches the LLM Wiki pattern while adding structured retrieval and"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_007",
+          "index": 7,
+          "text": "ill\n\n`mini-context-graph` closely matches the LLM Wiki pattern while adding structured retrieval and provenance.\n\n### Architecture\n\n1. **Wiki layer** \u2014 persistent summaries, entity pages, and topic syntheses.\n2. **Graph layer** \u2014 entities and relations extracted once for structural traversal.\n3. **Raw-source layer** \u2014 immutable source documents and chunks retained for evidence retrieval.\n\n### Strengths\n\n- Distributed as a native Agent Skill in `github/awesome-copilot`.\n- Works naturally with rep"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_008",
+          "index": 8,
+          "text": "ngths\n\n- Distributed as a native Agent Skill in `github/awesome-copilot`.\n- Works naturally with repository-local `SKILL.md` workflows.\n- Keeps the human-readable wiki as the primary synthesis artifact.\n- Adds graph traversal without replacing Markdown with an opaque database.\n- Preserves exact source evidence for claims and relations.\n- Supports search, evidence retrieval, graph queries, document listing, and linting.\n- Fits Git-based review, history, branching, and collaboration.\n\n### Trade-of"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_009",
+          "index": 9,
+          "text": "listing, and linting.\n- Fits Git-based review, history, branching, and collaboration.\n\n### Trade-offs\n\n- Ingestion remains agent-guided rather than a fully autonomous compiler pipeline.\n- Graph quality depends on disciplined ontology and extraction rules.\n- Larger corpora may eventually require stronger semantic retrieval and reranking.\n\nReferences:\n\n- [Mini Context Graph skill](https://awesome-copilot.github.com/skill/mini-context-graph/)\n- [Awesome GitHub Copilot repository](https://github.co"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_010",
+          "index": 10,
+          "text": "opilot.github.com/skill/mini-context-graph/)\n- [Awesome GitHub Copilot repository](https://github.com/github/awesome-copilot)\n\n## Alternative Implementations\n\n### `atomicstrata/llm-wiki-compiler`\n\nThe most complete standalone implementation reviewed.\n\nNotable capabilities:\n\n- typed wiki pages such as concepts, entities, comparisons, and overviews;\n- paragraph- and claim-level citations;\n- semantic embeddings and incremental content hashing;\n- BM25 reranking;\n- wiki-link graph expansion;\n- multip"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_011",
+          "index": 11,
+          "text": "embeddings and incremental content hashing;\n- BM25 reranking;\n- wiki-link graph expansion;\n- multiple model providers, including GitHub Copilot;\n- CLI and agent-oriented workflows.\n\nChoose it when retrieval quality, compilation automation, provider portability, and a complete standalone runtime matter more than keeping the implementation as a lightweight repository skill.\n\nReference: [`atomicstrata/llm-wiki-compiler`](https://github.com/atomicstrata/llm-wiki-compiler)\n\n### `ussumant/llm-wiki-co"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_012",
+          "index": 12,
+          "text": "ta/llm-wiki-compiler`](https://github.com/atomicstrata/llm-wiki-compiler)\n\n### `ussumant/llm-wiki-compiler`\n\nA plugin-first implementation for Claude Code and Codex.\n\nNotable capabilities:\n\n- topic-based knowledge compilation;\n- knowledge-project and codebase modes;\n- concept discovery and schema generation;\n- coverage and staleness workflows;\n- knowledge-graph visualization;\n- Claude Code and Codex-compatible packaging.\n\nChoose it when the primary environment is Claude Code or Codex and the des"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_013",
+          "index": 13,
+          "text": "ex-compatible packaging.\n\nChoose it when the primary environment is Claude Code or Codex and the desired interaction model is a guided compiler workflow.\n\nReference: [`ussumant/llm-wiki-compiler`](https://github.com/ussumant/llm-wiki-compiler)\n\n### Graphify\n\nGraphify is a strong codebase-understanding tool rather than a direct LLM Wiki implementation.\n\nNotable capabilities:\n\n- deterministic AST parsing with Tree-sitter;\n- queryable code and document knowledge graph;\n- explicit distinction betwee"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_014",
+          "index": 14,
+          "text": "rsing with Tree-sitter;\n- queryable code and document knowledge graph;\n- explicit distinction between extracted and inferred edges;\n- no required vector database for code structure;\n- optional Markdown wiki generation;\n- integrations with Copilot, Claude Code, Codex, Cursor, and other agents.\n\nChoose it when the primary problem is understanding code structure, dependencies, schemas, and architecture. Combine it with an LLM Wiki when both code intelligence and durable research synthesis are requi"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_015",
+          "index": 15,
+          "text": "re. Combine it with an LLM Wiki when both code intelligence and durable research synthesis are required.\n\nReference: [`Graphify-Labs/graphify`](https://github.com/Graphify-Labs/graphify)\n\n## Decision\n\nUse **`mini-context-graph`** for this repository because it provides the best balance of:\n\n- direct alignment with Karpathy's pattern;\n- native GitHub Copilot skill integration;\n- persistent Markdown synthesis;\n- graph-based structural queries;\n- immutable evidence and provenance;\n- lightweight, re"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_016",
+          "index": 16,
+          "text": "synthesis;\n- graph-based structural queries;\n- immutable evidence and provenance;\n- lightweight, repository-local operation.\n\nConsider `atomicstrata/llm-wiki-compiler` if the repository outgrows the current retrieval model and requires semantic top-K retrieval, reranking, automated compilation, or broader provider support.\n\n## Skill-Design Notes\n\nEffective Agent Skills should remain concise, use progressive disclosure, provide specific discovery metadata, separate detailed references from the m"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_017",
+          "index": 17,
+          "text": "progressive disclosure, provide specific discovery metadata, separate detailed references from the main `SKILL.md`, and include validation loops for fragile workflows.\n\nThe current `mini-context-graph` structure follows this model by keeping the skill entry point focused and moving ingestion, ontology, retrieval, and linting details into reference files and scripts.\n\nReference: [Anthropic \u2014 Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-pra"
+        },
+        {
+          "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_018",
+          "index": 18,
+          "text": "authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)"
+        }
+      ],
+      "ingestion_date": "2026-07-26T22:13:12.068091+00:00"
+    },
+    "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1": {
+      "id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "title": "Custom Skill workflow.yaml",
+      "source": "sources/custom-skill-workflow-yaml.md",
+      "content": "# Custom Skill `workflow.yaml`\n\n## Summary\n\n`workflow.yaml` is **not** a standard executable file for GitHub Copilot or Claude Agent Skills.\n\nThe standard skill entry point is `SKILL.md` with YAML frontmatter. A skill may include scripts, references, templates, and data files that `SKILL.md` explicitly tells the agent how to use.\n\nUse `workflow.yaml` only as a custom, machine-readable workflow contract when:\n\n- the workflow has multiple phases;\n- dependencies and gates must be explicit;\n- an agent, script, or orchestrator validates and interprets the file;\n- the same workflow definition must be reused across agents or tools.\n\nWithout an interpreter or explicit `SKILL.md` instructions, `workflow.yaml` is only reference data.\n\n## Recommended Structure\n\n```text\n.github/skills/feature-workflow/\n\u251c\u2500\u2500 SKILL.md\n\u251c\u2500\u2500 workflow.yaml\n\u251c\u2500\u2500 schemas/\n\u2502   \u2514\u2500\u2500 workflow.schema.json\n\u251c\u2500\u2500 scripts/\n\u2502   \u251c\u2500\u2500 validate-workflow.py\n\u2502   \u2514\u2500\u2500 run-gate.sh\n\u2514\u2500\u2500 references/\n    \u2514\u2500\u2500 phase-guidance.md\n```\n\n`SKILL.md` remains the controller. `workflow.yaml` provides structured workflow data. Scripts perform deterministic validation and execution.\n\n## Responsibility Split\n\n| Artifact | Responsibility |\n|---|---|\n| `SKILL.md` | Activation, reasoning instructions, execution rules, failure handling, and output contract |\n| `workflow.yaml` | Phases, dependencies, artifacts, gates, retries, and policy values |\n| `workflow.schema.json` | Structural validation and allowed values |\n| `scripts/` | Deterministic checks, transformations, and command execution |\n| Runtime state | Current phase, attempts, outcomes, evidence, and resume point |\n\nDo not store mutable execution state in `workflow.yaml`. Keep it as the workflow definition and persist runtime state separately.\n\n## Example `workflow.yaml`\n\n```yaml\nschema-version: 1\nworkflow: feature-delivery\n\nphases:\n  - id: discover\n    output: .workflow/requirements.md\n    success:\n      command: scripts/validate-requirements.sh\n    failure: retry\n\n  - id: design\n    depends-on: [discover]\n    input: .workflow/requirements.md\n    output: .workflow/design.md\n    success:\n      command: scripts/validate-design.sh\n    failure: return-to-discover\n\n  - id: implement\n    depends-on: [design]\n    input: .workflow/design.md\n    success:\n      command: dotnet build\n    failure: fix-and-retry\n\n  - id: verify\n    depends-on: [implement]\n    success:\n      commands:\n        - dotnet test\n        - dotnet format --verify-no-changes\n    failure: fix-and-retry\n```\n\nThe schema is project-defined. GitHub Copilot and Claude do not assign built-in meaning to these fields.\n\n## Required `SKILL.md` Instructions\n\n```markdown\n## Workflow\n\n1. Read `workflow.yaml` from this skill directory.\n2. Validate it against `schemas/workflow.schema.json`.\n3. Execute phases in dependency order.\n4. Do not start a phase until all dependencies have succeeded.\n5. Produce every declared output artifact.\n6. Run every declared success gate.\n7. Apply the declared failure policy when a gate fails.\n8. Persist phase status and the exact resume point after each phase.\n9. Never silently skip an unknown field, phase, dependency, or failure policy.\n10. Complete only when every required phase has a terminal outcome.\n```\n\nThe skill must define how paths are resolved, which fields are required, which commands require approval, and what happens when validation fails.\n\n## Execution Model\n\n```text\nload SKILL.md\n    \u2193\nload workflow.yaml\n    \u2193\nvalidate schema\n    \u2193\nresolve dependencies\n    \u2193\nexecute phase\n    \u2193\nvalidate gate\n    \u2193\npersist outcome\n    \u2193\ncontinue, retry, return, or stop\n```\n\nTreat each phase as a contract:\n\n```text\ninputs\npreconditions\nactions\noutputs\nsuccess gate\nfailure policy\n```\n\n## Validation Rules\n\nA workflow interpreter SHOULD verify:\n\n- the schema version is supported;\n- phase IDs are unique;\n- dependencies reference existing phases;\n- the dependency graph is acyclic;\n- referenced scripts and paths exist;\n- every phase has a measurable completion gate;\n- failure-policy values are known;\n- destructive commands require explicit user intent;\n- completed phases have observable evidence;\n- no required phase remains `not-started` or `in-progress` at completion.\n\nFor high-risk workflows, generate an execution plan from `workflow.yaml`, validate it, and only then execute commands.\n\n## What Belongs in YAML\n\nUse YAML for structured, stable values:\n\n- phase identifiers;\n- dependencies;\n- inputs and outputs;\n- commands and script paths;\n- retry limits;\n- timeouts;\n- allowed outcome values;\n- validation gates;\n- artifact paths.\n\nKeep these in Markdown instead:\n\n- judgment rules;\n- domain guidance;\n- nuanced trade-offs;\n- examples requiring explanation;\n- escalation guidance;\n- user-facing output requirements.\n\nAvoid encoding long natural-language prompts inside YAML. YAML is most useful when fields can be validated and interpreted consistently.\n\n## Distinguish Similar Formats\n\n| Format | Meaning |\n|---|---|\n| Skill `SKILL.md` frontmatter | Standard skill metadata such as `name`, `description`, and optional tool settings |\n| Custom skill `workflow.yaml` | Project-defined supporting resource with no built-in execution semantics |\n| `.github/workflows/*.yml` | GitHub Actions workflow executed by the Actions runner |\n| GitHub agentic workflow `.md` | YAML frontmatter plus natural-language agent instructions |\n| GitHub agentic workflow `.lock.yml` | Compiled hardened Actions workflow; do not edit manually |\n\nDo not place a custom skill workflow in `.github/workflows/` unless it is a valid GitHub Actions workflow.\n\n## When Not to Use `workflow.yaml`\n\nKeep the workflow entirely in `SKILL.md` when:\n\n- it is short and linear;\n- phases are not reused;\n- no machine validation is required;\n- the YAML would duplicate the Markdown instructions;\n- no script or orchestrator consumes the structured definition.\n\nUse separate specialized skills when phases have independent activation triggers, permissions, or reusable expertise. Use subagents when work can be delegated through explicit input and output artifacts.\n\n## Recommended Rule\n\n> Markdown defines how the agent should reason and behave. YAML defines structured workflow data. Scripts provide deterministic guarantees.\n\n## References\n\n- [GitHub: Adding agent skills for Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills)\n- [GitHub: Copilot CLI skill reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#skills-reference)\n- [GitHub: About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)\n- [GitHub: About agentic workflows](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/about-github-agentic-workflows)\n- [Anthropic: Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)\n- [Agent Skills specification](https://agentskills.io/specification)\n",
+      "chunks": [
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000",
+          "index": 0,
+          "text": "# Custom Skill `workflow.yaml`\n\n## Summary\n\n`workflow.yaml` is **not** a standard executable file for GitHub Copilot or Claude Agent Skills.\n\nThe standard skill entry point is `SKILL.md` with YAML frontmatter. A skill may include scripts, references, templates, and data files that `SKILL.md` explicitly tells the agent how to use.\n\nUse `workflow.yaml` only as a custom, machine-readable workflow contract when:\n\n- the workflow has multiple phases;\n- dependencies and gates must be explicit;\n- an age"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_001",
+          "index": 1,
+          "text": "tract when:\n\n- the workflow has multiple phases;\n- dependencies and gates must be explicit;\n- an agent, script, or orchestrator validates and interprets the file;\n- the same workflow definition must be reused across agents or tools.\n\nWithout an interpreter or explicit `SKILL.md` instructions, `workflow.yaml` is only reference data.\n\n## Recommended Structure\n\n```text\n.github/skills/feature-workflow/\n\u251c\u2500\u2500 SKILL.md\n\u251c\u2500\u2500 workflow.yaml\n\u251c\u2500\u2500 schemas/\n\u2502   \u2514\u2500\u2500 workflow.schema.json\n\u251c\u2500\u2500 scripts/\n\u2502   \u251c\u2500\u2500 vali"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_002",
+          "index": 2,
+          "text": "/\n\u251c\u2500\u2500 SKILL.md\n\u251c\u2500\u2500 workflow.yaml\n\u251c\u2500\u2500 schemas/\n\u2502   \u2514\u2500\u2500 workflow.schema.json\n\u251c\u2500\u2500 scripts/\n\u2502   \u251c\u2500\u2500 validate-workflow.py\n\u2502   \u2514\u2500\u2500 run-gate.sh\n\u2514\u2500\u2500 references/\n    \u2514\u2500\u2500 phase-guidance.md\n```\n\n`SKILL.md` remains the controller. `workflow.yaml` provides structured workflow data. Scripts perform deterministic validation and execution.\n\n## Responsibility Split\n\n| Artifact | Responsibility |\n|---|---|\n| `SKILL.md` | Activation, reasoning instructions, execution rules, failure handling, and output contract |"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_003",
+          "index": 3,
+          "text": ".md` | Activation, reasoning instructions, execution rules, failure handling, and output contract |\n| `workflow.yaml` | Phases, dependencies, artifacts, gates, retries, and policy values |\n| `workflow.schema.json` | Structural validation and allowed values |\n| `scripts/` | Deterministic checks, transformations, and command execution |\n| Runtime state | Current phase, attempts, outcomes, evidence, and resume point |\n\nDo not store mutable execution state in `workflow.yaml`. Keep it as the workflow"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_004",
+          "index": 4,
+          "text": "and resume point |\n\nDo not store mutable execution state in `workflow.yaml`. Keep it as the workflow definition and persist runtime state separately.\n\n## Example `workflow.yaml`\n\n```yaml\nschema-version: 1\nworkflow: feature-delivery\n\nphases:\n  - id: discover\n    output: .workflow/requirements.md\n    success:\n      command: scripts/validate-requirements.sh\n    failure: retry\n\n  - id: design\n    depends-on: [discover]\n    input: .workflow/requirements.md\n    output: .workflow/design.md\n    success:"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_005",
+          "index": 5,
+          "text": "nds-on: [discover]\n    input: .workflow/requirements.md\n    output: .workflow/design.md\n    success:\n      command: scripts/validate-design.sh\n    failure: return-to-discover\n\n  - id: implement\n    depends-on: [design]\n    input: .workflow/design.md\n    success:\n      command: dotnet build\n    failure: fix-and-retry\n\n  - id: verify\n    depends-on: [implement]\n    success:\n      commands:\n        - dotnet test\n        - dotnet format --verify-no-changes\n    failure: fix-and-retry\n```\n\nThe schema"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_006",
+          "index": 6,
+          "text": "dotnet test\n        - dotnet format --verify-no-changes\n    failure: fix-and-retry\n```\n\nThe schema is project-defined. GitHub Copilot and Claude do not assign built-in meaning to these fields.\n\n## Required `SKILL.md` Instructions\n\n```markdown\n## Workflow\n\n1. Read `workflow.yaml` from this skill directory.\n2. Validate it against `schemas/workflow.schema.json`.\n3. Execute phases in dependency order.\n4. Do not start a phase until all dependencies have succeeded.\n5. Produce every declared output ar"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_007",
+          "index": 7,
+          "text": ".\n4. Do not start a phase until all dependencies have succeeded.\n5. Produce every declared output artifact.\n6. Run every declared success gate.\n7. Apply the declared failure policy when a gate fails.\n8. Persist phase status and the exact resume point after each phase.\n9. Never silently skip an unknown field, phase, dependency, or failure policy.\n10. Complete only when every required phase has a terminal outcome.\n```\n\nThe skill must define how paths are resolved, which fields are required, which"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_008",
+          "index": 8,
+          "text": "rminal outcome.\n```\n\nThe skill must define how paths are resolved, which fields are required, which commands require approval, and what happens when validation fails.\n\n## Execution Model\n\n```text\nload SKILL.md\n    \u2193\nload workflow.yaml\n    \u2193\nvalidate schema\n    \u2193\nresolve dependencies\n    \u2193\nexecute phase\n    \u2193\nvalidate gate\n    \u2193\npersist outcome\n    \u2193\ncontinue, retry, return, or stop\n```\n\nTreat each phase as a contract:\n\n```text\ninputs\npreconditions\nactions\noutputs\nsuccess gate\nfailure policy\n```"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_009",
+          "index": 9,
+          "text": "phase as a contract:\n\n```text\ninputs\npreconditions\nactions\noutputs\nsuccess gate\nfailure policy\n```\n\n## Validation Rules\n\nA workflow interpreter SHOULD verify:\n\n- the schema version is supported;\n- phase IDs are unique;\n- dependencies reference existing phases;\n- the dependency graph is acyclic;\n- referenced scripts and paths exist;\n- every phase has a measurable completion gate;\n- failure-policy values are known;\n- destructive commands require explicit user intent;\n- completed phases have obser"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_010",
+          "index": 10,
+          "text": "values are known;\n- destructive commands require explicit user intent;\n- completed phases have observable evidence;\n- no required phase remains `not-started` or `in-progress` at completion.\n\nFor high-risk workflows, generate an execution plan from `workflow.yaml`, validate it, and only then execute commands.\n\n## What Belongs in YAML\n\nUse YAML for structured, stable values:\n\n- phase identifiers;\n- dependencies;\n- inputs and outputs;\n- commands and script paths;\n- retry limits;\n- timeouts;\n- allow"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_011",
+          "index": 11,
+          "text": "dependencies;\n- inputs and outputs;\n- commands and script paths;\n- retry limits;\n- timeouts;\n- allowed outcome values;\n- validation gates;\n- artifact paths.\n\nKeep these in Markdown instead:\n\n- judgment rules;\n- domain guidance;\n- nuanced trade-offs;\n- examples requiring explanation;\n- escalation guidance;\n- user-facing output requirements.\n\nAvoid encoding long natural-language prompts inside YAML. YAML is most useful when fields can be validated and interpreted consistently.\n\n## Distinguish Simi"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_012",
+          "index": 12,
+          "text": "YAML is most useful when fields can be validated and interpreted consistently.\n\n## Distinguish Similar Formats\n\n| Format | Meaning |\n|---|---|\n| Skill `SKILL.md` frontmatter | Standard skill metadata such as `name`, `description`, and optional tool settings |\n| Custom skill `workflow.yaml` | Project-defined supporting resource with no built-in execution semantics |\n| `.github/workflows/*.yml` | GitHub Actions workflow executed by the Actions runner |\n| GitHub agentic workflow `.md` | YAML front"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_013",
+          "index": 13,
+          "text": "itHub Actions workflow executed by the Actions runner |\n| GitHub agentic workflow `.md` | YAML frontmatter plus natural-language agent instructions |\n| GitHub agentic workflow `.lock.yml` | Compiled hardened Actions workflow; do not edit manually |\n\nDo not place a custom skill workflow in `.github/workflows/` unless it is a valid GitHub Actions workflow.\n\n## When Not to Use `workflow.yaml`\n\nKeep the workflow entirely in `SKILL.md` when:\n\n- it is short and linear;\n- phases are not reused;\n- no ma"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_014",
+          "index": 14,
+          "text": "he workflow entirely in `SKILL.md` when:\n\n- it is short and linear;\n- phases are not reused;\n- no machine validation is required;\n- the YAML would duplicate the Markdown instructions;\n- no script or orchestrator consumes the structured definition.\n\nUse separate specialized skills when phases have independent activation triggers, permissions, or reusable expertise. Use subagents when work can be delegated through explicit input and output artifacts.\n\n## Recommended Rule\n\n> Markdown defines how th"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_015",
+          "index": 15,
+          "text": "legated through explicit input and output artifacts.\n\n## Recommended Rule\n\n> Markdown defines how the agent should reason and behave. YAML defines structured workflow data. Scripts provide deterministic guarantees.\n\n## References\n\n- [GitHub: Adding agent skills for Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills)\n- [GitHub: Copilot CLI skill reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#skills-"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_016",
+          "index": 16,
+          "text": "ce](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#skills-reference)\n- [GitHub: About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)\n- [GitHub: About agentic workflows](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/about-github-agentic-workflows)\n- [Anthropic: Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)\n- [Agent Skills"
+        },
+        {
+          "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_017",
+          "index": 17,
+          "text": "](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)\n- [Agent Skills specification](https://agentskills.io/specification)"
+        }
+      ],
+      "ingestion_date": "2026-07-26T22:13:12.231998+00:00"
     }
   }
 }

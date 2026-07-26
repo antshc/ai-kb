@@ -122,6 +122,66 @@
     ],
     "you are not ready \u2013 agentic coding in 2026": [
       "945b6cd7"
+    ],
+    "mini-context-graph": [
+      "2766fcd6"
+    ],
+    "karpathy llm wiki pattern": [
+      "015625b0"
+    ],
+    "andrej karpathy": [
+      "7b47bc87"
+    ],
+    "atomicstrata/llm-wiki-compiler": [
+      "eae7be86"
+    ],
+    "ussumant/llm-wiki-compiler": [
+      "e36781d2"
+    ],
+    "graphify": [
+      "29ac456e"
+    ],
+    "raw sources": [
+      "2d546096"
+    ],
+    "persistent wiki": [
+      "3cd28bcd"
+    ],
+    "knowledge graph": [
+      "b2412a51"
+    ],
+    "github copilot": [
+      "07035569"
+    ],
+    "agent skill": [
+      "60a6bcda"
+    ],
+    "provenance": [
+      "db626596"
+    ],
+    "workflow.yaml": [
+      "37ec61df"
+    ],
+    "skill.md": [
+      "ba8f6d41"
+    ],
+    "claude agent skills": [
+      "37a2b21d"
+    ],
+    "workflow schema": [
+      "32abd32b"
+    ],
+    "phase": [
+      "f4065be9"
+    ],
+    "validation gate": [
+      "3dd5cd03"
+    ],
+    "github actions workflow": [
+      "f65ee41b"
+    ],
+    "runtime state": [
+      "c21b17e2"
     ]
   },
   "keyword_index": {
@@ -132,7 +192,9 @@
       "16610af6"
     ],
     "graph": [
-      "5dee5b0b"
+      "5dee5b0b",
+      "2766fcd6",
+      "b2412a51"
     ],
     "agent": [
       "40eaf89c",
@@ -140,7 +202,9 @@
       "0b2c37dc",
       "62d5c372",
       "5567075d",
-      "89c5f686"
+      "89c5f686",
+      "60a6bcda",
+      "37a2b21d"
     ],
     "patterns": [
       "40eaf89c"
@@ -173,7 +237,8 @@
     "skills": [
       "abcc7b4d",
       "cd5c18a4",
-      "11602ecb"
+      "11602ecb",
+      "37a2b21d"
     ],
     "integrations": [
       "abcc7b4d",
@@ -249,7 +314,8 @@
       "f54888e9",
       "01030e72",
       "881c8279",
-      "c3480cf9"
+      "c3480cf9",
+      "07035569"
     ],
     "prd": [
       "004cf269"
@@ -269,7 +335,9 @@
     ],
     "github": [
       "58e2b976",
-      "f54888e9"
+      "f54888e9",
+      "07035569",
+      "f65ee41b"
     ],
     "built": [
       "58e2b976"
@@ -319,7 +387,9 @@
       "0b2c37dc"
     ],
     "skill": [
-      "62d5c372"
+      "62d5c372",
+      "60a6bcda",
+      "ba8f6d41"
     ],
     "plugin": [
       "62d5c372"
@@ -428,7 +498,10 @@
       "fd91f015"
     ],
     "llm": [
-      "fd91f015"
+      "fd91f015",
+      "015625b0",
+      "eae7be86",
+      "e36781d2"
     ],
     "behavior": [
       "fd91f015"
@@ -452,7 +525,8 @@
       "881c8279",
       "5567075d",
       "ea71daf2",
-      "89c5f686"
+      "89c5f686",
+      "37a2b21d"
     ],
     "code": [
       "881c8279"
@@ -529,7 +603,8 @@
       "7fdf2d61",
       "ea71daf2",
       "af454e97",
-      "53ed4159"
+      "53ed4159",
+      "ba8f6d41"
     ],
     "handoff": [
       "59a81f65"
@@ -575,6 +650,85 @@
     ],
     "2026": [
       "945b6cd7"
+    ],
+    "mini": [
+      "2766fcd6"
+    ],
+    "context": [
+      "2766fcd6"
+    ],
+    "karpathy": [
+      "015625b0",
+      "7b47bc87"
+    ],
+    "wiki": [
+      "015625b0",
+      "eae7be86",
+      "e36781d2",
+      "3cd28bcd"
+    ],
+    "pattern": [
+      "015625b0"
+    ],
+    "andrej": [
+      "7b47bc87"
+    ],
+    "atomicstrata": [
+      "eae7be86"
+    ],
+    "compiler": [
+      "eae7be86",
+      "e36781d2"
+    ],
+    "ussumant": [
+      "e36781d2"
+    ],
+    "graphify": [
+      "29ac456e"
+    ],
+    "raw": [
+      "2d546096"
+    ],
+    "sources": [
+      "2d546096"
+    ],
+    "persistent": [
+      "3cd28bcd"
+    ],
+    "knowledge": [
+      "b2412a51"
+    ],
+    "provenance": [
+      "db626596"
+    ],
+    "workflow": [
+      "37ec61df",
+      "32abd32b",
+      "f65ee41b"
+    ],
+    "yaml": [
+      "37ec61df"
+    ],
+    "schema": [
+      "32abd32b"
+    ],
+    "phase": [
+      "f4065be9"
+    ],
+    "validation": [
+      "3dd5cd03"
+    ],
+    "gate": [
+      "3dd5cd03"
+    ],
+    "actions": [
+      "f65ee41b"
+    ],
+    "runtime": [
+      "c21b17e2"
+    ],
+    "state": [
+      "c21b17e2"
     ]
   }
 }

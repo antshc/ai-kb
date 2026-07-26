@@ -312,7 +312,277 @@
       "source_chunks": [
         "source-you-are-not-ready-agentic-coding-in-2026_chunk_000"
       ]
+    },
+    "2766fcd6": {
+      "name": "mini-context-graph",
+      "type": "software",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_000"
+      ]
+    },
+    "015625b0": {
+      "name": "karpathy llm wiki pattern",
+      "type": "concept",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_003"
+      ]
+    },
+    "7b47bc87": {
+      "name": "andrej karpathy",
+      "type": "actor",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_003"
+      ]
+    },
+    "eae7be86": {
+      "name": "atomicstrata/llm-wiki-compiler",
+      "type": "software",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_002"
+      ]
+    },
+    "e36781d2": {
+      "name": "ussumant/llm-wiki-compiler",
+      "type": "software",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_012"
+      ]
+    },
+    "29ac456e": {
+      "name": "graphify",
+      "type": "software",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_013"
+      ]
+    },
+    "2d546096": {
+      "name": "raw sources",
+      "type": "concept",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_004"
+      ]
+    },
+    "3cd28bcd": {
+      "name": "persistent wiki",
+      "type": "concept",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_004"
+      ]
+    },
+    "b2412a51": {
+      "name": "knowledge graph",
+      "type": "concept",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_005"
+      ]
+    },
+    "07035569": {
+      "name": "github copilot",
+      "type": "software",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_007",
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "60a6bcda": {
+      "name": "agent skill",
+      "type": "concept",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_008"
+      ]
+    },
+    "db626596": {
+      "name": "provenance",
+      "type": "concept",
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "source_chunks": [
+        "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_008"
+      ]
+    },
+    "37ec61df": {
+      "name": "workflow.yaml",
+      "type": "component",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "ba8f6d41": {
+      "name": "skill.md",
+      "type": "component",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "37a2b21d": {
+      "name": "claude agent skills",
+      "type": "software",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "32abd32b": {
+      "name": "workflow schema",
+      "type": "component",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_006"
+      ]
+    },
+    "f4065be9": {
+      "name": "phase",
+      "type": "concept",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_006"
+      ]
+    },
+    "3dd5cd03": {
+      "name": "validation gate",
+      "type": "concept",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_009"
+      ]
+    },
+    "f65ee41b": {
+      "name": "github actions workflow",
+      "type": "process",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_012"
+      ]
+    },
+    "c21b17e2": {
+      "name": "runtime state",
+      "type": "concept",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_004"
+      ]
     }
   },
-  "edges": []
+  "edges": [
+    {
+      "source": "2766fcd6",
+      "target": "015625b0",
+      "type": "implements",
+      "confidence": 0.95,
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "supporting_text": "mini-context-graph closely matches the LLM Wiki pattern while adding structured retrieval and provenance",
+      "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_006"
+    },
+    {
+      "source": "015625b0",
+      "target": "2d546096",
+      "type": "contains",
+      "confidence": 1.0,
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "supporting_text": "Raw sources \u2014 immutable, human-curated source material",
+      "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_004"
+    },
+    {
+      "source": "015625b0",
+      "target": "3cd28bcd",
+      "type": "contains",
+      "confidence": 1.0,
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "supporting_text": "Wiki \u2014 LLM-generated summaries, entity pages, concept pages, comparisons, and syntheses",
+      "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_004"
+    },
+    {
+      "source": "2766fcd6",
+      "target": "b2412a51",
+      "type": "uses",
+      "confidence": 0.95,
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "supporting_text": "Graph layer \u2014 entities and relations extracted once for structural traversal",
+      "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_007"
+    },
+    {
+      "source": "2766fcd6",
+      "target": "07035569",
+      "type": "uses",
+      "confidence": 0.9,
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "supporting_text": "Distributed as a native Agent Skill in github/awesome-copilot",
+      "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_007"
+    },
+    {
+      "source": "2766fcd6",
+      "target": "db626596",
+      "type": "uses",
+      "confidence": 0.9,
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "supporting_text": "Preserves exact source evidence for claims and relations",
+      "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_008"
+    },
+    {
+      "source": "7b47bc87",
+      "target": "015625b0",
+      "type": "creates",
+      "confidence": 1.0,
+      "source_document": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8",
+      "supporting_text": "Andrej Karpathy describes an LLM Wiki as a persistent, interlinked Markdown knowledge base",
+      "chunk_id": "sources/karpathy-llm-wiki-knowledge-base-md-671579e50c72a0a8_chunk_003"
+    },
+    {
+      "source": "ba8f6d41",
+      "target": "37ec61df",
+      "type": "uses",
+      "confidence": 0.9,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "SKILL.md remains the controller. workflow.yaml provides structured workflow data",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_002"
+    },
+    {
+      "source": "37ec61df",
+      "target": "f4065be9",
+      "type": "contains",
+      "confidence": 1.0,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "Execute phases in dependency order",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_006"
+    },
+    {
+      "source": "f4065be9",
+      "target": "3dd5cd03",
+      "type": "uses",
+      "confidence": 0.9,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "every phase has a measurable completion gate",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_009"
+    },
+    {
+      "source": "37ec61df",
+      "target": "c21b17e2",
+      "type": "affects",
+      "confidence": 0.8,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "Do not store mutable execution state in workflow.yaml. Keep it as the workflow definition and persist runtime state separately",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_004"
+    },
+    {
+      "source": "ba8f6d41",
+      "target": "07035569",
+      "type": "uses",
+      "confidence": 0.85,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "workflow.yaml is not a standard executable file for GitHub Copilot or Claude Agent Skills. The standard skill entry point is SKILL.md",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+    }
+  ]
 }
