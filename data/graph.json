@@ -1,4 +1,318 @@
 {
-  "nodes": {},
+  "nodes": {
+    "40eaf89c": {
+      "name": "agent patterns",
+      "type": "concept",
+      "source_document": "source-agent-patterns",
+      "source_chunks": [
+        "source-agent-patterns_chunk_000"
+      ]
+    },
+    "348dc9a0": {
+      "name": "agentic engineering concepts",
+      "type": "concept",
+      "source_document": "source-agentic-engineering-concepts",
+      "source_chunks": [
+        "source-agentic-engineering-concepts_chunk_000",
+        "source-agentic-engineering-glossary_chunk_000"
+      ]
+    },
+    "abcc7b4d": {
+      "name": "ai agents with custom skills and integrations for business productivity",
+      "type": "concept",
+      "source_document": "source-ai-agents-skills-bussines-areas-deep-research-report",
+      "source_chunks": [
+        "source-ai-agents-skills-bussines-areas-deep-research-report_chunk_000"
+      ]
+    },
+    "60b1061e": {
+      "name": "ai steering best practices",
+      "type": "concept",
+      "source_document": "source-ai-steering-best-practices",
+      "source_chunks": [
+        "source-ai-steering-best-practices_chunk_000"
+      ]
+    },
+    "f6eef4b2": {
+      "name": "ai systems and agent integrations for cross-industry business value",
+      "type": "concept",
+      "source_document": "source-ai-system-bussiness-integrations-deep-research-report",
+      "source_chunks": [
+        "source-ai-system-bussiness-integrations-deep-research-report_chunk_000"
+      ]
+    },
+    "dd34b51a": {
+      "name": "genai in engineering: structured summary, use cases, and sdlc optimization",
+      "type": "concept",
+      "source_document": "source-ai-tools-sdlc",
+      "source_chunks": [
+        "source-ai-tools-sdlc_chunk_000"
+      ]
+    },
+    "86c8664e": {
+      "name": "chain-of-thought (cot) prompting",
+      "type": "concept",
+      "source_document": "source-chain-of-thought-cot-prompting",
+      "source_chunks": [
+        "source-chain-of-thought-cot-prompting_chunk_000"
+      ]
+    },
+    "004cf269": {
+      "name": "copilot prd compression best practices (tl;dr style)",
+      "type": "concept",
+      "source_document": "source-compression-output-best-practices",
+      "source_chunks": [
+        "source-compression-output-best-practices_chunk_000"
+      ]
+    },
+    "58e2b976": {
+      "name": "github copilot built-in agents",
+      "type": "concept",
+      "source_document": "source-copilot-built-in-agents",
+      "source_chunks": [
+        "source-copilot-built-in-agents_chunk_000"
+      ]
+    },
+    "718b8f32": {
+      "name": "c# lsp servers: `csharp-ls` vs `roslyn-language-server` vs `dnx`",
+      "type": "concept",
+      "source_document": "source-dotnet-lsp",
+      "source_chunks": [
+        "source-dotnet-lsp_chunk_000"
+      ]
+    },
+    "f54888e9": {
+      "name": "github copilot repository instructions",
+      "type": "concept",
+      "source_document": "source-github-copilot-copilot-instructions-best-practices",
+      "source_chunks": [
+        "source-github-copilot-copilot-instructions-best-practices_chunk_000"
+      ]
+    },
+    "0b2c37dc": {
+      "name": "improve agent robustness and resumability",
+      "type": "concept",
+      "source_document": "source-improve-agent-robustness-and-resumability",
+      "source_chunks": [
+        "source-improve-agent-robustness-and-resumability_chunk_000"
+      ]
+    },
+    "62d5c372": {
+      "name": "agent, skill, and plugin authoring standard",
+      "type": "concept",
+      "source_document": "source-instructions-standards-agent-skill-plugin-authoring-standard",
+      "source_chunks": [
+        "source-instructions-standards-agent-skill-plugin-authoring-standard_chunk_000"
+      ]
+    },
+    "c0f90599": {
+      "name": "lsp tools reference",
+      "type": "concept",
+      "source_document": "source-lsp-tools-reference",
+      "source_chunks": [
+        "source-lsp-tools-reference_chunk_000"
+      ]
+    },
+    "2eb12b74": {
+      "name": "open spec design",
+      "type": "concept",
+      "source_document": "source-open-spec-design",
+      "source_chunks": [
+        "source-open-spec-design_chunk_000"
+      ]
+    },
+    "748bf4a7": {
+      "name": "example 2: e-commerce loyalty discount",
+      "type": "concept",
+      "source_document": "source-open-spec-spec-design-task-mapping-example1",
+      "source_chunks": [
+        "source-open-spec-spec-design-task-mapping-example1_chunk_000"
+      ]
+    },
+    "585950e7": {
+      "name": "example 1: password security",
+      "type": "concept",
+      "source_document": "source-open-spec-spec-design-task-mapping-example2",
+      "source_chunks": [
+        "source-open-spec-spec-design-task-mapping-example2_chunk_000"
+      ]
+    },
+    "b0c66e36": {
+      "name": "spec \u2192 design \u2192 task: mapping guide",
+      "type": "concept",
+      "source_document": "source-open-spec-spec-design-task-mapping",
+      "source_chunks": [
+        "source-open-spec-spec-design-task-mapping_chunk_000"
+      ]
+    },
+    "01030e72": {
+      "name": "compact openspec design decisions (copilot-friendly)",
+      "type": "concept",
+      "source_document": "source-output-design-decision",
+      "source_chunks": [
+        "source-output-design-decision_chunk_000"
+      ]
+    },
+    "ec7a642a": {
+      "name": "prompt variations for generating a healthy carrot recipe (high-protein / low-carb)",
+      "type": "concept",
+      "source_document": "source-prompt-style-readme",
+      "source_chunks": [
+        "source-prompt-style-readme_chunk_000"
+      ]
+    },
+    "fd91f015": {
+      "name": "scenarios: exploring llm behavior with different prompt types",
+      "type": "concept",
+      "source_document": "source-prompt-style-scenarious",
+      "source_chunks": [
+        "source-prompt-style-scenarious_chunk_000"
+      ]
+    },
+    "881c8279": {
+      "name": "rag cheat sheet for claude code / copilot-style agents",
+      "type": "concept",
+      "source_document": "source-rag-cheat-sheet",
+      "source_chunks": [
+        "source-rag-cheat-sheet_chunk_000"
+      ]
+    },
+    "677cced5": {
+      "name": "react prompting (reason + act)",
+      "type": "concept",
+      "source_document": "source-react-prompting",
+      "source_chunks": [
+        "source-react-prompting_chunk_000"
+      ]
+    },
+    "cd5c18a4": {
+      "name": "glossary \u2014 building great skills",
+      "type": "concept",
+      "source_document": "source-skills-glossary",
+      "source_chunks": [
+        "source-skills-glossary_chunk_000"
+      ]
+    },
+    "11602ecb": {
+      "name": "trending skills libraries",
+      "type": "concept",
+      "source_document": "source-skills-influencers",
+      "source_chunks": [
+        "source-skills-influencers_chunk_000"
+      ]
+    },
+    "7eb3c9f2": {
+      "name": "grill design",
+      "type": "concept",
+      "source_document": "source-skills-lines-of-inquiry-probes-checklist-skill-example",
+      "source_chunks": [
+        "source-skills-lines-of-inquiry-probes-checklist-skill-example_chunk_000"
+      ]
+    },
+    "459ce941": {
+      "name": "concept: lines of inquiry \u2192 probes \u2192 coverage checklist",
+      "type": "concept",
+      "source_document": "source-skills-lines-of-inquiry-probes-checklist",
+      "source_chunks": [
+        "source-skills-lines-of-inquiry-probes-checklist_chunk_000"
+      ]
+    },
+    "5567075d": {
+      "name": "how claude agent coding saves progress between retries",
+      "type": "concept",
+      "source_document": "source-state-persistence-readme",
+      "source_chunks": [
+        "source-state-persistence-readme_chunk_000"
+      ]
+    },
+    "aecdc822": {
+      "name": "failures.md",
+      "type": "concept",
+      "source_document": "source-state-persistence-template-claude-failures",
+      "source_chunks": [
+        "source-state-persistence-template-claude-failures_chunk_000"
+      ]
+    },
+    "59a81f65": {
+      "name": "handoff.md",
+      "type": "concept",
+      "source_document": "source-state-persistence-template-claude-handoff",
+      "source_chunks": [
+        "source-state-persistence-template-claude-handoff_chunk_000"
+      ]
+    },
+    "7fdf2d61": {
+      "name": "st-001.md",
+      "type": "concept",
+      "source_document": "source-state-persistence-template-claude-results-st-001",
+      "source_chunks": [
+        "source-state-persistence-template-claude-results-st-001_chunk_000"
+      ]
+    },
+    "ea71daf2": {
+      "name": "claude.md",
+      "type": "concept",
+      "source_document": "source-state-persistence-template-claude",
+      "source_chunks": [
+        "source-state-persistence-template-claude_chunk_000"
+      ]
+    },
+    "af454e97": {
+      "name": "progress.md",
+      "type": "concept",
+      "source_document": "source-state-persistence-template-progress",
+      "source_chunks": [
+        "source-state-persistence-template-progress_chunk_000"
+      ]
+    },
+    "89c5f686": {
+      "name": "claude agent template pack",
+      "type": "concept",
+      "source_document": "source-state-persistence-template-readme",
+      "source_chunks": [
+        "source-state-persistence-template-readme_chunk_000"
+      ]
+    },
+    "53ed4159": {
+      "name": "tasks.md",
+      "type": "concept",
+      "source_document": "source-state-persistence-template-tasks",
+      "source_chunks": [
+        "source-state-persistence-template-tasks_chunk_000"
+      ]
+    },
+    "724a9878": {
+      "name": "upwork ai buyers and what a senior developer can sell them",
+      "type": "concept",
+      "source_document": "source-upwork-ai-system-job-types-deep-research-report",
+      "source_chunks": [
+        "source-upwork-ai-system-job-types-deep-research-report_chunk_000"
+      ]
+    },
+    "c3480cf9": {
+      "name": "copilot instructions",
+      "type": "concept",
+      "source_document": "source-vertical-slices-archutecture-copilot-instructions",
+      "source_chunks": [
+        "source-vertical-slices-archutecture-copilot-instructions_chunk_000"
+      ]
+    },
+    "4ce2f030": {
+      "name": "vibe coding tools",
+      "type": "concept",
+      "source_document": "source-vibe-coding-tools",
+      "source_chunks": [
+        "source-vibe-coding-tools_chunk_000"
+      ]
+    },
+    "945b6cd7": {
+      "name": "you are not ready \u2013 agentic coding in 2026",
+      "type": "concept",
+      "source_document": "source-you-are-not-ready-agentic-coding-in-2026",
+      "source_chunks": [
+        "source-you-are-not-ready-agentic-coding-in-2026_chunk_000"
+      ]
+    }
+  },
   "edges": []
 }

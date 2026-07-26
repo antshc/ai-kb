@@ -5,6 +5,123 @@
     ],
     "graph": [
       "5dee5b0b"
+    ],
+    "agent patterns": [
+      "40eaf89c"
+    ],
+    "agentic engineering concepts": [
+      "348dc9a0"
+    ],
+    "ai agents with custom skills and integrations for business productivity": [
+      "abcc7b4d"
+    ],
+    "ai steering best practices": [
+      "60b1061e"
+    ],
+    "ai systems and agent integrations for cross-industry business value": [
+      "f6eef4b2"
+    ],
+    "genai in engineering: structured summary, use cases, and sdlc optimization": [
+      "dd34b51a"
+    ],
+    "chain-of-thought (cot) prompting": [
+      "86c8664e"
+    ],
+    "copilot prd compression best practices (tl;dr style)": [
+      "004cf269"
+    ],
+    "github copilot built-in agents": [
+      "58e2b976"
+    ],
+    "c# lsp servers: `csharp-ls` vs `roslyn-language-server` vs `dnx`": [
+      "718b8f32"
+    ],
+    "github copilot repository instructions": [
+      "f54888e9"
+    ],
+    "improve agent robustness and resumability": [
+      "0b2c37dc"
+    ],
+    "agent, skill, and plugin authoring standard": [
+      "62d5c372"
+    ],
+    "lsp tools reference": [
+      "c0f90599"
+    ],
+    "open spec design": [
+      "2eb12b74"
+    ],
+    "example 2: e-commerce loyalty discount": [
+      "748bf4a7"
+    ],
+    "example 1: password security": [
+      "585950e7"
+    ],
+    "spec \u2192 design \u2192 task: mapping guide": [
+      "b0c66e36"
+    ],
+    "compact openspec design decisions (copilot-friendly)": [
+      "01030e72"
+    ],
+    "prompt variations for generating a healthy carrot recipe (high-protein / low-carb)": [
+      "ec7a642a"
+    ],
+    "scenarios: exploring llm behavior with different prompt types": [
+      "fd91f015"
+    ],
+    "rag cheat sheet for claude code / copilot-style agents": [
+      "881c8279"
+    ],
+    "react prompting (reason + act)": [
+      "677cced5"
+    ],
+    "glossary \u2014 building great skills": [
+      "cd5c18a4"
+    ],
+    "trending skills libraries": [
+      "11602ecb"
+    ],
+    "grill design": [
+      "7eb3c9f2"
+    ],
+    "concept: lines of inquiry \u2192 probes \u2192 coverage checklist": [
+      "459ce941"
+    ],
+    "how claude agent coding saves progress between retries": [
+      "5567075d"
+    ],
+    "failures.md": [
+      "aecdc822"
+    ],
+    "handoff.md": [
+      "59a81f65"
+    ],
+    "st-001.md": [
+      "7fdf2d61"
+    ],
+    "claude.md": [
+      "ea71daf2"
+    ],
+    "progress.md": [
+      "af454e97"
+    ],
+    "claude agent template pack": [
+      "89c5f686"
+    ],
+    "tasks.md": [
+      "53ed4159"
+    ],
+    "upwork ai buyers and what a senior developer can sell them": [
+      "724a9878"
+    ],
+    "copilot instructions": [
+      "c3480cf9"
+    ],
+    "vibe coding tools": [
+      "4ce2f030"
+    ],
+    "you are not ready \u2013 agentic coding in 2026": [
+      "945b6cd7"
     ]
   },
   "keyword_index": {
@@ -16,6 +133,448 @@
     ],
     "graph": [
       "5dee5b0b"
+    ],
+    "agent": [
+      "40eaf89c",
+      "f6eef4b2",
+      "0b2c37dc",
+      "62d5c372",
+      "5567075d",
+      "89c5f686"
+    ],
+    "patterns": [
+      "40eaf89c"
+    ],
+    "agentic": [
+      "348dc9a0",
+      "945b6cd7"
+    ],
+    "engineering": [
+      "348dc9a0",
+      "dd34b51a"
+    ],
+    "concepts": [
+      "348dc9a0"
+    ],
+    "ai": [
+      "abcc7b4d",
+      "60b1061e",
+      "f6eef4b2",
+      "724a9878"
+    ],
+    "agents": [
+      "abcc7b4d",
+      "58e2b976",
+      "881c8279"
+    ],
+    "custom": [
+      "abcc7b4d"
+    ],
+    "skills": [
+      "abcc7b4d",
+      "cd5c18a4",
+      "11602ecb"
+    ],
+    "integrations": [
+      "abcc7b4d",
+      "f6eef4b2"
+    ],
+    "business": [
+      "abcc7b4d",
+      "f6eef4b2"
+    ],
+    "productivity": [
+      "abcc7b4d"
+    ],
+    "steering": [
+      "60b1061e"
+    ],
+    "best": [
+      "60b1061e",
+      "004cf269"
+    ],
+    "practices": [
+      "60b1061e",
+      "004cf269"
+    ],
+    "systems": [
+      "f6eef4b2"
+    ],
+    "cross": [
+      "f6eef4b2"
+    ],
+    "industry": [
+      "f6eef4b2"
+    ],
+    "value": [
+      "f6eef4b2"
+    ],
+    "genai": [
+      "dd34b51a"
+    ],
+    "structured": [
+      "dd34b51a"
+    ],
+    "summary": [
+      "dd34b51a"
+    ],
+    "use": [
+      "dd34b51a"
+    ],
+    "cases": [
+      "dd34b51a"
+    ],
+    "sdlc": [
+      "dd34b51a"
+    ],
+    "optimization": [
+      "dd34b51a"
+    ],
+    "chain": [
+      "86c8664e"
+    ],
+    "thought": [
+      "86c8664e"
+    ],
+    "cot": [
+      "86c8664e"
+    ],
+    "prompting": [
+      "86c8664e",
+      "677cced5"
+    ],
+    "copilot": [
+      "004cf269",
+      "58e2b976",
+      "f54888e9",
+      "01030e72",
+      "881c8279",
+      "c3480cf9"
+    ],
+    "prd": [
+      "004cf269"
+    ],
+    "compression": [
+      "004cf269"
+    ],
+    "tl": [
+      "004cf269"
+    ],
+    "dr": [
+      "004cf269"
+    ],
+    "style": [
+      "004cf269",
+      "881c8279"
+    ],
+    "github": [
+      "58e2b976",
+      "f54888e9"
+    ],
+    "built": [
+      "58e2b976"
+    ],
+    "lsp": [
+      "718b8f32",
+      "c0f90599"
+    ],
+    "servers": [
+      "718b8f32"
+    ],
+    "csharp": [
+      "718b8f32"
+    ],
+    "ls": [
+      "718b8f32"
+    ],
+    "vs": [
+      "718b8f32"
+    ],
+    "roslyn": [
+      "718b8f32"
+    ],
+    "language": [
+      "718b8f32"
+    ],
+    "server": [
+      "718b8f32"
+    ],
+    "dnx": [
+      "718b8f32"
+    ],
+    "repository": [
+      "f54888e9"
+    ],
+    "instructions": [
+      "f54888e9",
+      "c3480cf9"
+    ],
+    "improve": [
+      "0b2c37dc"
+    ],
+    "robustness": [
+      "0b2c37dc"
+    ],
+    "resumability": [
+      "0b2c37dc"
+    ],
+    "skill": [
+      "62d5c372"
+    ],
+    "plugin": [
+      "62d5c372"
+    ],
+    "authoring": [
+      "62d5c372"
+    ],
+    "standard": [
+      "62d5c372"
+    ],
+    "tools": [
+      "c0f90599",
+      "4ce2f030"
+    ],
+    "reference": [
+      "c0f90599"
+    ],
+    "open": [
+      "2eb12b74"
+    ],
+    "spec": [
+      "2eb12b74",
+      "b0c66e36"
+    ],
+    "design": [
+      "2eb12b74",
+      "b0c66e36",
+      "01030e72",
+      "7eb3c9f2"
+    ],
+    "example": [
+      "748bf4a7",
+      "585950e7"
+    ],
+    "commerce": [
+      "748bf4a7"
+    ],
+    "loyalty": [
+      "748bf4a7"
+    ],
+    "discount": [
+      "748bf4a7"
+    ],
+    "password": [
+      "585950e7"
+    ],
+    "security": [
+      "585950e7"
+    ],
+    "task": [
+      "b0c66e36"
+    ],
+    "mapping": [
+      "b0c66e36"
+    ],
+    "guide": [
+      "b0c66e36"
+    ],
+    "compact": [
+      "01030e72"
+    ],
+    "openspec": [
+      "01030e72"
+    ],
+    "decisions": [
+      "01030e72"
+    ],
+    "friendly": [
+      "01030e72"
+    ],
+    "prompt": [
+      "ec7a642a",
+      "fd91f015"
+    ],
+    "variations": [
+      "ec7a642a"
+    ],
+    "generating": [
+      "ec7a642a"
+    ],
+    "healthy": [
+      "ec7a642a"
+    ],
+    "carrot": [
+      "ec7a642a"
+    ],
+    "recipe": [
+      "ec7a642a"
+    ],
+    "high": [
+      "ec7a642a"
+    ],
+    "protein": [
+      "ec7a642a"
+    ],
+    "low": [
+      "ec7a642a"
+    ],
+    "carb": [
+      "ec7a642a"
+    ],
+    "scenarios": [
+      "fd91f015"
+    ],
+    "exploring": [
+      "fd91f015"
+    ],
+    "llm": [
+      "fd91f015"
+    ],
+    "behavior": [
+      "fd91f015"
+    ],
+    "different": [
+      "fd91f015"
+    ],
+    "types": [
+      "fd91f015"
+    ],
+    "rag": [
+      "881c8279"
+    ],
+    "cheat": [
+      "881c8279"
+    ],
+    "sheet": [
+      "881c8279"
+    ],
+    "claude": [
+      "881c8279",
+      "5567075d",
+      "ea71daf2",
+      "89c5f686"
+    ],
+    "code": [
+      "881c8279"
+    ],
+    "react": [
+      "677cced5"
+    ],
+    "reason": [
+      "677cced5"
+    ],
+    "act": [
+      "677cced5"
+    ],
+    "glossary": [
+      "cd5c18a4"
+    ],
+    "building": [
+      "cd5c18a4"
+    ],
+    "great": [
+      "cd5c18a4"
+    ],
+    "trending": [
+      "11602ecb"
+    ],
+    "libraries": [
+      "11602ecb"
+    ],
+    "grill": [
+      "7eb3c9f2"
+    ],
+    "concept": [
+      "459ce941"
+    ],
+    "lines": [
+      "459ce941"
+    ],
+    "inquiry": [
+      "459ce941"
+    ],
+    "probes": [
+      "459ce941"
+    ],
+    "coverage": [
+      "459ce941"
+    ],
+    "checklist": [
+      "459ce941"
+    ],
+    "coding": [
+      "5567075d",
+      "4ce2f030",
+      "945b6cd7"
+    ],
+    "saves": [
+      "5567075d"
+    ],
+    "progress": [
+      "5567075d",
+      "af454e97"
+    ],
+    "between": [
+      "5567075d"
+    ],
+    "retries": [
+      "5567075d"
+    ],
+    "failures": [
+      "aecdc822"
+    ],
+    "md": [
+      "aecdc822",
+      "59a81f65",
+      "7fdf2d61",
+      "ea71daf2",
+      "af454e97",
+      "53ed4159"
+    ],
+    "handoff": [
+      "59a81f65"
+    ],
+    "st": [
+      "7fdf2d61"
+    ],
+    "001": [
+      "7fdf2d61"
+    ],
+    "template": [
+      "89c5f686"
+    ],
+    "pack": [
+      "89c5f686"
+    ],
+    "tasks": [
+      "53ed4159"
+    ],
+    "upwork": [
+      "724a9878"
+    ],
+    "buyers": [
+      "724a9878"
+    ],
+    "senior": [
+      "724a9878"
+    ],
+    "developer": [
+      "724a9878"
+    ],
+    "sell": [
+      "724a9878"
+    ],
+    "them": [
+      "724a9878"
+    ],
+    "vibe": [
+      "4ce2f030"
+    ],
+    "ready": [
+      "945b6cd7"
+    ],
+    "2026": [
+      "945b6cd7"
     ]
   }
 }

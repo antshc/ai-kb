@@ -1,7 +1,7 @@
 {
   "entity_types": {
     "system": 1,
-    "concept": 1
+    "concept": 42
   },
   "relation_types": {
     "uses": 1

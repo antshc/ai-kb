@@ -1,5 +1,23 @@
 # mini-context-graph
 
+## Directory structure
+
+```text
+.
+├── sources/                         # Immutable, human-maintained source documents
+├── wiki/                            # Synthesized knowledge pages
+│   ├── index.md                     # Generated page index
+│   └── log.md                       # Generated change log
+├── data/                            # Machine-managed graph, documents, ontology, and search state
+├── docs/                            # Project documentation and workflows
+├── .agents/skills/mini-context-graph/ # Skill code, runtime, and extraction rules
+├── AGENTS.md                        # Repository rules for agents
+├── migration-map.md                 # Migration notes and mappings
+└── README.md                        # Usage and repository overview
+```
+
+`index.md` and `log.md` are generated; update wiki content through `wiki_store`.
+
 ```text
 # Ingest a document
 /mini-context-graph ingest sources\example.md
