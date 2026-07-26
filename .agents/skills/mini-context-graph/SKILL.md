@@ -25,11 +25,12 @@ or when ingesting, updating, validating, or retrieving repository knowledge.
 
 For retrieval, follow this order:
 
-1. Search the wiki first with `wiki_store.search_wiki(query)`.
-2. Read relevant wiki pages and answer directly when they contain sufficient information.
-3. Use `ContextGraphSkill.query_with_evidence(query)` for entity and relationship questions.
-4. Use `documents_store.search_chunks(query)` when exact source text is required or graph
-   retrieval finds no matching nodes.
+1. Normalize and decompose the request into 2–5 focused search phrases. Include the original query, its key noun phrase, and specific entity/topic variants. Do not split into isolated single words unless the request itself is a keyword lookup.
+2. Search the wiki first with `wiki_store.search_wiki()` for each phrase. Run independent searches in parallel when the runtime supports it; otherwise use a short sequential loop.
+3. Merge and deduplicate results by page slug, retaining the highest score and the query phrases that matched. Prefer exact phrase matches, then multi-term matches, then broader related results.
+4. Read the top relevant wiki pages and answer directly when they contain sufficient information.
+5. Use `ContextGraphSkill.query_with_evidence()` with the original request plus its key phrases for entity and relationship questions, or when wiki results are insufficient.
+6. Use `documents_store.search_chunks()` with the same focused phrases when exact source text is required or graph retrieval finds no matching nodes.
 
 Do not replace this workflow with direct raw-file scanning unless investigating or debugging
 the knowledge-base runtime.
