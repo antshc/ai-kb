@@ -47,3 +47,19 @@ Ingestion accepts UTF-8 text files, including `.md`, `.adoc`, `.txt`, `.rst`, `.
 # Validate the wiki
 /mini-context-graph lint
 ```
+
+## Search modes
+
+- `query "..."` searches graph entities and relationships for structural questions.
+- `search "..."` searches synthesized wiki pages by keyword.
+- `evidence "..."` searches original source chunks for supporting text.
+
+Typical workflow:
+
+```text
+/mini-context-graph search "leading word"
+/mini-context-graph query "leading word"
+/mini-context-graph evidence "leading word"
+```
+
+Use `evidence` when the concept appears in source text but was not extracted as a graph entity.

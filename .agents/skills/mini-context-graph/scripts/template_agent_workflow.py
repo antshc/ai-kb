@@ -15,6 +15,13 @@ import json
 import sys
 from pathlib import Path
 
+# Windows consoles may default to cp1252, which cannot print valid UTF-8
+# knowledge-base content such as arrows and other Unicode punctuation.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="backslashreplace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="backslashreplace")
+
 # Add tools to path
 sys.path.insert(0, str(Path(__file__).parent))
 

@@ -1,10 +1,14 @@
 ---
 description: |-
-    A persistent, compounding knowledge base combining Karpathy's LLM Wiki pattern
-    with a structured knowledge graph. Ingest documents once — the LLM writes wiki
-    pages, extracts entities/relations into the graph, and stores raw content for
-    evidence retrieval. Knowledge accumulates and cross-references; it is never
-    re-derived from scratch.
+    Use for questions about documents, entities, topics, or facts in this repository's
+    knowledge base, and for ingesting or maintaining its source, wiki, and graph layers.
+    Search the wiki first; use graph retrieval for entity and relationship questions; use
+    source evidence retrieval for exact supporting text or when graph retrieval finds
+    nothing. Do not scan raw files directly unless debugging the knowledge-base runtime.
+    Ingest new sources with stable document IDs, write required wiki pages, preserve
+    provenance and contradictions, and validate the wiki after writes. This skill combines
+    Karpathy's LLM Wiki pattern with a structured knowledge graph so knowledge accumulates
+    and cross-references instead of being re-derived from scratch.
 metadata:
     github-path: skills/mini-context-graph
     github-ref: refs/heads/main
@@ -13,6 +17,22 @@ metadata:
 name: mini-context-graph
 ---
 # Mini Context Graph Skill
+
+## Trigger and query routing
+
+Invoke this skill for questions about knowledge stored in `sources/`, `wiki/`, or `data/`,
+or when ingesting, updating, validating, or retrieving repository knowledge.
+
+For retrieval, follow this order:
+
+1. Search the wiki first with `wiki_store.search_wiki(query)`.
+2. Read relevant wiki pages and answer directly when they contain sufficient information.
+3. Use `ContextGraphSkill.query_with_evidence(query)` for entity and relationship questions.
+4. Use `documents_store.search_chunks(query)` when exact source text is required or graph
+   retrieval finds no matching nodes.
+
+Do not replace this workflow with direct raw-file scanning unless investigating or debugging
+the knowledge-base runtime.
 
 ## The Core Idea
 
@@ -195,4 +215,3 @@ Ask the LLM to review and fix: broken links, orphan pages, stale claims, missing
 | **Raw Source Storage** | Immutable docs + chunks + provenance | `documents_store.py` |
 
 The human curates sources and asks questions. The LLM writes the wiki, extracts the graph, and answers with citations. Python handles all bookkeeping.
-
