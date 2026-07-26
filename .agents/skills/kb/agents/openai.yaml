@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Base Search"
+  short_description: "Search repository wiki and source evidence"
+  default_prompt: "Search the knowledge base for resources about $ARGUMENTS."

@@ -88,3 +88,13 @@ Typical workflow:
 ```
 
 Use `evidence` when the concept appears in source text but was not extracted as a graph entity.
+
+## Knowledge-base search skill
+
+Use the repository skill with `$kb`, or ask directly:
+
+```text
+Search the knowledge base for resources about <TOPIC>.
+```
+
+Skill definition: `.agents/skills/kb/SKILL.md`
