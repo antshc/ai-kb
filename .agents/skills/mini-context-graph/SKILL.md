@@ -59,6 +59,36 @@ Standard RAG re-discovers knowledge from scratch on every query. This skill is d
 
 ## ⚡ Quick Start for Agents
 
+### Runtime bootstrap
+
+When running Python from the consuming repository, bootstrap the installed skill
+before importing `scripts`. This avoids relying on the current directory or a
+manually configured `PYTHONPATH`, and keeps Windows console output UTF-8-safe:
+
+```python
+import os
+import sys
+from pathlib import Path
+
+skill_dir = Path(os.environ.get(
+    "MINI_CONTEXT_GRAPH_SKILL_DIR",
+    ".agents/skills/mini-context-graph",
+)).resolve()
+sys.path.insert(0, str(skill_dir))
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="backslashreplace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="backslashreplace")
+```
+
+The skill-local `scripts/mcg.py` entry point already performs this bootstrap
+for CLI operations. Run it from the consuming repository with:
+
+```powershell
+python .agents/skills/mini-context-graph/scripts/mcg.py search "memory leak"
+```
+
 ```python
 from scripts.contextgraph import ContextGraphSkill
 from scripts.tools import wiki_store

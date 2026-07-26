@@ -23,8 +23,33 @@
 Ingestion accepts UTF-8 text files, including `.md`, `.adoc`, `.txt`, `.rst`, `.yaml`, `.yml`, `.json`, `.csv`, and source-code files. Binary files are not supported reliably. The directory pass processes files directly inside `sources/`, not nested subdirectories.
 
 ```text
-# Ingest a document
-/mini-context-graph ingest sources\example.md
+# Run the skill CLI from the repository root. It configures its runtime path
+# and UTF-8 output automatically.
+
+$mcg = "python .agents/skills/mini-context-graph/scripts/mcg.py"
+
+# Search the wiki
+& $mcg search "memory leak"
+
+# Find source evidence
+& $mcg evidence "memory leak"
+
+# Query the graph with provenance
+& $mcg query "Why does the service fail?"
+
+# Read a wiki page
+& $mcg read summary "Example Summary"
+
+# List wiki pages
+& $mcg pages entity
+
+# List ingested documents
+& $mcg documents
+
+# Validate the wiki
+& $mcg lint
+
+# Ingest documents remains an agent-guided workflow; follow the skill rules.
 
 # Ask a question
 /mini-context-graph query "Why does the service fail?"
