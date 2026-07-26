@@ -312,7 +312,167 @@
       "source_chunks": [
         "source-you-are-not-ready-agentic-coding-in-2026_chunk_000"
       ]
+    },
+    "5a387ad3": {
+      "name": "workflow.yaml",
+      "type": "component",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "6a500f63": {
+      "name": "skill.md",
+      "type": "component",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "bc754191": {
+      "name": "github copilot",
+      "type": "software",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "219a3798": {
+      "name": "agent skill",
+      "type": "concept",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+      ]
+    },
+    "f6ae38ff": {
+      "name": "workflow phase",
+      "type": "process",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_001"
+      ]
+    },
+    "bb5101f5": {
+      "name": "workflow schema",
+      "type": "component",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_003"
+      ]
+    },
+    "d16852da": {
+      "name": "workflow interpreter",
+      "type": "software",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_009"
+      ]
+    },
+    "90343b9b": {
+      "name": "success gate",
+      "type": "process",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_007"
+      ]
+    },
+    "729748d3": {
+      "name": "failure policy",
+      "type": "concept",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_007"
+      ]
+    },
+    "3988617d": {
+      "name": "github actions workflow",
+      "type": "process",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_012"
+      ]
+    },
+    "471dd67e": {
+      "name": "agentic workflow",
+      "type": "process",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_013"
+      ]
+    },
+    "96d20652": {
+      "name": "runtime state",
+      "type": "concept",
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "source_chunks": [
+        "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_004"
+      ]
     }
   },
-  "edges": []
+  "edges": [
+    {
+      "source": "6a500f63",
+      "target": "5a387ad3",
+      "type": "uses",
+      "confidence": 0.95,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "SKILL.md remains the controller. workflow.yaml provides structured workflow data.",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_002"
+    },
+    {
+      "source": "d16852da",
+      "target": "5a387ad3",
+      "type": "reads from",
+      "confidence": 0.9,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "A workflow interpreter SHOULD verify: the schema version is supported; phase IDs are unique",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_009"
+    },
+    {
+      "source": "d16852da",
+      "target": "90343b9b",
+      "type": "uses",
+      "confidence": 0.9,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "Run every declared success gate. Apply the declared failure policy when a gate fails.",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_007"
+    },
+    {
+      "source": "90343b9b",
+      "target": "729748d3",
+      "type": "causes",
+      "confidence": 0.85,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "Apply the declared failure policy when a gate fails.",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_007"
+    },
+    {
+      "source": "5a387ad3",
+      "target": "f6ae38ff",
+      "type": "contains",
+      "confidence": 0.95,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "phases: - id: discover ... - id: design ... - id: implement ... - id: verify",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_004"
+    },
+    {
+      "source": "219a3798",
+      "target": "6a500f63",
+      "type": "uses",
+      "confidence": 0.95,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "The standard skill entry point is SKILL.md with YAML frontmatter.",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+    },
+    {
+      "source": "bc754191",
+      "target": "219a3798",
+      "type": "uses",
+      "confidence": 0.9,
+      "source_document": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1",
+      "supporting_text": "workflow.yaml is not a standard executable file for GitHub Copilot or Claude Agent Skills.",
+      "chunk_id": "sources/custom-skill-workflow-yaml-md-ff35138ed3f511a1_chunk_000"
+    }
+  ]
 }

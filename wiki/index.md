@@ -82,3 +82,16 @@ _Auto-managed by wiki_store. Do not edit the table manually._
 | [[vibe-coding-tools]] | entity | Vibe Coding Tools: concept | 2026-07-26 |
 | [[you-are-not-ready-agentic-coding-in-2026-summary-you-are-not-ready-agentic-coding-in-2026]] | summary | Summary of You Are Not Ready – Agentic Coding in 2026 | 2026-07-26 |
 | [[you-are-not-ready-agentic-coding-in-2026]] | entity | You Are Not Ready – Agentic Coding in 2026: concept | 2026-07-26 |
+| [[custom-skill-workflow-yaml-summary]] | summaries | Summary of Custom Skill workflow.yaml | 2026-07-26 |
+| [[workflow-yaml]] | entities | workflow.yaml: component | 2026-07-26 |
+| [[workflow-phase]] | entities | workflow phase: process | 2026-07-26 |
+| [[workflow-schema]] | entities | workflow schema: component | 2026-07-26 |
+| [[workflow-interpreter]] | entities | workflow interpreter: software | 2026-07-26 |
+| [[success-gate]] | entities | success gate: process | 2026-07-26 |
+| [[failure-policy]] | entities | failure policy: concept | 2026-07-26 |
+| [[agentic-workflow]] | entities | agentic workflow: process | 2026-07-26 |
+| [[runtime-state]] | entities | runtime state: concept | 2026-07-26 |
+| [[skill-md]] | entity | skill.md: component | 2026-07-26 |
+| [[agent-skill]] | entity | agent skill: concept | 2026-07-26 |
+| [[github-copilot]] | entity | github copilot: software | 2026-07-26 |
+| [[github-actions-workflow]] | entity | github actions workflow: process | 2026-07-26 |

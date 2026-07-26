@@ -159,3 +159,47 @@
 ## [2026-07-26] write | You Are Not Ready – Agentic Coding in 2026 Summary (you-are-not-ready-agentic-coding-in-2026)
 
 ## [2026-07-26] write | You Are Not Ready – Agentic Coding in 2026
+
+## [2026-07-26] write | Custom Skill workflow.yaml Summary
+
+## [2026-07-26] write | workflow.yaml
+
+## [2026-07-26] write | workflow phase
+
+## [2026-07-26] write | workflow schema
+
+## [2026-07-26] write | workflow interpreter
+
+## [2026-07-26] write | success gate
+
+## [2026-07-26] write | failure policy
+
+## [2026-07-26] write | agentic workflow
+
+## [2026-07-26] write | runtime state
+
+## [2026-07-26] write | Custom Skill workflow.yaml Summary
+
+## [2026-07-26] write | workflow.yaml
+
+## [2026-07-26] write | workflow phase
+
+## [2026-07-26] write | workflow schema
+
+## [2026-07-26] write | workflow interpreter
+
+## [2026-07-26] write | success gate
+
+## [2026-07-26] write | failure policy
+
+## [2026-07-26] write | agentic workflow
+
+## [2026-07-26] write | runtime state
+
+## [2026-07-26] write | skill.md
+
+## [2026-07-26] write | agent skill
+
+## [2026-07-26] write | github copilot
+
+## [2026-07-26] write | github actions workflow
