@@ -72,7 +72,7 @@ def _load_index() -> list[dict]:
     if not _INDEX_FILE.exists():
         return []
     entries = []
-    for line in _INDEX_FILE.read_text().splitlines():
+    for line in _INDEX_FILE.read_text(encoding="utf-8").splitlines():
         # Expected table row: | [[slug]] | category | summary | date |
         if line.startswith("| [["):
             parts = [p.strip() for p in line.split("|") if p.strip()]
@@ -104,7 +104,7 @@ def _save_index(entries: list[dict]) -> None:
         lines.append(
             f"| [[{e['slug']}]] | {e['category']} | {e['summary']} | {e['date']} |\n"
         )
-    _INDEX_FILE.write_text("".join(lines))
+    _INDEX_FILE.write_text("".join(lines), encoding="utf-8")
 
 
 def _append_log(operation: str, detail: str) -> None:
@@ -112,7 +112,7 @@ def _append_log(operation: str, detail: str) -> None:
     _ensure_dirs()
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     entry = f"\n## [{timestamp}] {operation} | {detail}\n"
-    with open(_LOG_FILE, "a") as f:
+    with open(_LOG_FILE, "a", encoding="utf-8") as f:
         f.write(entry)
 
 
@@ -155,7 +155,7 @@ def write_page(
                 summary = stripped[:100]
                 break
 
-    path.write_text(content)
+    path.write_text(content, encoding="utf-8")
 
     # Update index
     entries = _load_index()
@@ -182,7 +182,7 @@ def read_page(category: str, title: str) -> str | None:
     path = _page_path(category, slug)
     if not path.exists():
         return None
-    return path.read_text()
+    return path.read_text(encoding="utf-8")
 
 
 def read_page_by_slug(slug: str) -> str | None:
@@ -208,7 +208,7 @@ def search_wiki(query: str) -> list[dict]:
         if not base_dir.exists():
             continue
         for page_path in base_dir.glob("*.md"):
-            content = page_path.read_text().lower()
+            content = page_path.read_text(encoding="utf-8").lower()
             content_tokens = set(re.findall(r"[a-z0-9]+", content))
             overlap = len(query_tokens & content_tokens)
             if overlap > 0:
@@ -240,7 +240,7 @@ def get_log(last_n: int = 20) -> list[str]:
     """Return the last N log entries from log.md."""
     if not _LOG_FILE.exists():
         return []
-    lines = _LOG_FILE.read_text().splitlines()
+    lines = _LOG_FILE.read_text(encoding="utf-8").splitlines()
     entries = [l for l in lines if l.startswith("## [")]
     return entries[-last_n:]
 
@@ -278,7 +278,7 @@ def lint_wiki() -> dict:
     all_slugs = set(file_slugs.keys())
 
     for slug, path in file_slugs.items():
-        content = path.read_text()
+        content = path.read_text(encoding="utf-8")
         links = re.findall(r"\[\[([^\]]+)\]\]", content)
         if not links:
             isolated.append(slug)

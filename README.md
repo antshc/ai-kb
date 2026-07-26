@@ -18,6 +18,10 @@
 
 `index.md` and `log.md` are generated; update wiki content through `wiki_store`.
 
+## Supported source files
+
+Ingestion accepts UTF-8 text files, including `.md`, `.adoc`, `.txt`, `.rst`, `.yaml`, `.yml`, `.json`, `.csv`, and source-code files. Binary files are not supported reliably. The directory pass processes files directly inside `sources/`, not nested subdirectories.
+
 ```text
 # Ingest a document
 /mini-context-graph ingest sources\example.md
