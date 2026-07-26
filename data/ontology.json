@@ -1,9 +1,17 @@
 {
   "entity_types": {
     "system": 1,
-    "concept": 42
+    "concept": 51,
+    "software": 7,
+    "actor": 1,
+    "component": 3,
+    "process": 1
   },
   "relation_types": {
-    "uses": 1
+    "uses": 7,
+    "implements": 1,
+    "contains": 3,
+    "creates": 1,
+    "affects": 1
   }
 }

@@ -159,3 +159,47 @@
 ## [2026-07-26] write | You Are Not Ready – Agentic Coding in 2026 Summary (you-are-not-ready-agentic-coding-in-2026)
 
 ## [2026-07-26] write | You Are Not Ready – Agentic Coding in 2026
+
+## [2026-07-26] write | Karpathy LLM Wiki: Knowledge-Base Skill Comparison Summary
+
+## [2026-07-26] write | Custom Skill workflow.yaml Summary
+
+## [2026-07-26] write | karpathy llm wiki pattern
+
+## [2026-07-26] write | andrej karpathy
+
+## [2026-07-26] write | atomicstrata/llm-wiki-compiler
+
+## [2026-07-26] write | ussumant/llm-wiki-compiler
+
+## [2026-07-26] write | graphify
+
+## [2026-07-26] write | raw sources
+
+## [2026-07-26] write | persistent wiki
+
+## [2026-07-26] write | provenance
+
+## [2026-07-26] write | workflow.yaml
+
+## [2026-07-26] write | skill.md
+
+## [2026-07-26] write | claude agent skills
+
+## [2026-07-26] write | workflow schema
+
+## [2026-07-26] write | phase
+
+## [2026-07-26] write | validation gate
+
+## [2026-07-26] write | github actions workflow
+
+## [2026-07-26] write | runtime state
+
+## [2026-07-26] write | github copilot
+
+## [2026-07-26] write | mini-context-graph
+
+## [2026-07-26] write | knowledge graph
+
+## [2026-07-26] write | agent skill
