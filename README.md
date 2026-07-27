@@ -48,6 +48,11 @@ or API key; semantic extraction for docs/PDFs/images calls the `--backend`
 LLM and requires its API key. Since `raw/` is all Markdown, `OPENAI_API_KEY`
 is effectively required for this command to do anything.
 
+Supported `--backend` values: `openai`, `gemini`, `kimi`, `deepseek`,
+`claude-cli`. Each requires its own API key/credentials except `claude-cli`,
+which uses a local Claude CLI login. This repository standardizes on
+`openai`.
+
 ## GitHub Actions secrets
 
 The ingestion pipeline requires this repository secret:
@@ -75,3 +80,7 @@ pipeline and must be converted to a supported text format before ingestion.
 
 Graphify output is generated and reviewable. Do not edit `raw/` during graph
 generation, and do not commit `graphify-out/cache/` or `graphify-out/cost.json`.
+
+Do commit `graphify-out/manifest.json` — it records per-file hashes/timestamps
+so a later `--update` run can detect what changed and re-extract only that
+subset instead of the whole corpus.
