@@ -4,6 +4,19 @@
   "graph": {
     "hyperedges": [
       {
+        "id": "copilot_tools_usage",
+        "label": "GitHub Copilot Tools Usage",
+        "nodes": [
+          "raw_bestpracticesforusinggithubcopilot_githubcopilot",
+          "raw_bestpracticesforusinggithubcopilot_copilotinline",
+          "raw_bestpracticesforusinggithubcopilot_copilotchat"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "raw/best-practices-for-using-github-copilot.md"
+      },
+      {
         "id": "agent_patterns_sequence_operator_split_merge",
         "label": "Agent Patterns Sequence",
         "nodes": [
@@ -113,9 +126,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_sequential_flow",
-      "community": 5,
-      "norm_label": "pattern #1 \u2014 sequential flow"
+      "community": 7,
+      "norm_label": "pattern #1 \u2014 sequential flow",
+      "id": "raw_agent_patterns_sequential_flow"
     },
     {
       "label": "Pattern #3 \u2014 Split & Merge",
@@ -126,9 +139,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_split_merge",
-      "community": 5,
-      "norm_label": "pattern #3 \u2014 split & merge"
+      "community": 7,
+      "norm_label": "pattern #3 \u2014 split & merge",
+      "id": "raw_agent_patterns_split_merge"
     },
     {
       "label": "Pattern #4 \u2014 Agent Teams",
@@ -139,9 +152,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_agent_teams",
-      "community": 5,
-      "norm_label": "pattern #4 \u2014 agent teams"
+      "community": 7,
+      "norm_label": "pattern #4 \u2014 agent teams",
+      "id": "raw_agent_patterns_agent_teams"
     },
     {
       "label": "Pattern #5 \u2014 Headless",
@@ -152,9 +165,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_headless",
-      "community": 5,
-      "norm_label": "pattern #5 \u2014 headless"
+      "community": 7,
+      "norm_label": "pattern #5 \u2014 headless",
+      "id": "raw_agent_patterns_headless"
     },
     {
       "label": "Context Engineering",
@@ -165,9 +178,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_context_engineering",
-      "community": 10,
-      "norm_label": "context engineering"
+      "community": 11,
+      "norm_label": "context engineering",
+      "id": "raw_agentic_engineering_concepts_context_engineering"
     },
     {
       "label": "ReAct",
@@ -178,9 +191,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_react",
-      "community": 8,
-      "norm_label": "react"
+      "community": 9,
+      "norm_label": "react",
+      "id": "raw_agentic_engineering_concepts_react"
     },
     {
       "label": "Multi-agent Coding",
@@ -191,9 +204,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_multi_agent_coding",
-      "community": 12,
-      "norm_label": "multi-agent coding"
+      "community": 13,
+      "norm_label": "multi-agent coding",
+      "id": "raw_agentic_engineering_concepts_multi_agent_coding"
     },
     {
       "label": "State Persistence",
@@ -204,9 +217,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_state_persistence",
-      "community": 15,
-      "norm_label": "state persistence"
+      "community": 16,
+      "norm_label": "state persistence",
+      "id": "raw_agentic_engineering_concepts_state_persistence"
     },
     {
       "label": "Agents Consilium",
@@ -217,9 +230,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_glossary_agents_consilium",
-      "community": 18,
-      "norm_label": "agents consilium"
+      "community": 19,
+      "norm_label": "agents consilium",
+      "id": "raw_agentic_engineering_glossary_agents_consilium"
     },
     {
       "label": "Agent Harness",
@@ -230,9 +243,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_glossary_agent_harness",
-      "community": 17,
-      "norm_label": "agent harness"
+      "community": 18,
+      "norm_label": "agent harness",
+      "id": "raw_agentic_engineering_glossary_agent_harness"
     },
     {
       "label": "HITL (Human In The Loop)",
@@ -243,9 +256,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_glossary_hitl",
-      "community": 19,
-      "norm_label": "hitl (human in the loop)"
+      "community": 20,
+      "norm_label": "hitl (human in the loop)",
+      "id": "raw_agentic_engineering_glossary_hitl"
     },
     {
       "label": "AFK (Away From Keyboard)",
@@ -256,9 +269,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_glossary_afk",
-      "community": 16,
-      "norm_label": "afk (away from keyboard)"
+      "community": 17,
+      "norm_label": "afk (away from keyboard)",
+      "id": "raw_agentic_engineering_glossary_afk"
     },
     {
       "label": "AI Steering",
@@ -269,9 +282,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_steering_best_practices_steering",
-      "community": 24,
-      "norm_label": "ai steering"
+      "community": 25,
+      "norm_label": "ai steering",
+      "id": "raw_ai_steering_best_practices_steering"
     },
     {
       "label": "Predictability",
@@ -282,9 +295,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_predictability",
-      "community": 53,
-      "norm_label": "predictability"
+      "community": 54,
+      "norm_label": "predictability",
+      "id": "raw_skills_glossary_predictability"
     },
     {
       "label": "Information Hierarchy",
@@ -295,9 +308,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_information_hierarchy",
       "community": 2,
-      "norm_label": "information hierarchy"
+      "norm_label": "information hierarchy",
+      "id": "raw_skills_glossary_information_hierarchy"
     },
     {
       "label": "Completion Criterion",
@@ -308,9 +321,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_completion_criterion",
-      "community": 1,
-      "norm_label": "completion criterion"
+      "community": 0,
+      "norm_label": "completion criterion",
+      "id": "raw_skills_glossary_completion_criterion"
     },
     {
       "label": "Negation (Failure Mode)",
@@ -321,9 +334,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_negation",
-      "community": 1,
-      "norm_label": "negation (failure mode)"
+      "community": 0,
+      "norm_label": "negation (failure mode)",
+      "id": "raw_skills_glossary_negation"
     },
     {
       "label": "Duplication (Failure Mode)",
@@ -334,9 +347,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_duplication",
-      "community": 1,
-      "norm_label": "duplication (failure mode)"
+      "community": 0,
+      "norm_label": "duplication (failure mode)",
+      "id": "raw_skills_glossary_duplication"
     },
     {
       "label": "Grill Design Skill",
@@ -347,9 +360,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_lines_of_inquiry_probes_checklist_skill_example_grill_design",
-      "community": 9,
-      "norm_label": "grill design skill"
+      "community": 10,
+      "norm_label": "grill design skill",
+      "id": "raw_skills_lines_of_inquiry_probes_checklist_skill_example_grill_design"
     },
     {
       "label": "Pattern #2 \u2014 The Operator",
@@ -360,9 +373,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_operator",
-      "community": 5,
-      "norm_label": "pattern #2 \u2014 the operator"
+      "community": 7,
+      "norm_label": "pattern #2 \u2014 the operator",
+      "id": "raw_agent_patterns_operator"
     },
     {
       "label": "Feedback Loop",
@@ -373,9 +386,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_feedback_loop",
-      "community": 11,
-      "norm_label": "feedback loop"
+      "community": 12,
+      "norm_label": "feedback loop",
+      "id": "raw_agentic_engineering_concepts_feedback_loop"
     },
     {
       "label": "Chain of Thought",
@@ -386,9 +399,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_chain_of_thought",
-      "community": 7,
-      "norm_label": "chain of thought"
+      "community": 8,
+      "norm_label": "chain of thought",
+      "id": "raw_agentic_engineering_concepts_chain_of_thought"
     },
     {
       "label": "Preventing Doom Loops",
@@ -399,9 +412,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_preventing_doom_loops",
-      "community": 13,
-      "norm_label": "preventing doom loops"
+      "community": 14,
+      "norm_label": "preventing doom loops",
+      "id": "raw_agentic_engineering_concepts_preventing_doom_loops"
     },
     {
       "label": "Ralph Agent Loop",
@@ -412,9 +425,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_concepts_ralph_agent_loop",
-      "community": 14,
-      "norm_label": "ralph agent loop"
+      "community": 15,
+      "norm_label": "ralph agent loop",
+      "id": "raw_agentic_engineering_concepts_ralph_agent_loop"
     },
     {
       "label": "Hooks",
@@ -425,9 +438,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agentic_engineering_glossary_hooks",
-      "community": 20,
-      "norm_label": "hooks"
+      "community": 21,
+      "norm_label": "hooks",
+      "id": "raw_agentic_engineering_glossary_hooks"
     },
     {
       "label": "Sales Meeting-to-Follow-Up Agent",
@@ -438,9 +451,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_sales_meeting_to_follow_up_agent",
-      "community": 0,
-      "norm_label": "sales meeting-to-follow-up agent"
+      "community": 1,
+      "norm_label": "sales meeting-to-follow-up agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_sales_meeting_to_follow_up_agent"
     },
     {
       "label": "Customer Support Agent",
@@ -451,9 +464,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_customer_support_agent",
-      "community": 0,
-      "norm_label": "customer support agent"
+      "community": 1,
+      "norm_label": "customer support agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_customer_support_agent"
     },
     {
       "label": "Finance/Accounting Close Copilot",
@@ -464,9 +477,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_finance_accounting_close_copilot",
-      "community": 21,
-      "norm_label": "finance/accounting close copilot"
+      "community": 22,
+      "norm_label": "finance/accounting close copilot",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_finance_accounting_close_copilot"
     },
     {
       "label": "Legal Contract Agent",
@@ -477,9 +490,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_legal_contract_agent",
-      "community": 23,
-      "norm_label": "legal contract agent"
+      "community": 24,
+      "norm_label": "legal contract agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_legal_contract_agent"
     },
     {
       "label": "HR Agent",
@@ -490,9 +503,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_hr_agent",
-      "community": 22,
-      "norm_label": "hr agent"
+      "community": 23,
+      "norm_label": "hr agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_hr_agent"
     },
     {
       "label": "Product/Engineering Agent",
@@ -503,9 +516,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_product_engineering_agent",
-      "community": 0,
-      "norm_label": "product/engineering agent"
+      "community": 5,
+      "norm_label": "product/engineering agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_product_engineering_agent"
     },
     {
       "label": "Marketing Agent",
@@ -516,9 +529,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_marketing_agent",
-      "community": 0,
-      "norm_label": "marketing agent"
+      "community": 5,
+      "norm_label": "marketing agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_marketing_agent"
     },
     {
       "label": "Operations/Supply Chain Agent",
@@ -529,9 +542,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_operations_supply_chain_agent",
-      "community": 0,
-      "norm_label": "operations/supply chain agent"
+      "community": 5,
+      "norm_label": "operations/supply chain agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_operations_supply_chain_agent"
     },
     {
       "label": "RFP/Proposal Response Agent",
@@ -542,9 +555,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_rfp_proposal_response_agent",
-      "community": 0,
-      "norm_label": "rfp/proposal response agent"
+      "community": 5,
+      "norm_label": "rfp/proposal response agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_rfp_proposal_response_agent"
     },
     {
       "label": "Accounts Payable Invoice-to-Pay Agent",
@@ -555,9 +568,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_accounts_payable_invoice_to_pay_agent",
-      "community": 0,
-      "norm_label": "accounts payable invoice-to-pay agent"
+      "community": 5,
+      "norm_label": "accounts payable invoice-to-pay agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_accounts_payable_invoice_to_pay_agent"
     },
     {
       "label": "eDiscovery + Privilege-Log Drafting Agent",
@@ -568,9 +581,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_ediscovery_privilege_log_drafting_agent",
-      "community": 0,
-      "norm_label": "ediscovery + privilege-log drafting agent"
+      "community": 5,
+      "norm_label": "ediscovery + privilege-log drafting agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_ediscovery_privilege_log_drafting_agent"
     },
     {
       "label": "ITSM Runbook Remediation Agent",
@@ -581,9 +594,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_itsm_runbook_remediation_agent",
-      "community": 0,
-      "norm_label": "itsm runbook remediation agent"
+      "community": 1,
+      "norm_label": "itsm runbook remediation agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_itsm_runbook_remediation_agent"
     },
     {
       "label": "SOC Alert Triage + Containment Agent",
@@ -594,9 +607,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_soc_alert_triage_containment_agent",
-      "community": 6,
-      "norm_label": "soc alert triage + containment agent"
+      "community": 1,
+      "norm_label": "soc alert triage + containment agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_soc_alert_triage_containment_agent"
     },
     {
       "label": "Healthcare Clinical Documentation + Prior Authorization Agent",
@@ -607,9 +620,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_healthcare_clinical_documentation_prior_auth_agent",
-      "community": 6,
-      "norm_label": "healthcare clinical documentation + prior authorization agent"
+      "community": 1,
+      "norm_label": "healthcare clinical documentation + prior authorization agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_healthcare_clinical_documentation_prior_auth_agent"
     },
     {
       "label": "Education AI Tutor + Teacher Assistant Agent",
@@ -620,9 +633,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_education_ai_tutor_teacher_assistant_agent",
-      "community": 6,
-      "norm_label": "education ai tutor + teacher assistant agent"
+      "community": 1,
+      "norm_label": "education ai tutor + teacher assistant agent",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_education_ai_tutor_teacher_assistant_agent"
     },
     {
       "label": "Retail Store Associate + Inventory Copilot",
@@ -633,9 +646,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_retail_store_associate_inventory_copilot",
-      "community": 6,
-      "norm_label": "retail store associate + inventory copilot"
+      "community": 1,
+      "norm_label": "retail store associate + inventory copilot",
+      "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_retail_store_associate_inventory_copilot"
     },
     {
       "label": "AI Steering Methods",
@@ -646,9 +659,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_steering_best_practices_steering_methods",
-      "community": 25,
-      "norm_label": "ai steering methods"
+      "community": 26,
+      "norm_label": "ai steering methods",
+      "id": "raw_ai_steering_best_practices_steering_methods"
     },
     {
       "label": "AI Systems and Agent Integrations",
@@ -659,9 +672,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_system_bussiness_integrations_deep_research_report_ai_systems",
-      "community": 26,
-      "norm_label": "ai systems and agent integrations"
+      "community": 27,
+      "norm_label": "ai systems and agent integrations",
+      "id": "raw_ai_system_bussiness_integrations_deep_research_report_ai_systems"
     },
     {
       "label": "Architecture Patterns",
@@ -672,9 +685,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_system_bussiness_integrations_deep_research_report_architecture_patterns",
-      "community": 27,
-      "norm_label": "architecture patterns"
+      "community": 28,
+      "norm_label": "architecture patterns",
+      "id": "raw_ai_system_bussiness_integrations_deep_research_report_architecture_patterns"
     },
     {
       "label": "Security and Governance",
@@ -685,9 +698,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_system_bussiness_integrations_deep_research_report_security_governance",
-      "community": 30,
-      "norm_label": "security and governance"
+      "community": 31,
+      "norm_label": "security and governance",
+      "id": "raw_ai_system_bussiness_integrations_deep_research_report_security_governance"
     },
     {
       "label": "Ecosystem Components",
@@ -698,9 +711,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_system_bussiness_integrations_deep_research_report_ecosystem_components",
-      "community": 28,
-      "norm_label": "ecosystem components"
+      "community": 29,
+      "norm_label": "ecosystem components",
+      "id": "raw_ai_system_bussiness_integrations_deep_research_report_ecosystem_components"
     },
     {
       "label": "Measurement and Metrics",
@@ -711,9 +724,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_system_bussiness_integrations_deep_research_report_measurement_metrics",
-      "community": 29,
-      "norm_label": "measurement and metrics"
+      "community": 30,
+      "norm_label": "measurement and metrics",
+      "id": "raw_ai_system_bussiness_integrations_deep_research_report_measurement_metrics"
     },
     {
       "label": "AI Token Cost Optimization Best Practices",
@@ -724,9 +737,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_token_cost_optimization_best_practices",
-      "community": 31,
-      "norm_label": "ai token cost optimization best practices"
+      "community": 32,
+      "norm_label": "ai token cost optimization best practices",
+      "id": "raw_ai_token_cost_optimization_best_practices"
     },
     {
       "label": "GenAI in Engineering: Tool Landscape and SDLC Optimization",
@@ -737,9 +750,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_tools_sdlc",
-      "community": 32,
-      "norm_label": "genai in engineering: tool landscape and sdlc optimization"
+      "community": 33,
+      "norm_label": "genai in engineering: tool landscape and sdlc optimization",
+      "id": "raw_ai_tools_sdlc"
     },
     {
       "label": "Chain-of-Thought (CoT) Prompting",
@@ -750,9 +763,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_chain_of_thought_cot_prompting",
-      "community": 7,
-      "norm_label": "chain-of-thought (cot) prompting"
+      "community": 8,
+      "norm_label": "chain-of-thought (cot) prompting",
+      "id": "raw_chain_of_thought_cot_prompting"
     },
     {
       "label": "Copilot PRD Compression Best Practices",
@@ -763,9 +776,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_compression_output_best_practices",
-      "community": 33,
-      "norm_label": "copilot prd compression best practices"
+      "community": 34,
+      "norm_label": "copilot prd compression best practices",
+      "id": "raw_compression_output_best_practices"
     },
     {
       "label": "GitHub Copilot Built-in Agents",
@@ -776,9 +789,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_copilot_built_in_agents",
-      "community": 34,
-      "norm_label": "github copilot built-in agents"
+      "community": 35,
+      "norm_label": "github copilot built-in agents",
+      "id": "raw_copilot_built_in_agents"
     },
     {
       "label": "Custom Skill workflow.yaml",
@@ -789,9 +802,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_custom_skill_workflow_yaml",
-      "community": 35,
-      "norm_label": "custom skill workflow.yaml"
+      "community": 36,
+      "norm_label": "custom skill workflow.yaml",
+      "id": "raw_custom_skill_workflow_yaml"
     },
     {
       "label": "C# LSP Servers: csharp-ls vs roslyn-language-server vs dnx",
@@ -802,9 +815,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_dotnet_lsp",
-      "community": 36,
-      "norm_label": "c# lsp servers: csharp-ls vs roslyn-language-server vs dnx"
+      "community": 37,
+      "norm_label": "c# lsp servers: csharp-ls vs roslyn-language-server vs dnx",
+      "id": "raw_dotnet_lsp"
     },
     {
       "label": "GitHub Copilot Repository Instructions",
@@ -815,9 +828,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_github_copilot_copilot_instructions_best_practices",
-      "community": 37,
-      "norm_label": "github copilot repository instructions"
+      "community": 38,
+      "norm_label": "github copilot repository instructions",
+      "id": "raw_github_copilot_copilot_instructions_best_practices"
     },
     {
       "label": "Improve Agent Robustness and Resumability",
@@ -828,9 +841,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_improve_agent_robustness_and_resumability",
-      "community": 38,
-      "norm_label": "improve agent robustness and resumability"
+      "community": 39,
+      "norm_label": "improve agent robustness and resumability",
+      "id": "raw_improve_agent_robustness_and_resumability"
     },
     {
       "label": "Agent, Skill, and Plugin Authoring Standard",
@@ -841,9 +854,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_instructions_standards_agent_skill_plugin_authoring_standard",
-      "community": 39,
-      "norm_label": "agent, skill, and plugin authoring standard"
+      "community": 40,
+      "norm_label": "agent, skill, and plugin authoring standard",
+      "id": "raw_instructions_standards_agent_skill_plugin_authoring_standard"
     },
     {
       "label": "Karpathy LLM Wiki: Knowledge-Base Skill Comparison",
@@ -854,9 +867,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_karpathy_llm_wiki_knowledge_base",
-      "community": 40,
-      "norm_label": "karpathy llm wiki: knowledge-base skill comparison"
+      "community": 41,
+      "norm_label": "karpathy llm wiki: knowledge-base skill comparison",
+      "id": "raw_karpathy_llm_wiki_knowledge_base"
     },
     {
       "label": "LSP Tools Reference",
@@ -867,9 +880,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_lsp_tools_reference",
-      "community": 41,
-      "norm_label": "lsp tools reference"
+      "community": 42,
+      "norm_label": "lsp tools reference",
+      "id": "raw_lsp_tools_reference"
     },
     {
       "label": "What Is Context in a Design Document",
@@ -880,9 +893,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_open_spec_design",
-      "community": 42,
-      "norm_label": "what is context in a design document"
+      "community": 43,
+      "norm_label": "what is context in a design document",
+      "id": "raw_open_spec_design"
     },
     {
       "label": "Example 2: E-Commerce Loyalty Discount",
@@ -893,9 +906,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_open_spec_spec_design_task_mapping_example1",
-      "community": 44,
-      "norm_label": "example 2: e-commerce loyalty discount"
+      "community": 45,
+      "norm_label": "example 2: e-commerce loyalty discount",
+      "id": "raw_open_spec_spec_design_task_mapping_example1"
     },
     {
       "label": "Example 1: Password Security",
@@ -906,9 +919,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_open_spec_spec_design_task_mapping_example2",
-      "community": 45,
-      "norm_label": "example 1: password security"
+      "community": 46,
+      "norm_label": "example 1: password security",
+      "id": "raw_open_spec_spec_design_task_mapping_example2"
     },
     {
       "label": "Spec \u2192 Design \u2192 Task: Mapping Guide",
@@ -919,9 +932,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_open_spec_spec_design_task_mapping",
-      "community": 43,
-      "norm_label": "spec \u2192 design \u2192 task: mapping guide"
+      "community": 44,
+      "norm_label": "spec \u2192 design \u2192 task: mapping guide",
+      "id": "raw_open_spec_spec_design_task_mapping"
     },
     {
       "label": "Compact OpenSpec Design Decisions (Copilot-Friendly)",
@@ -932,9 +945,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_output_design_decision",
-      "community": 46,
-      "norm_label": "compact openspec design decisions (copilot-friendly)"
+      "community": 47,
+      "norm_label": "compact openspec design decisions (copilot-friendly)",
+      "id": "raw_output_design_decision"
     },
     {
       "label": "Claude Agent Skill Authoring Best Practices",
@@ -945,9 +958,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_platform_claude_com_docs_en_agents_and_tools_agent_skills_best_practices",
-      "community": 47,
-      "norm_label": "claude agent skill authoring best practices"
+      "community": 48,
+      "norm_label": "claude agent skill authoring best practices",
+      "id": "raw_platform_claude_com_docs_en_agents_and_tools_agent_skills_best_practices"
     },
     {
       "label": "Prompt Variations for Generating a Healthy Carrot Recipe",
@@ -958,9 +971,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_prompt_style_readme",
-      "community": 48,
-      "norm_label": "prompt variations for generating a healthy carrot recipe"
+      "community": 49,
+      "norm_label": "prompt variations for generating a healthy carrot recipe",
+      "id": "raw_prompt_style_readme"
     },
     {
       "label": "Scenarios: Exploring LLM Behavior with Different Prompt Types",
@@ -971,9 +984,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_prompt_style_scenarious",
-      "community": 49,
-      "norm_label": "scenarios: exploring llm behavior with different prompt types"
+      "community": 50,
+      "norm_label": "scenarios: exploring llm behavior with different prompt types",
+      "id": "raw_prompt_style_scenarious"
     },
     {
       "label": "RAG Cheat Sheet for Claude Code / Copilot-style Agents",
@@ -984,9 +997,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_rag_cheat_sheet",
-      "community": 50,
-      "norm_label": "rag cheat sheet for claude code / copilot-style agents"
+      "community": 51,
+      "norm_label": "rag cheat sheet for claude code / copilot-style agents",
+      "id": "raw_rag_cheat_sheet"
     },
     {
       "label": "ReAct Prompting (Reason + Act)",
@@ -997,9 +1010,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_react_prompting",
-      "community": 8,
-      "norm_label": "react prompting (reason + act)"
+      "community": 9,
+      "norm_label": "react prompting (reason + act)",
+      "id": "raw_react_prompting"
     },
     {
       "label": "Model-Invoked Skill",
@@ -1010,9 +1023,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_model_invoked",
       "community": 3,
-      "norm_label": "model-invoked skill"
+      "norm_label": "model-invoked skill",
+      "id": "raw_skills_glossary_model_invoked"
     },
     {
       "label": "User-Invoked Skill",
@@ -1023,9 +1036,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_user_invoked",
       "community": 3,
-      "norm_label": "user-invoked skill"
+      "norm_label": "user-invoked skill",
+      "id": "raw_skills_glossary_user_invoked"
     },
     {
       "label": "Description (Skill Trigger)",
@@ -1036,9 +1049,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_description",
       "community": 3,
-      "norm_label": "description (skill trigger)"
+      "norm_label": "description (skill trigger)",
+      "id": "raw_skills_glossary_description"
     },
     {
       "label": "Context Pointer",
@@ -1049,9 +1062,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_context_pointer",
       "community": 2,
-      "norm_label": "context pointer"
+      "norm_label": "context pointer",
+      "id": "raw_skills_glossary_context_pointer"
     },
     {
       "label": "Context Load",
@@ -1062,9 +1075,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_context_load",
       "community": 3,
-      "norm_label": "context load"
+      "norm_label": "context load",
+      "id": "raw_skills_glossary_context_load"
     },
     {
       "label": "Cognitive Load",
@@ -1075,9 +1088,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_cognitive_load",
       "community": 3,
-      "norm_label": "cognitive load"
+      "norm_label": "cognitive load",
+      "id": "raw_skills_glossary_cognitive_load"
     },
     {
       "label": "Router Skill",
@@ -1088,9 +1101,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_router_skill",
       "community": 3,
-      "norm_label": "router skill"
+      "norm_label": "router skill",
+      "id": "raw_skills_glossary_router_skill"
     },
     {
       "label": "Granularity",
@@ -1101,9 +1114,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_granularity",
       "community": 3,
-      "norm_label": "granularity"
+      "norm_label": "granularity",
+      "id": "raw_skills_glossary_granularity"
     },
     {
       "label": "Steps",
@@ -1114,9 +1127,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_steps",
       "community": 2,
-      "norm_label": "steps"
+      "norm_label": "steps",
+      "id": "raw_skills_glossary_steps"
     },
     {
       "label": "Reference",
@@ -1127,9 +1140,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_reference",
       "community": 2,
-      "norm_label": "reference"
+      "norm_label": "reference",
+      "id": "raw_skills_glossary_reference"
     },
     {
       "label": "External Reference",
@@ -1140,9 +1153,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_external_reference",
       "community": 2,
-      "norm_label": "external reference"
+      "norm_label": "external reference",
+      "id": "raw_skills_glossary_external_reference"
     },
     {
       "label": "Co-location",
@@ -1153,9 +1166,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_co_location",
       "community": 2,
-      "norm_label": "co-location"
+      "norm_label": "co-location",
+      "id": "raw_skills_glossary_co_location"
     },
     {
       "label": "Sprawl (Failure Mode)",
@@ -1166,9 +1179,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_sprawl",
       "community": 2,
-      "norm_label": "sprawl (failure mode)"
+      "norm_label": "sprawl (failure mode)",
+      "id": "raw_skills_glossary_sprawl"
     },
     {
       "label": "Branch",
@@ -1179,9 +1192,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_branch",
-      "community": 51,
-      "norm_label": "branch"
+      "community": 52,
+      "norm_label": "branch",
+      "id": "raw_skills_glossary_branch"
     },
     {
       "label": "Leading Word",
@@ -1192,9 +1205,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_leading_word",
-      "community": 1,
-      "norm_label": "leading word"
+      "community": 0,
+      "norm_label": "leading word",
+      "id": "raw_skills_glossary_leading_word"
     },
     {
       "label": "Legwork",
@@ -1205,9 +1218,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_legwork",
-      "community": 1,
-      "norm_label": "legwork"
+      "community": 0,
+      "norm_label": "legwork",
+      "id": "raw_skills_glossary_legwork"
     },
     {
       "label": "Post-Completion Steps",
@@ -1218,9 +1231,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_post_completion_steps",
-      "community": 1,
-      "norm_label": "post-completion steps"
+      "community": 0,
+      "norm_label": "post-completion steps",
+      "id": "raw_skills_glossary_post_completion_steps"
     },
     {
       "label": "Premature Completion (Failure Mode)",
@@ -1231,9 +1244,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_premature_completion",
-      "community": 1,
-      "norm_label": "premature completion (failure mode)"
+      "community": 0,
+      "norm_label": "premature completion (failure mode)",
+      "id": "raw_skills_glossary_premature_completion"
     },
     {
       "label": "Single Source of Truth",
@@ -1244,9 +1257,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_single_source_of_truth",
-      "community": 1,
-      "norm_label": "single source of truth"
+      "community": 0,
+      "norm_label": "single source of truth",
+      "id": "raw_skills_glossary_single_source_of_truth"
     },
     {
       "label": "Relevance",
@@ -1257,9 +1270,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_relevance",
-      "community": 54,
-      "norm_label": "relevance"
+      "community": 55,
+      "norm_label": "relevance",
+      "id": "raw_skills_glossary_relevance"
     },
     {
       "label": "Sediment (Failure Mode)",
@@ -1270,9 +1283,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_sediment",
-      "community": 55,
-      "norm_label": "sediment (failure mode)"
+      "community": 56,
+      "norm_label": "sediment (failure mode)",
+      "id": "raw_skills_glossary_sediment"
     },
     {
       "label": "No-Op (Failure Mode)",
@@ -1283,9 +1296,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_glossary_no_op",
-      "community": 52,
-      "norm_label": "no-op (failure mode)"
+      "community": 53,
+      "norm_label": "no-op (failure mode)",
+      "id": "raw_skills_glossary_no_op"
     },
     {
       "label": "Lines of Inquiry \u2192 Probes \u2192 Coverage Checklist",
@@ -1296,9 +1309,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_lines_of_inquiry_probes_checklist",
-      "community": 9,
-      "norm_label": "lines of inquiry \u2192 probes \u2192 coverage checklist"
+      "community": 10,
+      "norm_label": "lines of inquiry \u2192 probes \u2192 coverage checklist",
+      "id": "raw_skills_lines_of_inquiry_probes_checklist"
     },
     {
       "label": "How Claude Agent Coding Saves Progress Between Retries",
@@ -1309,9 +1322,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_readme",
       "community": 4,
-      "norm_label": "how claude agent coding saves progress between retries"
+      "norm_label": "how claude agent coding saves progress between retries",
+      "id": "raw_state_persistence_readme"
     },
     {
       "label": "failures.md Template",
@@ -1322,9 +1335,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_template_claude_failures",
       "community": 4,
-      "norm_label": "failures.md template"
+      "norm_label": "failures.md template",
+      "id": "raw_state_persistence_template_claude_failures"
     },
     {
       "label": "handoff.md Template",
@@ -1335,9 +1348,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_template_claude_handoff",
       "community": 4,
-      "norm_label": "handoff.md template"
+      "norm_label": "handoff.md template",
+      "id": "raw_state_persistence_template_claude_handoff"
     },
     {
       "label": "ST-001.md Example Result File",
@@ -1348,9 +1361,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_template_claude_results_st_001",
       "community": 4,
-      "norm_label": "st-001.md example result file"
+      "norm_label": "st-001.md example result file",
+      "id": "raw_state_persistence_template_claude_results_st_001"
     },
     {
       "label": "CLAUDE.md Template",
@@ -1361,9 +1374,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_template_claude",
       "community": 4,
-      "norm_label": "claude.md template"
+      "norm_label": "claude.md template",
+      "id": "raw_state_persistence_template_claude"
     },
     {
       "label": "PROGRESS.md Template",
@@ -1374,9 +1387,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_template_progress",
       "community": 4,
-      "norm_label": "progress.md template"
+      "norm_label": "progress.md template",
+      "id": "raw_state_persistence_template_progress"
     },
     {
       "label": "Claude Agent Template Pack Readme",
@@ -1387,9 +1400,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_template_readme",
-      "community": 57,
-      "norm_label": "claude agent template pack readme"
+      "community": 58,
+      "norm_label": "claude agent template pack readme",
+      "id": "raw_state_persistence_template_readme"
     },
     {
       "label": "TASKS.md Template",
@@ -1400,9 +1413,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_state_persistence_template_tasks",
       "community": 4,
-      "norm_label": "tasks.md template"
+      "norm_label": "tasks.md template",
+      "id": "raw_state_persistence_template_tasks"
     },
     {
       "label": "Upwork AI Buyers and What a Senior Developer Can Sell Them",
@@ -1413,9 +1426,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_upwork_ai_system_job_types_deep_research_report",
-      "community": 58,
-      "norm_label": "upwork ai buyers and what a senior developer can sell them"
+      "community": 59,
+      "norm_label": "upwork ai buyers and what a senior developer can sell them",
+      "id": "raw_upwork_ai_system_job_types_deep_research_report"
     },
     {
       "label": "Copilot Instructions for Vertical Slice Architecture Project",
@@ -1426,9 +1439,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_vertical_slices_archutecture_copilot_instructions",
-      "community": 59,
-      "norm_label": "copilot instructions for vertical slice architecture project"
+      "community": 60,
+      "norm_label": "copilot instructions for vertical slice architecture project",
+      "id": "raw_vertical_slices_archutecture_copilot_instructions"
     },
     {
       "label": "Vibe Coding Tools Comparison",
@@ -1439,9 +1452,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_vibe_coding_tools",
-      "community": 60,
-      "norm_label": "vibe coding tools comparison"
+      "community": 61,
+      "norm_label": "vibe coding tools comparison",
+      "id": "raw_vibe_coding_tools"
     },
     {
       "label": "You Are Not Ready \u2013 Agentic Coding in 2026",
@@ -1452,9 +1465,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_you_are_not_ready_agentic_coding_in_2026",
-      "community": 61,
-      "norm_label": "you are not ready \u2013 agentic coding in 2026"
+      "community": 62,
+      "norm_label": "you are not ready \u2013 agentic coding in 2026",
+      "id": "raw_you_are_not_ready_agentic_coding_in_2026"
     },
     {
       "label": "Trending Skills Libraries",
@@ -1465,9 +1478,87 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_skills_influencers",
-      "community": 56,
-      "norm_label": "trending skills libraries"
+      "community": 57,
+      "norm_label": "trending skills libraries",
+      "id": "raw_skills_influencers"
+    },
+    {
+      "label": "GitHub Copilot",
+      "file_type": "concept",
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_bestpracticesforusinggithubcopilot_githubcopilot",
+      "community": 6,
+      "norm_label": "github copilot"
+    },
+    {
+      "label": "Copilot Inline Suggestions",
+      "file_type": "concept",
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_bestpracticesforusinggithubcopilot_copilotinline",
+      "community": 6,
+      "norm_label": "copilot inline suggestions"
+    },
+    {
+      "label": "Copilot Chat",
+      "file_type": "concept",
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_bestpracticesforusinggithubcopilot_copilotchat",
+      "community": 6,
+      "norm_label": "copilot chat"
+    },
+    {
+      "label": "Prompt Engineering",
+      "file_type": "concept",
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "source_url": "/en/copilot/concepts/prompting/prompt-engineering",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_bestpracticesforusinggithubcopilot_promptengineering",
+      "community": 6,
+      "norm_label": "prompt engineering"
+    },
+    {
+      "label": "Checking Copilot's Work",
+      "file_type": "concept",
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_bestpracticesforusinggithubcopilot_checkingcopilotwork",
+      "community": 6,
+      "norm_label": "checking copilot's work"
+    },
+    {
+      "label": "Guiding Copilot Towards Helpful Outputs",
+      "file_type": "concept",
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_bestpracticesforusinggithubcopilot_guidingcopilot",
+      "community": 6,
+      "norm_label": "guiding copilot towards helpful outputs"
     }
   ],
   "links": [
@@ -1930,9 +2021,72 @@
       "weight": 1.0,
       "source": "raw_state_persistence_template_tasks",
       "target": "raw_state_persistence_template_claude"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_bestpracticesforusinggithubcopilot_checkingcopilotwork",
+      "target": "raw_bestpracticesforusinggithubcopilot_githubcopilot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_bestpracticesforusinggithubcopilot_copilotchat",
+      "target": "raw_bestpracticesforusinggithubcopilot_githubcopilot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_bestpracticesforusinggithubcopilot_copilotinline",
+      "target": "raw_bestpracticesforusinggithubcopilot_githubcopilot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_bestpracticesforusinggithubcopilot_guidingcopilot",
+      "target": "raw_bestpracticesforusinggithubcopilot_githubcopilot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/best-practices-for-using-github-copilot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_bestpracticesforusinggithubcopilot_promptengineering",
+      "target": "raw_bestpracticesforusinggithubcopilot_copilotchat"
     }
   ],
   "hyperedges": [
+    {
+      "id": "copilot_tools_usage",
+      "label": "GitHub Copilot Tools Usage",
+      "nodes": [
+        "raw_bestpracticesforusinggithubcopilot_githubcopilot",
+        "raw_bestpracticesforusinggithubcopilot_copilotinline",
+        "raw_bestpracticesforusinggithubcopilot_copilotchat"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/best-practices-for-using-github-copilot.md"
+    },
     {
       "id": "agent_patterns_sequence_operator_split_merge",
       "label": "Agent Patterns Sequence",
@@ -2032,5 +2186,5 @@
       "source_file": "raw/skills-glossary.md"
     }
   ],
-  "built_at_commit": "e4534df8f581ec420a2da43ae0041539b396889f"
+  "built_at_commit": "17306b01c05ea48d19da8b0df7d682688a395391"
 }
