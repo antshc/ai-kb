@@ -1491,9 +1491,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_bestpracticesforusinggithubcopilot_githubcopilot",
       "community": 6,
-      "norm_label": "github copilot"
+      "norm_label": "github copilot",
+      "id": "raw_bestpracticesforusinggithubcopilot_githubcopilot"
     },
     {
       "label": "Copilot Inline Suggestions",
@@ -1504,9 +1504,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_bestpracticesforusinggithubcopilot_copilotinline",
       "community": 6,
-      "norm_label": "copilot inline suggestions"
+      "norm_label": "copilot inline suggestions",
+      "id": "raw_bestpracticesforusinggithubcopilot_copilotinline"
     },
     {
       "label": "Copilot Chat",
@@ -1517,9 +1517,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_bestpracticesforusinggithubcopilot_copilotchat",
       "community": 6,
-      "norm_label": "copilot chat"
+      "norm_label": "copilot chat",
+      "id": "raw_bestpracticesforusinggithubcopilot_copilotchat"
     },
     {
       "label": "Prompt Engineering",
@@ -1530,9 +1530,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_bestpracticesforusinggithubcopilot_promptengineering",
       "community": 6,
-      "norm_label": "prompt engineering"
+      "norm_label": "prompt engineering",
+      "id": "raw_bestpracticesforusinggithubcopilot_promptengineering"
     },
     {
       "label": "Checking Copilot's Work",
@@ -1543,9 +1543,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_bestpracticesforusinggithubcopilot_checkingcopilotwork",
       "community": 6,
-      "norm_label": "checking copilot's work"
+      "norm_label": "checking copilot's work",
+      "id": "raw_bestpracticesforusinggithubcopilot_checkingcopilotwork"
     },
     {
       "label": "Guiding Copilot Towards Helpful Outputs",
@@ -1556,9 +1556,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_bestpracticesforusinggithubcopilot_guidingcopilot",
       "community": 6,
-      "norm_label": "guiding copilot towards helpful outputs"
+      "norm_label": "guiding copilot towards helpful outputs",
+      "id": "raw_bestpracticesforusinggithubcopilot_guidingcopilot"
     }
   ],
   "links": [
@@ -2186,5 +2186,5 @@
       "source_file": "raw/skills-glossary.md"
     }
   ],
-  "built_at_commit": "17306b01c05ea48d19da8b0df7d682688a395391"
+  "built_at_commit": "39204c836a184db275a7b9978405fee8d00b3d6a"
 }
