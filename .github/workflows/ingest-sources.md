@@ -27,6 +27,15 @@ safe-outputs:
     github-token-for-extra-empty-commit: ${{ secrets.GH_AW_CI_TRIGGER_TOKEN }}
     allowed-files:
       - graphify-out/**
+pre-agent-steps:
+  - name: Install Graphify CLI
+    shell: bash
+    run: |
+      graphify_venv="${RUNNER_TEMP}/graphify-venv"
+      python3 -m venv "$graphify_venv"
+      "$graphify_venv/bin/python" -m pip install --disable-pip-version-check --no-cache-dir graphifyy==0.9.27
+      echo "$graphify_venv/bin" >> "$GITHUB_PATH"
+      "$graphify_venv/bin/graphify" --help >/dev/null
 ---
 
 # Update the Graphify knowledge graph
