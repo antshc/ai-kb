@@ -1,61 +1,168 @@
-# Community 5
+# Community 5 — State persistence
 
-**10 nodes**
+- Nodes: 54
+- Top hubs: `CLAUDE.md`, `Problem`, `PROGRESS.md`, `TASKS.md`, `Claude Agent Template Pack`, `failures.md`, `handoff.md`, `ST-001.md`
 
 ## Nodes
-### Durable State Machine
-- **File:** `improve-agent-robustness-and-resumability.md`
-- **Type:** rationale
-- **Links:**
-  - references → Explicit Phase Outcomes
-  - references → Finalization Completeness Sweep
-  - references → Invocation-Scoped Durable State
-  - references → Skill Call Checkpointing
-  - references → Task Fingerprint
-  - references → Verification Receipts
-
-### Explicit Phase Outcomes
-- **File:** `improve-agent-robustness-and-resumability.md`
-- **Type:** rationale
-
-### Finalization Completeness Sweep
-- **File:** `improve-agent-robustness-and-resumability.md`
-- **Type:** rationale
-
-### Invocation-Scoped Durable State
-- **File:** `improve-agent-robustness-and-resumability.md`
-- **Type:** rationale
-
-### Ralph Agent Loop
-- **File:** `agentic-engineering-concepts.md`
-- **Type:** rationale
-- **Links:**
-  - semantically_similar_to → Durable State Machine
-
-### Runtime State
-- **File:** `custom-skill-workflow-yaml.md`
-- **Type:** concept
-- **Links:**
-  - semantically_similar_to → Invocation-Scoped Durable State
-
-### Skill Call Checkpointing
-- **File:** `improve-agent-robustness-and-resumability.md`
-- **Type:** rationale
-- **Links:**
-  - shares_data_with → Runtime State
-
-### State Persistence
-- **File:** `agentic-engineering-concepts.md`
-- **Type:** rationale
-- **Links:**
-  - semantically_similar_to → Invocation-Scoped Durable State
-
-### Task Fingerprint
-- **File:** `improve-agent-robustness-and-resumability.md`
-- **Type:** concept
-
-### Workflow Orchestration vs Open-Ended Agents
-- **File:** `ai-system-bussiness-integrations-deep-research-report.md`
-- **Type:** rationale
-- **Links:**
-  - conceptually_related_to → Durable State Machine
+- **.claude/results/** — `raw/state-persistence-template-tasks.md`
+  - Connections: 3
+  - Related: TASKS.md, If blocked, explain why in PROGRESS.md., PROGRESS.md
+- **[DATE/TIME] <TASK-ID>** — `raw/state-persistence-template-claude-failures.md`
+  - Connections: 2
+  - Related: failures.md, Template
+- **Added initial abstraction placeholder.** — `raw/state-persistence-template-claude-results-st-001.md`
+  - Connections: 2
+  - Related: ST-001.md, Follow-up
+- **Before ending session** — `raw/state-persistence-template-claude-handoff.md`
+  - Connections: 3
+  - Related: handoff.md, TASKS.md, Before making changes
+- **Before making changes** — `raw/state-persistence-template-claude-handoff.md`
+  - Connections: 3
+  - Related: handoff.md, Before ending session, Resume Rule
+- **Claude Agent Template Pack** — `raw/state-persistence-template-readme.md`
+  - Connections: 24
+  - Related: Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Custom Skill `workflow.yaml`, GitHub Copilot Repository Instructions
+- **CLAUDE.md** — `raw/state-persistence-template-claude.md`
+  - Connections: 38
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **CLAUDE.md** — `raw/state-persistence-template-readme.md`
+  - Connections: 4
+  - Related: CLAUDE.md, Claude Agent Template Pack, TASKS.md, Recommended Workflow
+- **Coding Rules** — `raw/state-persistence-template-claude.md`
+  - Connections: 3
+  - Related: CLAUDE.md, Retry Rules, Project Invariants
+- **Current Decisions** — `raw/state-persistence-template-progress.md`
+  - Connections: 3
+  - Related: PROGRESS.md, Next Step, Failed Attempts
+- **Current Focus** — `raw/state-persistence-readme.adoc`
+  - Connections: 3
+  - Related: Done, Current Focus, PROGRESS.md
+- **Current Focus** — `raw/state-persistence-template-progress.md`
+  - Connections: 3
+  - Related: Current Focus, PROGRESS.md, Done
+- **Done** — `raw/state-persistence-readme.adoc`
+  - Connections: 3
+  - Related: Current Focus, Failed Attempts, Done
+- **Done** — `raw/state-persistence-template-progress.md`
+  - Connections: 4
+  - Related: Done, PROGRESS.md, Current Focus, Failed Attempts
+- **Failed Attempts** — `raw/state-persistence-readme.adoc`
+  - Connections: 2
+  - Related: Done, Failed Attempts
+- **Failed Attempts** — `raw/state-persistence-template-progress.md`
+  - Connections: 4
+  - Related: Failed Attempts, PROGRESS.md, Done, Current Decisions
+- **failures.md** — `raw/state-persistence-template-claude-failures.md`
+  - Connections: 24
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **Files Changed** — `raw/state-persistence-template-claude-results-st-001.md`
+  - Connections: 2
+  - Related: ST-001.md, What Changed
+- **Follow-up** — `raw/state-persistence-template-claude-results-st-001.md`
+  - Connections: 3
+  - Related: ST-001.md, Added initial abstraction placeholder., Learned
+- **Goal** — `raw/improve-agent-robustness-and-resumability.md`
+  - Connections: 2
+  - Related: Problem, Proposed design
+- **handoff.md** — `raw/state-persistence-template-claude-handoff.md`
+  - Connections: 22
+  - Related: Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Custom Skill `workflow.yaml`, GitHub Copilot Repository Instructions
+- **If a new Claude session starts, do this first:** — `raw/state-persistence-template-claude-handoff.md`
+  - Connections: 2
+  - Related: handoff.md, Resume Rule
+- **If blocked, explain why in PROGRESS.md.** — `raw/state-persistence-template-tasks.md`
+  - Connections: 2
+  - Related: TASKS.md, .claude/results/
+- **IN PROGRESS** — `raw/state-persistence-template-tasks.md`
+  - Connections: 3
+  - Related: TASKS.md, PROGRESS.md, Rules
+- **Included Files** — `raw/state-persistence-template-readme.md`
+  - Connections: 2
+  - Related: Claude Agent Template Pack, Recommended Workflow
+- **Learned** — `raw/state-persistence-template-claude-results-st-001.md`
+  - Connections: 3
+  - Related: ST-001.md, Follow-up, Why
+- **Next Step** — `raw/state-persistence-template-progress.md`
+  - Connections: 3
+  - Related: PROGRESS.md, Current Decisions, Risks / Blockers
+- **Output Rules** — `raw/state-persistence-template-claude.md`
+  - Connections: 2
+  - Related: CLAUDE.md, Verification Rules
+- **Problem** — `raw/improve-agent-robustness-and-resumability.md`
+  - Connections: 35
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **PROGRESS.md** — `raw/state-persistence-readme.adoc`
+  - Connections: 6
+  - Related: Current Focus, PROGRESS.md, PROGRESS.md, PROGRESS.md, PROGRESS.md, | ST-003 | Add tests for disk full fallback | TODO |
+- **PROGRESS.md** — `raw/state-persistence-template-claude-handoff.md`
+  - Connections: 3
+  - Related: PROGRESS.md, handoff.md, TASKS.md
+- **PROGRESS.md** — `raw/state-persistence-template-progress.md`
+  - Connections: 35
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **PROGRESS.md** — `raw/state-persistence-template-readme.md`
+  - Connections: 3
+  - Related: PROGRESS.md, Claude Agent Template Pack, TASKS.md
+- **PROGRESS.md** — `raw/state-persistence-template-tasks.md`
+  - Connections: 4
+  - Related: PROGRESS.md, TASKS.md, IN PROGRESS, .claude/results/
+- **Project Invariants** — `raw/state-persistence-template-claude.md`
+  - Connections: 3
+  - Related: CLAUDE.md, Coding Rules, Purpose
+- **Proposed design** — `raw/improve-agent-robustness-and-resumability.md`
+  - Connections: 2
+  - Related: Problem, Goal
+- **Purpose** — `raw/state-persistence-template-claude-failures.md`
+  - Connections: 3
+  - Related: Purpose, failures.md, Template
+- **Purpose** — `raw/state-persistence-template-claude.md`
+  - Connections: 3
+  - Related: Purpose, CLAUDE.md, Project Invariants
+- **Recommended Workflow** — `raw/state-persistence-template-readme.md`
+  - Connections: 3
+  - Related: Claude Agent Template Pack, Included Files, CLAUDE.md
+- **Resume Rule** — `raw/state-persistence-template-claude-handoff.md`
+  - Connections: 3
+  - Related: handoff.md, If a new Claude session starts, do this first:, Before making changes
+- **Retry Rules** — `raw/state-persistence-template-claude.md`
+  - Connections: 3
+  - Related: CLAUDE.md, Coding Rules, Verification Rules
+- **Risks / Blockers** — `raw/state-persistence-template-progress.md`
+  - Connections: 2
+  - Related: PROGRESS.md, Next Step
+- **Rules** — `raw/state-persistence-template-tasks.md`
+  - Connections: 3
+  - Related: TASKS.md, IN PROGRESS, Status Values
+- **ST-001.md** — `raw/state-persistence-template-claude-results-st-001.md`
+  - Connections: 15
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, GitHub Copilot Repository Instructions, Problem, Agent, Skill, and Plugin Authoring Standard, RAG cheat sheet for Claude Code / Copilot-style agents
+- **Status Values** — `raw/state-persistence-template-tasks.md`
+  - Connections: 2
+  - Related: TASKS.md, Rules
+- **TASKS.md** — `raw/state-persistence-readme.adoc`
+  - Connections: 4
+  - Related: | ST-003 | Add tests for disk full fallback | TODO |, TASKS.md, TASKS.md, TASKS.md
+- **TASKS.md** — `raw/state-persistence-template-claude-handoff.md`
+  - Connections: 4
+  - Related: TASKS.md, handoff.md, Before ending session, PROGRESS.md
+- **TASKS.md** — `raw/state-persistence-template-readme.md`
+  - Connections: 4
+  - Related: TASKS.md, Claude Agent Template Pack, CLAUDE.md, PROGRESS.md
+- **TASKS.md** — `raw/state-persistence-template-tasks.md`
+  - Connections: 29
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **Template** — `raw/state-persistence-template-claude-failures.md`
+  - Connections: 3
+  - Related: failures.md, Purpose, [DATE/TIME] <TASK-ID>
+- **Verification Rules** — `raw/state-persistence-template-claude.md`
+  - Connections: 3
+  - Related: CLAUDE.md, Retry Rules, Output Rules
+- **What Changed** — `raw/state-persistence-template-claude-results-st-001.md`
+  - Connections: 3
+  - Related: ST-001.md, Files Changed, Why
+- **Why** — `raw/state-persistence-template-claude-results-st-001.md`
+  - Connections: 3
+  - Related: ST-001.md, What Changed, Learned
+- **| ST-003 | Add tests for disk full fallback | TODO |** — `raw/state-persistence-readme.adoc`
+  - Connections: 2
+  - Related: PROGRESS.md, TASKS.md

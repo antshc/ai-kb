@@ -1,62 +1,66 @@
-# Community 4
+# Community 4 — Tools & lsp
 
-**11 nodes**
+- Nodes: 20
+- Top hubs: `Custom Skill `workflow.yaml``, `GitHub Copilot Repository Instructions`, `LSP Tools Reference`, `Purpose`, `Example `workflow.yaml``, `findReferences`, `hover`, `Recommended Structure`
 
 ## Nodes
-### AI Automation POC
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** concept
-
-### High-Probability Upwork Buyer Sectors
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** concept
-
-### Production ML Deployment + Monitoring Starter
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** concept
-
-### Productized Outcome-First Offerings
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** rationale
-- **Links:**
-  - conceptually_related_to → AI Automation POC
-  - conceptually_related_to → Production ML Deployment + Monitoring Starter
-  - conceptually_related_to → RAG Audit + Hardening
-  - conceptually_related_to → RAG MVP
-
-### RAG Audit + Hardening
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** concept
-
-### RAG MVP
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** concept
-
-### Two-Step Close
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** rationale
-
-### Upwork AI & Machine Learning Project Catalog
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** document
-
-### Upwork AI Buyers and What a Senior Developer Can Sell Them
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** paper
-- **Links:**
-  - references → AI Automation POC
-  - references → High-Probability Upwork Buyer Sectors
-  - references → Production ML Deployment + Monitoring Starter
-  - references → Productized Outcome-First Offerings
-  - references → RAG Audit + Hardening
-  - references → RAG MVP
-  - references → Two-Step Close
-  - cites → Upwork AI & Machine Learning Project Catalog
-
-### Upwork Chatbot Development Jobs Page
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** document
-
-### Upwork Cost to Hire: Machine Learning Engineers
-- **File:** `upwork-ai-system-job-types-deep-research-report.md`
-- **Type:** document
+- **Best practices** — `raw/github-copilot-copilot-instructions-best-practices.md`
+  - Connections: 2
+  - Related: GitHub Copilot Repository Instructions, Purpose
+- **csharp-ls = "an alternative C# language server"** — `raw/dotnet-lsp.adoc`
+  - Connections: 2
+  - Related: roslyn-language-server = "the Microsoft/Roslyn-style C# language server", Do not think of dnx as a language server.
+- **Custom Skill `workflow.yaml`** — `raw/custom-skill-workflow-yaml.md`
+  - Connections: 38
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **dnx roslyn-language-server --stdio** — `raw/dotnet-lsp.adoc`
+  - Connections: 0
+  - Related: None
+- **Do not think of dnx as a language server.** — `raw/dotnet-lsp.adoc`
+  - Connections: 1
+  - Related: csharp-ls = "an alternative C# language server"
+- **documentSymbol** — `raw/lsp-tools-reference.md`
+  - Connections: 2
+  - Related: LSP Tools Reference, hover
+- **Example `workflow.yaml`** — `raw/custom-skill-workflow-yaml.md`
+  - Connections: 3
+  - Related: Custom Skill `workflow.yaml`, Required `SKILL.md` Instructions, Responsibility Split
+- **findReferences** — `raw/lsp-tools-reference.md`
+  - Connections: 3
+  - Related: LSP Tools Reference, rename, goToDefinition
+- **GitHub Copilot Repository Instructions** — `raw/github-copilot-copilot-instructions-best-practices.md`
+  - Connections: 35
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **goToDefinition** — `raw/lsp-tools-reference.md`
+  - Connections: 2
+  - Related: LSP Tools Reference, findReferences
+- **hover** — `raw/lsp-tools-reference.md`
+  - Connections: 3
+  - Related: LSP Tools Reference, documentSymbol, rename
+- **LSP Tools Reference** — `raw/lsp-tools-reference.md`
+  - Connections: 16
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc, Custom Skill `workflow.yaml`, GitHub Copilot Repository Instructions, Problem
+- **Purpose** — `raw/github-copilot-copilot-instructions-best-practices.md`
+  - Connections: 4
+  - Related: GitHub Copilot Repository Instructions, Best practices, Purpose, Purpose
+- **Recommended Structure** — `raw/custom-skill-workflow-yaml.md`
+  - Connections: 3
+  - Related: Custom Skill `workflow.yaml`, Responsibility Split, Summary
+- **rename** — `raw/lsp-tools-reference.md`
+  - Connections: 3
+  - Related: LSP Tools Reference, findReferences, hover
+- **Required `SKILL.md` Instructions** — `raw/custom-skill-workflow-yaml.md`
+  - Connections: 3
+  - Related: Custom Skill `workflow.yaml`, Example `workflow.yaml`, Workflow
+- **Responsibility Split** — `raw/custom-skill-workflow-yaml.md`
+  - Connections: 3
+  - Related: Custom Skill `workflow.yaml`, Recommended Structure, Example `workflow.yaml`
+- **roslyn-language-server = "the Microsoft/Roslyn-style C# language server"** — `raw/dotnet-lsp.adoc`
+  - Connections: 1
+  - Related: csharp-ls = "an alternative C# language server"
+- **Summary** — `raw/custom-skill-workflow-yaml.md`
+  - Connections: 3
+  - Related: Custom Skill `workflow.yaml`, Recommended Structure, Summary
+- **Workflow** — `raw/custom-skill-workflow-yaml.md`
+  - Connections: 2
+  - Related: Custom Skill `workflow.yaml`, Required `SKILL.md` Instructions

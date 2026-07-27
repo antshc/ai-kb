@@ -1,134 +1,162 @@
-# Community 1
+# Community 1 — Prompting & reasoning
 
-**23 nodes**
+- Nodes: 52
+- Top hubs: `Glossary — Building Great Skills`, `Agentic Engineering Concepts`, `Agentic Engineering Concepts`, `React Prompting`, `Vibe Coding Tools`, `Think step by step.`, `Chain of thought`, `Chain of thought`
 
 ## Nodes
-### Agentic Tool-Calling Retrieval
-- **File:** `rag-cheat-sheet.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Parallel Independent Retrieval
-  - conceptually_related_to → Precision-First Tool Ordering
-  - conceptually_related_to → Progressive Disclosure
-
-### Cognitive Load
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Completion Criterion
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Legwork
-  - conceptually_related_to → Premature Completion
-
-### Context Load
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Duplication
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Glossary — Building Great Skills
-- **File:** `skills-glossary.md`
-- **Type:** document
-- **Links:**
-  - references → Completion Criterion
-  - references → Information Hierarchy
-  - references → Model-Invoked Skill
-  - references → Predictability
-  - references → Progressive Disclosure
-  - references → Relevance
-  - references → Single Source of Truth
-  - references → User-Invoked Skill
-
-### Information Hierarchy
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Leading Word
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - rationale_for → Predictability
-
-### Legwork
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Model-Invoked Skill
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Context Load
-
-### No-Op
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Parallel Independent Retrieval
-- **File:** `rag-cheat-sheet.md`
-- **Type:** rationale
-
-### Precision-First Tool Ordering
-- **File:** `rag-cheat-sheet.md`
-- **Type:** rationale
-
-### Predictability
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Premature Completion
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Progressive Disclosure
-- **File:** `rag-cheat-sheet.md`
-- **Type:** concept
-- **Links:**
-  - semantically_similar_to → Progressive Disclosure
-
-### Progressive Disclosure
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Information Hierarchy
-
-### RAG Cheat Sheet for Claude Code / Copilot-style Agents
-- **File:** `rag-cheat-sheet.md`
-- **Type:** document
-- **Links:**
-  - references → Agentic Tool-Calling Retrieval
-  - references → Parallel Independent Retrieval
-  - references → Precision-First Tool Ordering
-  - references → Progressive Disclosure
-
-### Relevance
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → No-Op
-  - conceptually_related_to → Sediment
-
-### Router Skill
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Cognitive Load
-
-### Sediment
-- **File:** `skills-glossary.md`
-- **Type:** concept
-
-### Single Source of Truth
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Duplication
-
-### User-Invoked Skill
-- **File:** `skills-glossary.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Cognitive Load
+- **Adapt reasoning** — `raw/react-prompting.adoc`
+  - Connections: 2
+  - Related: React Prompting, Observe results
+- **Agent Harness** — `raw/agentic-engineering-glossary.md`
+  - Connections: 2
+  - Related: Agentic Engineering Concepts, Context engineering
+- **Agentic Engineering Concepts** — `raw/agentic-engineering-concepts.md`
+  - Connections: 36
+  - Related: Agent Patterns, Chain of thought, Context engineering, Feedback loop, Installing guardrails, Preventing doom loops
+- **Agentic Engineering Concepts** — `raw/agentic-engineering-glossary.md`
+  - Connections: 36
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agent Harness, Chain of thought, Context engineering, Feedback loop
+- **AI App Generation** — `raw/vibe-coding-tools.adoc`
+  - Connections: 2
+  - Related: Vibe Coding Tools, Very High
+- **Call APIs** — `raw/react-prompting.adoc`
+  - Connections: 3
+  - Related: React Prompting, Think about a problem, Final answer
+- **Chain of thought** — `raw/agentic-engineering-concepts.md`
+  - Connections: 4
+  - Related: Agentic Engineering Concepts, Installing guardrails, Chain of thought, Feedback loop
+- **Chain of thought** — `raw/agentic-engineering-glossary.md`
+  - Connections: 4
+  - Related: Chain of thought, Agentic Engineering Concepts, Installing guardrails, Feedback loop
+- **compressed PRD** — `raw/compression-output-best-practices.adoc`
+  - Connections: 2
+  - Related: high-density PRD, explicit behavior rules
+- **Context engineering** — `raw/agentic-engineering-concepts.md`
+  - Connections: 3
+  - Related: Agentic Engineering Concepts, Feedback loop, Context engineering
+- **Context engineering** — `raw/agentic-engineering-glossary.md`
+  - Connections: 4
+  - Related: Context engineering, Agentic Engineering Concepts, Agent Harness, Feedback loop
+- **Context Pointer** — `raw/skills-glossary.md`
+  - Connections: 2
+  - Related: Glossary — Building Great Skills, Description
+- **Create a healthy recipe where carrots are one of the main ingredients.** — `raw/prompt-style-scenarious.adoc`
+  - Connections: 1
+  - Related: Include cooking steps, ingredients, cooking time, and nutrition information.
+- **Create a recipe with the banana are one of the main ingredients.** — `raw/prompt-style-scenarious.adoc`
+  - Connections: 0
+  - Related: None
+- **Description** — `raw/skills-glossary.md`
+  - Connections: 3
+  - Related: Glossary — Building Great Skills, Context Pointer, User-Invoked
+- **Examples: <optional example to copy>** — `raw/ai-steering-best-practices.adoc`
+  - Connections: 2
+  - Related: Rollback strategy, short + structured + useful for implementation
+- **explicit behavior rules** — `raw/compression-output-best-practices.adoc`
+  - Connections: 2
+  - Related: compressed PRD, Total document must not exceed 200–300 words
+- **Feedback loop** — `raw/agentic-engineering-concepts.md`
+  - Connections: 4
+  - Related: Agentic Engineering Concepts, Context engineering, Chain of thought, Feedback loop
+- **Feedback loop** — `raw/agentic-engineering-glossary.md`
+  - Connections: 4
+  - Related: Feedback loop, Agentic Engineering Concepts, Context engineering, Chain of thought
+- **Final answer** — `raw/react-prompting.adoc`
+  - Connections: 2
+  - Related: React Prompting, Call APIs
+- **Firebase Studio** — `raw/vibe-coding-tools.adoc`
+  - Connections: 3
+  - Related: Vibe Coding Tools, Python SDK, Google Cloud
+- **Glossary — Building Great Skills** — `raw/skills-glossary.md`
+  - Connections: 38
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **Google Cloud** — `raw/vibe-coding-tools.adoc`
+  - Connections: 3
+  - Related: Vibe Coding Tools, Firebase Studio, Very High
+- **high-density PRD** — `raw/compression-output-best-practices.adoc`
+  - Connections: 1
+  - Related: compressed PRD
+- **Include cooking steps, ingredients, cooking time, and nutrition information.** — `raw/prompt-style-readme.adoc`
+  - Connections: 2
+  - Related: | Variations | |, Include cooking steps, ingredients, cooking time, and nutrition information.
+- **Include cooking steps, ingredients, cooking time, and nutrition information.** — `raw/prompt-style-scenarious.adoc`
+  - Connections: 2
+  - Related: Include cooking steps, ingredients, cooking time, and nutrition information., Create a healthy recipe where carrots are one of the main ingredients.
+- **Installing guardrails** — `raw/agentic-engineering-concepts.md`
+  - Connections: 4
+  - Related: Agentic Engineering Concepts, Chain of thought, Preventing doom loops, Installing guardrails
+- **Installing guardrails** — `raw/agentic-engineering-glossary.md`
+  - Connections: 3
+  - Related: Installing guardrails, Agentic Engineering Concepts, Chain of thought
+- **Invocation** — `raw/skills-glossary.md`
+  - Connections: 3
+  - Related: Glossary — Building Great Skills, Model-Invoked, Predictability
+- **Model-Invoked** — `raw/skills-glossary.md`
+  - Connections: 3
+  - Related: Glossary — Building Great Skills, Invocation, User-Invoked
+- **Observe results** — `raw/react-prompting.adoc`
+  - Connections: 3
+  - Related: React Prompting, Adapt reasoning, Take actions using tools
+- **Predictability** — `raw/skills-glossary.md`
+  - Connections: 2
+  - Related: Glossary — Building Great Skills, Invocation
+- **Prefer vertical slices.** — `raw/ai-steering-best-practices.adoc`
+  - Connections: 1
+  - Related: Preserve dependencies between issues.
+- **Preserve dependencies between issues.** — `raw/ai-steering-best-practices.adoc`
+  - Connections: 2
+  - Related: Prefer vertical slices., Rollback strategy
+- **Preventing doom loops** — `raw/agentic-engineering-concepts.md`
+  - Connections: 2
+  - Related: Agentic Engineering Concepts, Installing guardrails
+- **Primary Paradigm** — `raw/vibe-coding-tools.adoc`
+  - Connections: 2
+  - Related: Vibe Coding Tools, Python SDK
+- **Python SDK** — `raw/vibe-coding-tools.adoc`
+  - Connections: 3
+  - Related: Vibe Coding Tools, Firebase Studio, Primary Paradigm
+- **React Prompting** — `raw/react-prompting.adoc`
+  - Connections: 33
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **Rollback strategy** — `raw/ai-steering-best-practices.adoc`
+  - Connections: 2
+  - Related: Examples: <optional example to copy>, Preserve dependencies between issues.
+- **Run Prompt** — `raw/prompt-style-scenarious.adoc`
+  - Connections: 0
+  - Related: None
+- **short + structured + useful for implementation** — `raw/ai-steering-best-practices.adoc`
+  - Connections: 1
+  - Related: Examples: <optional example to copy>
+- **Short summary** — `raw/compression-output-best-practices.adoc`
+  - Connections: 0
+  - Related: None
+- **Take actions using tools** — `raw/react-prompting.adoc`
+  - Connections: 3
+  - Related: React Prompting, Observe results, Think about a problem
+- **Think about a problem** — `raw/react-prompting.adoc`
+  - Connections: 3
+  - Related: React Prompting, Call APIs, Take actions using tools
+- **Think step by step.** — `raw/chain-of-thought-cot-prompting.adoc`
+  - Connections: 27
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **Total document must not exceed 200–300 words** — `raw/compression-output-best-practices.adoc`
+  - Connections: 1
+  - Related: explicit behavior rules
+- **User-Invoked** — `raw/skills-glossary.md`
+  - Connections: 3
+  - Related: Glossary — Building Great Skills, Model-Invoked, Description
+- **Variations** — `raw/prompt-style-readme.adoc`
+  - Connections: 1
+  - Related: Include cooking steps, ingredients, cooking time, and nutrition information.
+- **Very High** — `raw/vibe-coding-tools.adoc`
+  - Connections: 3
+  - Related: Vibe Coding Tools, AI App Generation, Google Cloud
+- **Vibe Coding Tools** — `raw/vibe-coding-tools.adoc`
+  - Connections: 33
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **| Variations | |** — `raw/prompt-style-readme.adoc`
+  - Connections: 1
+  - Related: Include cooking steps, ingredients, cooking time, and nutrition information.
+- **}** — `raw/prompt-style-readme.adoc`
+  - Connections: 0
+  - Related: None
