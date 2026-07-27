@@ -1,0 +1,171 @@
+name: Update Graphify knowledge graph
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - raw/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: graphify-ingestion
+  cancel-in-progress: false
+
+jobs:
+  update-graph:
+    name: Extract and publish Graphify output
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Install Graphify
+        shell: bash
+        run: |
+          set -euo pipefail
+          graphify_venv="${GITHUB_WORKSPACE}/.graphify-venv"
+          python3 -m venv "$graphify_venv"
+          "$graphify_venv/bin/python" -m pip install \
+            --disable-pip-version-check \
+            --no-cache-dir \
+            "graphifyy[openai]==0.9.27"
+          echo "$graphify_venv/bin" >> "$GITHUB_PATH"
+
+      - name: Extract Graphify corpus
+        shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set -euo pipefail
+          export GRAPHIFY_OUT=graphify-out
+          graphify extract raw --out . --backend openai
+
+      - name: Remove local Graphify state
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf graphify-out/cache graphify-out/reflections
+          find graphify-out -maxdepth 1 -type f \
+            \( -name '.graphify_*' -o -name '.vocab.txt' -o -name 'cost.json' \) \
+            -delete
+
+      - name: Validate Graphify output
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          graph_path = Path("graphify-out/graph.json")
+          graph = json.loads(graph_path.read_text(encoding="utf-8"))
+
+          nodes = graph.get("nodes")
+          links = graph.get("links")
+          if not isinstance(nodes, list) or not nodes:
+              raise SystemExit("graph.json must contain a non-empty nodes list")
+          if not isinstance(links, list):
+              raise SystemExit("graph.json must contain a links list")
+
+          for node in nodes:
+              source_file = node.get("source_file")
+              if source_file is None:
+                  continue
+              normalized = str(source_file).replace("\\", "/")
+              if not normalized.startswith("raw/"):
+                  raise SystemExit(f"source path escapes raw/: {source_file}")
+              if not Path(normalized).is_file():
+                  raise SystemExit(f"source file does not exist: {source_file}")
+          PY
+          test -s graphify-out/GRAPH_REPORT.md
+          test -s graphify-out/graph.html
+          test -s graphify-out/wiki/index.md
+
+      - name: Prepare ingestion branch
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --create automated-ingest/graphify
+          git add graphify-out/GRAPH_REPORT.md \
+            graphify-out/graph.html \
+            graphify-out/graph.json \
+            graphify-out/wiki/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore(graphify): update knowledge graph"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push ingestion branch
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GH_AW_CI_TRIGGER_TOKEN || github.token }}
+        run: |
+          set -euo pipefail
+          gh auth setup-git
+          git push --force origin HEAD:automated-ingest/graphify
+
+      - name: Create or update ingestion pull request
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GH_AW_CI_TRIGGER_TOKEN || github.token }}
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          raw_changes="$(git diff --name-only "$BEFORE_SHA" "$CURRENT_SHA" -- raw/ || true)"
+          if [[ -z "$raw_changes" ]]; then
+            raw_changes="Manual workflow dispatch"
+          fi
+
+          body_file="$RUNNER_TEMP/graphify-pr-body.md"
+          cat > "$body_file" <<EOF
+          Automated Graphify refresh.
+
+          Changed raw sources:
+
+          ```
+          ${raw_changes}
+          ```
+
+          Generated and validated:
+          - graphify-out/graph.json
+          - graphify-out/GRAPH_REPORT.md
+          - graphify-out/graph.html
+          - graphify-out/wiki/
+          EOF
+
+          pr_number="$(gh pr list \
+            --head automated-ingest/graphify \
+            --base main \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+
+          if [[ -n "$pr_number" ]]; then
+            gh pr edit "$pr_number" \
+              --title "[graphify] Update knowledge graph" \
+              --body-file "$body_file" \
+              --add-label graphify
+          else
+            gh pr create \
+              --base main \
+              --head automated-ingest/graphify \
+              --title "[graphify] Update knowledge graph" \
+              --body-file "$body_file" \
+              --label graphify
+          fi
