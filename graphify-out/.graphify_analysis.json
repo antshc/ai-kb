@@ -1,0 +1,356 @@
+{
+  "communities": {
+    "0": [
+      "raw_agent_patterns_sequential_flow",
+      "raw_custom_skill_workflow_yaml_machine_readable_workflow_contract",
+      "raw_custom_skill_workflow_yaml_skill_md",
+      "raw_custom_skill_workflow_yaml_workflow_schema_json",
+      "raw_custom_skill_workflow_yaml_workflow_yaml",
+      "raw_github_copilot_copilot_instructions_best_practices_lsp_first_navigation",
+      "raw_github_copilot_copilot_instructions_best_practices_normative_vocabulary",
+      "raw_github_copilot_copilot_instructions_best_practices_progressive_disclosure",
+      "raw_github_copilot_copilot_instructions_best_practices_repository_instructions",
+      "raw_github_copilot_copilot_instructions_best_practices_repository_topology",
+      "raw_github_copilot_copilot_instructions_best_practices_targeted_validation",
+      "raw_improve_agent_robustness_and_resumability_verification_receipts",
+      "raw_instructions_standards_agent_skill_plugin_authoring_standard_authoring_standard",
+      "raw_instructions_standards_agent_skill_plugin_authoring_standard_instruction_structure",
+      "raw_instructions_standards_agent_skill_plugin_authoring_standard_output_contract",
+      "raw_instructions_standards_agent_skill_plugin_authoring_standard_quality_gate",
+      "raw_instructions_standards_agent_skill_plugin_authoring_standard_rfc_2119",
+      "raw_instructions_standards_agent_skill_plugin_authoring_standard_variable_standard",
+      "raw_instructions_standards_agent_skill_plugin_authoring_standard_workflow_standard",
+      "raw_lsp_tools_reference_find_references",
+      "raw_lsp_tools_reference_go_to_definition",
+      "raw_lsp_tools_reference_go_to_implementation",
+      "raw_lsp_tools_reference_outgoing_calls"
+    ],
+    "1": [
+      "raw_rag_cheat_sheet_agentic_tool_calling_retrieval",
+      "raw_rag_cheat_sheet_parallel_independent_retrieval",
+      "raw_rag_cheat_sheet_precision_first_tool_ordering",
+      "raw_rag_cheat_sheet_progressive_disclosure",
+      "raw_rag_cheat_sheet_rag_cheat_sheet",
+      "raw_skills_glossary_building_great_skills_glossary",
+      "raw_skills_glossary_cognitive_load",
+      "raw_skills_glossary_completion_criterion",
+      "raw_skills_glossary_context_load",
+      "raw_skills_glossary_duplication",
+      "raw_skills_glossary_information_hierarchy",
+      "raw_skills_glossary_leading_word",
+      "raw_skills_glossary_legwork",
+      "raw_skills_glossary_model_invoked_skill",
+      "raw_skills_glossary_no_op",
+      "raw_skills_glossary_predictability",
+      "raw_skills_glossary_premature_completion",
+      "raw_skills_glossary_progressive_disclosure",
+      "raw_skills_glossary_relevance",
+      "raw_skills_glossary_router_skill",
+      "raw_skills_glossary_sediment",
+      "raw_skills_glossary_single_source_of_truth",
+      "raw_skills_glossary_user_invoked_skill"
+    ],
+    "2": [
+      "raw_state_persistence_template_claude_claude_md_template",
+      "raw_state_persistence_template_claude_failures_anti_doom_loop_memory",
+      "raw_state_persistence_template_claude_failures_failures_template",
+      "raw_state_persistence_template_claude_handoff_handoff_template",
+      "raw_state_persistence_template_claude_handoff_restart_instructions",
+      "raw_state_persistence_template_claude_persistent_project_rules",
+      "raw_state_persistence_template_claude_results_st_001_completed_task_output",
+      "raw_state_persistence_template_claude_results_st_001_st_001_example_result",
+      "raw_state_persistence_template_claude_retry_rules",
+      "raw_state_persistence_template_claude_verification_rules",
+      "raw_state_persistence_template_progress_progress_template",
+      "raw_state_persistence_template_progress_working_memory_checkpoint",
+      "raw_state_persistence_template_readme_claude_agent_template_pack",
+      "raw_state_persistence_template_readme_retry_safe_coding_workflow",
+      "raw_state_persistence_template_tasks_atomic_task_tracker",
+      "raw_state_persistence_template_tasks_tasks_template"
+    ],
+    "3": [
+      "raw_skills_lines_of_inquiry_probes_checklist_coverage_checklist",
+      "raw_skills_lines_of_inquiry_probes_checklist_inline_capture_step",
+      "raw_skills_lines_of_inquiry_probes_checklist_lines_of_inquiry",
+      "raw_skills_lines_of_inquiry_probes_checklist_lines_of_inquiry_probes_coverage_checklist",
+      "raw_skills_lines_of_inquiry_probes_checklist_not_applicable_with_reason",
+      "raw_skills_lines_of_inquiry_probes_checklist_probes",
+      "raw_skills_lines_of_inquiry_probes_checklist_skill_example_coverage_checklist",
+      "raw_skills_lines_of_inquiry_probes_checklist_skill_example_grill_design",
+      "raw_skills_lines_of_inquiry_probes_checklist_skill_example_lines_of_inquiry",
+      "raw_skills_lines_of_inquiry_probes_checklist_skill_example_probes",
+      "raw_skills_lines_of_inquiry_probes_checklist_skill_example_ssr_vs_adr"
+    ],
+    "4": [
+      "raw_upwork_ai_system_job_types_deep_research_report_ai_automation_poc",
+      "raw_upwork_ai_system_job_types_deep_research_report_high_probability_upwork_buyer_sectors",
+      "raw_upwork_ai_system_job_types_deep_research_report_production_ml_deployment_monitoring",
+      "raw_upwork_ai_system_job_types_deep_research_report_productized_outcome_first_offerings",
+      "raw_upwork_ai_system_job_types_deep_research_report_rag_audit_hardening",
+      "raw_upwork_ai_system_job_types_deep_research_report_rag_mvp",
+      "raw_upwork_ai_system_job_types_deep_research_report_two_step_close",
+      "raw_upwork_ai_system_job_types_deep_research_report_upwork_ai_buyers_report",
+      "raw_upwork_ai_system_job_types_deep_research_report_upwork_ai_machine_learning_project_catalog",
+      "raw_upwork_ai_system_job_types_deep_research_report_upwork_chatbot_development_jobs_page",
+      "raw_upwork_ai_system_job_types_deep_research_report_upwork_cost_to_hire_machine_learning_engineers"
+    ],
+    "5": [
+      "raw_agentic_engineering_concepts_ralph_agent_loop",
+      "raw_agentic_engineering_concepts_state_persistence",
+      "raw_ai_system_bussiness_integrations_deep_research_report_workflow_orchestration",
+      "raw_custom_skill_workflow_yaml_runtime_state",
+      "raw_improve_agent_robustness_and_resumability_durable_state_machine",
+      "raw_improve_agent_robustness_and_resumability_explicit_phase_outcomes",
+      "raw_improve_agent_robustness_and_resumability_finalization_completeness_sweep",
+      "raw_improve_agent_robustness_and_resumability_invocation_scoped_durable_state",
+      "raw_improve_agent_robustness_and_resumability_skill_call_checkpointing",
+      "raw_improve_agent_robustness_and_resumability_task_fingerprint"
+    ],
+    "6": [
+      "raw_vertical_slices_archutecture_copilot_instructions_async_by_default",
+      "raw_vertical_slices_archutecture_copilot_instructions_business_rule_policy_classes",
+      "raw_vertical_slices_archutecture_copilot_instructions_copilot_instructions",
+      "raw_vertical_slices_archutecture_copilot_instructions_explicit_code_over_premature_abstraction",
+      "raw_vertical_slices_archutecture_copilot_instructions_feature_first_organization",
+      "raw_vertical_slices_archutecture_copilot_instructions_focused_handlers",
+      "raw_vertical_slices_archutecture_copilot_instructions_isolated_infrastructure",
+      "raw_vertical_slices_archutecture_copilot_instructions_thin_endpoints",
+      "raw_vertical_slices_archutecture_copilot_instructions_vertical_slice_architecture"
+    ],
+    "7": [
+      "raw_agent_patterns_operator_pattern",
+      "raw_agentic_engineering_glossary_agent_harness",
+      "raw_agentic_engineering_glossary_hitl",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_human_in_the_loop_copilot_workflow_agents",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_retrieval_grounded_copilot",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_workflow_agent",
+      "raw_ai_system_bussiness_integrations_deep_research_report_grounded_generation_rag",
+      "raw_ai_system_bussiness_integrations_deep_research_report_tool_calling_controlled_execution_loops"
+    ],
+    "8": [
+      "raw_open_spec_spec_design_task_mapping_example1_iloyaltydiscountcalculator",
+      "raw_open_spec_spec_design_task_mapping_example1_loyalty_discount_design_decision",
+      "raw_open_spec_spec_design_task_mapping_example1_loyaltydiscountcalculator",
+      "raw_open_spec_spec_design_task_mapping_example1_orderpricingservice_calculatetotals",
+      "raw_open_spec_spec_design_task_mapping_example2_bcryptpasswordhasher",
+      "raw_open_spec_spec_design_task_mapping_example2_ipasswordhasher",
+      "raw_open_spec_spec_design_task_mapping_example2_password_security_design_decision",
+      "raw_open_spec_spec_design_task_mapping_example2_userregistrationservice_registerasync"
+    ],
+    "9": [
+      "raw_agentic_engineering_concepts_react",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_batch_analytics_agent",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_deterministic_tools",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_model_context_protocol",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_programmatic_tool_calling",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_retrieve_reason_plan_act_verify_commit_log",
+      "raw_ai_system_bussiness_integrations_deep_research_report_standardized_connectors"
+    ],
+    "10": [
+      "raw_open_spec_design_context_in_design_document",
+      "raw_open_spec_design_current_state",
+      "raw_open_spec_design_goals",
+      "raw_open_spec_design_non_goals",
+      "raw_open_spec_design_problem"
+    ],
+    "11": [
+      "raw_agentic_engineering_concepts_installing_guardrails",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_ai_rmf",
+      "raw_ai_agents_skills_bussines_areas_deep_research_report_owasp_llm_risks",
+      "raw_ai_system_bussiness_integrations_deep_research_report_security_governance_by_design"
+    ],
+    "12": [
+      "raw_open_spec_spec_design_task_mapping_ac_plus_decision_formula",
+      "raw_open_spec_spec_design_task_mapping_acceptance_criterion_to_subtask_mapping",
+      "raw_open_spec_spec_design_task_mapping_implementation_anchor",
+      "raw_open_spec_spec_design_task_mapping_spec_design_task_mapping_guide"
+    ],
+    "13": [
+      "raw_agent_patterns_agent_teams_pattern",
+      "raw_agent_patterns_split_merge_pattern",
+      "raw_agentic_engineering_concepts_multi_agent_coding"
+    ],
+    "14": [
+      "raw_ai_system_bussiness_integrations_deep_research_report_ab_testing_templates",
+      "raw_ai_system_bussiness_integrations_deep_research_report_implementation_roadmap",
+      "raw_ai_system_bussiness_integrations_deep_research_report_metric_stack"
+    ],
+    "15": [
+      "raw_agent_patterns_headless_pattern",
+      "raw_agentic_engineering_glossary_afk"
+    ],
+    "16": [
+      "raw_agentic_engineering_concepts_context_engineering"
+    ],
+    "17": [
+      "raw_agentic_engineering_glossary_agents_consilium"
+    ],
+    "18": [
+      "raw_copilot_built_in_agents_code_review_agent"
+    ],
+    "19": [
+      "raw_copilot_built_in_agents_explore_agent"
+    ],
+    "20": [
+      "raw_copilot_built_in_agents_research_agent"
+    ],
+    "21": [
+      "raw_copilot_built_in_agents_task_agent"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10276679841897234,
+    "1": 0.10276679841897234,
+    "2": 0.25,
+    "3": 0.36363636363636365,
+    "4": 0.2545454545454545,
+    "5": 0.2222222222222222,
+    "6": 0.4166666666666667,
+    "7": 0.2857142857142857,
+    "8": 0.25,
+    "9": 0.2857142857142857,
+    "10": 0.5,
+    "11": 0.5,
+    "12": 0.8333333333333334,
+    "13": 0.6666666666666666,
+    "14": 0.6666666666666666,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0
+  },
+  "gods": [
+    {
+      "id": "raw_upwork_ai_system_job_types_deep_research_report_upwork_ai_buyers_report",
+      "label": "Upwork AI Buyers and What a Senior Developer Can Sell Them",
+      "degree": 10
+    },
+    {
+      "id": "raw_state_persistence_template_claude_claude_md_template",
+      "label": "CLAUDE.md Template",
+      "degree": 9
+    },
+    {
+      "id": "raw_improve_agent_robustness_and_resumability_durable_state_machine",
+      "label": "Durable State Machine",
+      "degree": 8
+    },
+    {
+      "id": "raw_skills_glossary_building_great_skills_glossary",
+      "label": "Glossary — Building Great Skills",
+      "degree": 8
+    },
+    {
+      "id": "raw_vertical_slices_archutecture_copilot_instructions_copilot_instructions",
+      "label": "Copilot Instructions",
+      "degree": 8
+    },
+    {
+      "id": "raw_state_persistence_template_claude_handoff_handoff_template",
+      "label": "handoff.md Template",
+      "degree": 7
+    },
+    {
+      "id": "raw_state_persistence_template_readme_claude_agent_template_pack",
+      "label": "Claude Agent Template Pack",
+      "degree": 7
+    },
+    {
+      "id": "raw_custom_skill_workflow_yaml_workflow_yaml",
+      "label": "workflow.yaml",
+      "degree": 6
+    },
+    {
+      "id": "raw_instructions_standards_agent_skill_plugin_authoring_standard_authoring_standard",
+      "label": "Agent Skill Plugin Authoring Standard",
+      "degree": 6
+    },
+    {
+      "id": "raw_skills_lines_of_inquiry_probes_checklist_lines_of_inquiry_probes_coverage_checklist",
+      "label": "Lines of Inquiry → Probes → Coverage Checklist",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Sequential Flow",
+      "target": "workflow.yaml",
+      "source_files": [
+        "D:/_projects/ai-kb/raw/agent-patterns.md",
+        "D:/_projects/ai-kb/raw/custom-skill-workflow-yaml.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link; peripheral node `Sequential Flow` unexpectedly reaches hub `workflow.yaml`"
+    },
+    {
+      "source": "Ralph Agent Loop",
+      "target": "Durable State Machine",
+      "source_files": [
+        "D:/_projects/ai-kb/raw/agentic-engineering-concepts.md",
+        "D:/_projects/ai-kb/raw/improve-agent-robustness-and-resumability.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link; peripheral node `Ralph Agent Loop` unexpectedly reaches hub `Durable State Machine`"
+    },
+    {
+      "source": "Atomic Task Tracker",
+      "target": "Coverage Checklist",
+      "source_files": [
+        "D:/_projects/ai-kb/raw/state-persistence-template-tasks.md",
+        "D:/_projects/ai-kb/raw/skills-lines-of-inquiry-probes-checklist.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Operator Pattern",
+      "target": "Workflow Agent",
+      "source_files": [
+        "D:/_projects/ai-kb/raw/agent-patterns.md",
+        "D:/_projects/ai-kb/raw/ai-agents-skills-bussines-areas-deep-research-report.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Split & Merge Pattern",
+      "target": "Multi-Agent Coding",
+      "source_files": [
+        "D:/_projects/ai-kb/raw/agent-patterns.md",
+        "D:/_projects/ai-kb/raw/agentic-engineering-concepts.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Durable State Machine` connect `Community 5` to `Community 0`?",
+      "why": "High betweenness centrality (0.016) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `HITL`, `AFK`, `Agent Harness` to the rest of the system?",
+      "why": "37 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10276679841897234 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10276679841897234 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

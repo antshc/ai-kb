@@ -342,9 +342,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 **/__pycache__/
 *.pyc
-.ingestion/
-data/.pending/
-data/.smoke/
 
 # Cake - Uncomment if you are using it
 #tools/**
@@ -419,3 +416,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Graphify local-only output
+graphify-out/cache/
+graphify-out/cost.json

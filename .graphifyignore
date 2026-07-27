@@ -1,0 +1,11 @@
+# Repository metadata and generated output are not corpus content.
+.git/
+.agents/
+.codex/
+.copilot/
+.github/
+docs/
+graphify-out/
+AGENTS.md
+README.md
+.graphifyignore

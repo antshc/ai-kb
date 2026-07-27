@@ -1,100 +1,41 @@
-# mini-context-graph
+# Knowledge Base
 
-## Directory structure
+This repository stores an immutable raw document corpus and a generated
+[Graphify](https://github.com/Graphify-Labs/graphify) knowledge graph.
 
-```text
-.
-├── sources/                         # Immutable, human-maintained source documents
-├── wiki/                            # Synthesized knowledge pages
-│   ├── index.md                     # Generated page index
-│   └── log.md                       # Generated change log
-├── data/                            # Machine-managed graph, documents, ontology, and search state
-├── docs/                            # Project documentation and workflows
-├── .agents/skills/mini-context-graph/ # Skill code, runtime, and extraction rules
-├── AGENTS.md                        # Repository rules for agents
-├── migration-map.md                 # Migration notes and mappings
-└── README.md                        # Usage and repository overview
-```
-
-`index.md` and `log.md` are generated; update wiki content through `wiki_store`.
-
-## Supported source files
-
-Ingestion accepts UTF-8 text files, including `.md`, `.adoc`, `.txt`, `.rst`, `.yaml`, `.yml`, `.json`, `.csv`, and source-code files. Binary files are not supported reliably. The directory pass processes files directly inside `sources/`, not nested subdirectories.
+## Layout
 
 ```text
-# Run the skill CLI from the repository root. It configures its runtime path
-# and UTF-8 output automatically.
-
-$mcg = "python .agents/skills/mini-context-graph/scripts/mcg.py"
-
-# Search the wiki
-& $mcg search "memory leak"
-
-# Find source evidence
-& $mcg evidence "memory leak"
-
-# Query the graph with provenance
-& $mcg query "Why does the service fail?"
-
-# Read a wiki page
-& $mcg read summary "Example Summary"
-
-# List wiki pages
-& $mcg pages entity
-
-# List ingested documents
-& $mcg documents
-
-# Validate the wiki
-& $mcg lint
-
-# Ingest documents remains an agent-guided workflow; follow the skill rules.
-
-# Ask a question
-/mini-context-graph query "Why does the service fail?"
-
-# Search the wiki
-/mini-context-graph search "memory leak"
-
-# Read a wiki page
-/mini-context-graph read summary "Example Summary"
-
-# List wiki pages
-/mini-context-graph pages entity
-
-# List ingested documents
-/mini-context-graph documents
-
-# Find source evidence
-/mini-context-graph evidence "memory leak"
-
-# Validate the wiki
-/mini-context-graph lint
+raw/                         Immutable source documents
+graphify-out/                Generated graph, report, visualization, and wiki
+.codex/skills/graphify/      Codex project integration
+.copilot/skills/graphify/    GitHub Copilot project integration
 ```
 
-## Search modes
+## Usage
 
-- `query "..."` searches graph entities and relationships for structural questions.
-- `search "..."` searches synthesized wiki pages by keyword.
-- `evidence "..."` searches original source chunks for supporting text.
+Install Graphify with the package manager of your choice if `graphify` is not
+already available, then build the corpus from the repository root:
 
-Typical workflow:
-
-```text
-/mini-context-graph search "leading word"
-/mini-context-graph query "leading word"
-/mini-context-graph evidence "leading word"
+```powershell
+$env:GRAPHIFY_OUT = "graphify-out"
+graphify extract raw --out . --wiki
 ```
 
-Use `evidence` when the concept appears in source text but was not extracted as a graph entity.
+Update the graph after raw documents change:
 
-## Knowledge-base search skill
-
-Use the repository skill with `$kb`, or ask directly:
-
-```text
-Search the knowledge base for resources about <TOPIC>.
+```powershell
+$env:GRAPHIFY_OUT = "graphify-out"
+graphify extract raw --out . --update --wiki
 ```
 
-Skill definition: `.agents/skills/kb/SKILL.md`
+Query the generated graph:
+
+```powershell
+graphify query "<question>"
+graphify path "<concept-a>" "<concept-b>"
+graphify explain "<concept>"
+```
+
+Graphify output is generated and reviewable. Do not edit `raw/` during graph
+generation, and do not commit `graphify-out/cache/` or `graphify-out/cost.json`.
