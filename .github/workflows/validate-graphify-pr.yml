@@ -85,17 +85,23 @@ jobs:
                   raise SystemExit(f"source file does not exist: {source_file}")
           PY
 
-  enable-graphify-auto-merge:
-    name: enable-graphify-auto-merge
+  merge-and-deploy-graphify:
+    name: merge-and-deploy-graphify
     needs: validate-graphify-output
     if: needs.validate-graphify-output.result == 'success'
     runs-on: ubuntu-latest
     permissions:
+      actions: write
       contents: write
       pull-requests: write
     steps:
-      - name: Enable native auto-merge
+      - name: Merge validated Graphify PR
         env:
           GH_TOKEN: ${{ github.token }}
           PR_URL: ${{ github.event.pull_request.html_url }}
-        run: gh pr merge "${PR_URL}" --auto --squash --delete-branch
+        run: gh pr merge "${PR_URL}" --squash --delete-branch
+
+      - name: Dispatch Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --repo "${GITHUB_REPOSITORY}" --ref main
