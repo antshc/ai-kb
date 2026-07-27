@@ -1,182 +1,250 @@
 # Knowledge Graph — graphify-out
 
-> 153 nodes · 183 edges · 22 communities
+> 235 nodes · 815 edges · 8 communities
 
 ## Communities
-- [Community 0](community-0.md) (23 nodes)
-- [Community 1](community-1.md) (23 nodes)
-- [Community 2](community-2.md) (16 nodes)
-- [Community 3](community-3.md) (11 nodes)
-- [Community 4](community-4.md) (11 nodes)
-- [Community 5](community-5.md) (10 nodes)
-- [Community 6](community-6.md) (9 nodes)
-- [Community 7](community-7.md) (8 nodes)
-- [Community 8](community-8.md) (8 nodes)
-- [Community 9](community-9.md) (7 nodes)
-- [Community 10](community-10.md) (5 nodes)
-- [Community 11](community-11.md) (4 nodes)
-- [Community 12](community-12.md) (4 nodes)
-- [Community 13](community-13.md) (3 nodes)
-- [Community 14](community-14.md) (3 nodes)
-- [Community 15](community-15.md) (2 nodes)
-- [Community 16](community-16.md) (1 nodes)
-- [Community 17](community-17.md) (1 nodes)
-- [Community 18](community-18.md) (1 nodes)
-- [Community 19](community-19.md) (1 nodes)
-- [Community 20](community-20.md) (1 nodes)
-- [Community 21](community-21.md) (1 nodes)
+- [Community 0](community-0.md) (14 nodes) — Agents & orchestration
+- [Community 1](community-1.md) (52 nodes) — Prompting & reasoning
+- [Community 2](community-2.md) (21 nodes) — Business & research
+- [Community 3](community-3.md) (59 nodes) — Architecture & specs
+- [Community 4](community-4.md) (20 nodes) — Tools & lsp
+- [Community 5](community-5.md) (54 nodes) — State persistence
+- [Community 6](community-6.md) (9 nodes) — Skills & instructions
+- [Community 7](community-7.md) (6 nodes) — General knowledge
 
 ## All Nodes
-- **A/B Testing Templates** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 14
-- **AC + Decision Formula** (`open-spec-spec-design-task-mapping.md`) — Community 12
-- **AFK** (`agentic-engineering-glossary.md`) — Community 15
-- **AI Automation POC** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **AI RMF** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 11
-- **Acceptance Criterion to Subtask Mapping** (`open-spec-spec-design-task-mapping.md`) — Community 12
-- **Agent Harness** (`agentic-engineering-glossary.md`) — Community 7
-- **Agent Skill Plugin Authoring Standard** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 0
-- **Agent Teams Pattern** (`agent-patterns.md`) — Community 13
-- **Agentic Tool-Calling Retrieval** (`rag-cheat-sheet.md`) — Community 1
-- **Agents Consilium** (`agentic-engineering-glossary.md`) — Community 17
-- **Anti-Doom-Loop Memory** (`state-persistence-template-claude-failures.md`) — Community 2
-- **Async by Default** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **Atomic Task Tracker** (`state-persistence-template-tasks.md`) — Community 2
-- **BCryptPasswordHasher** (`open-spec-spec-design-task-mapping-example2.md`) — Community 8
-- **Batch Analytics Agent** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 9
-- **Business Rule Policy / Calculator Classes** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **CLAUDE.md Template** (`state-persistence-template-claude.md`) — Community 2
-- **Claude Agent Template Pack** (`state-persistence-template-readme.md`) — Community 2
-- **Cognitive Load** (`skills-glossary.md`) — Community 1
-- **Completed Task Output** (`state-persistence-template-claude-results-st-001.md`) — Community 2
-- **Completion Criterion** (`skills-glossary.md`) — Community 1
-- **Context Engineering** (`agentic-engineering-concepts.md`) — Community 16
-- **Context Load** (`skills-glossary.md`) — Community 1
-- **Context in a Design Document** (`open-spec-design.md`) — Community 10
-- **Copilot Instructions** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **Coverage Checklist** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3
-- **Coverage Checklist** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3
-- **Current State** (`open-spec-design.md`) — Community 10
-- **Deterministic Tools** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 9
-- **Duplication** (`skills-glossary.md`) — Community 1
-- **Durable State Machine** (`improve-agent-robustness-and-resumability.md`) — Community 5
-- **Explicit Code over Premature Abstraction** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **Explicit Phase Outcomes** (`improve-agent-robustness-and-resumability.md`) — Community 5
-- **Feature-First Organization** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **Finalization Completeness Sweep** (`improve-agent-robustness-and-resumability.md`) — Community 5
-- **Focused Handlers** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **Glossary — Building Great Skills** (`skills-glossary.md`) — Community 1
-- **Goals** (`open-spec-design.md`) — Community 10
-- **Grill Design** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3
-- **Grounded Generation (RAG)** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 7
-- **HITL** (`agentic-engineering-glossary.md`) — Community 7
-- **Headless Pattern** (`agent-patterns.md`) — Community 15
-- **High-Probability Upwork Buyer Sectors** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **Human-in-the-Loop Copilot + Workflow Agents** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 7
-- **ILoyaltyDiscountCalculator** (`open-spec-spec-design-task-mapping-example1.md`) — Community 8
-- **IPasswordHasher** (`open-spec-spec-design-task-mapping-example2.md`) — Community 8
-- **Implementation Anchor** (`open-spec-spec-design-task-mapping.md`) — Community 12
-- **Implementation Roadmap** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 14
-- **Information Hierarchy** (`skills-glossary.md`) — Community 1
-- **Inline Capture Step** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3
-- **Installing Guardrails** (`agentic-engineering-concepts.md`) — Community 11
-- **Instruction Structure** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 0
-- **Invocation-Scoped Durable State** (`improve-agent-robustness-and-resumability.md`) — Community 5
-- **Isolated Infrastructure** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **LSP-First Navigation** (`github-copilot-copilot-instructions-best-practices.md`) — Community 0
-- **Leading Word** (`skills-glossary.md`) — Community 1
-- **Legwork** (`skills-glossary.md`) — Community 1
-- **Lines of Inquiry** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3
-- **Lines of Inquiry** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3
-- **Lines of Inquiry → Probes → Coverage Checklist** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3
-- **Loyalty Discount Design Decision** (`open-spec-spec-design-task-mapping-example1.md`) — Community 8
-- **LoyaltyDiscountCalculator** (`open-spec-spec-design-task-mapping-example1.md`) — Community 8
-- **Machine-Readable Workflow Contract** (`custom-skill-workflow-yaml.md`) — Community 0
-- **Metric Stack** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 14
-- **Model Context Protocol** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 9
-- **Model-Invoked Skill** (`skills-glossary.md`) — Community 1
-- **Multi-Agent Coding** (`agentic-engineering-concepts.md`) — Community 13
-- **No-Op** (`skills-glossary.md`) — Community 1
-- **Non-Goals** (`open-spec-design.md`) — Community 10
-- **Normative Vocabulary** (`github-copilot-copilot-instructions-best-practices.md`) — Community 0
-- **Not Applicable with Reason** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3
-- **OWASP LLM Risks** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 11
-- **Operator Pattern** (`agent-patterns.md`) — Community 7
-- **OrderPricingService.CalculateTotals** (`open-spec-spec-design-task-mapping-example1.md`) — Community 8
-- **Output Contract** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 0
-- **PROGRESS.md Template** (`state-persistence-template-progress.md`) — Community 2
-- **Parallel Independent Retrieval** (`rag-cheat-sheet.md`) — Community 1
-- **Password Security Design Decision** (`open-spec-spec-design-task-mapping-example2.md`) — Community 8
-- **Persistent Project Rules** (`state-persistence-template-claude.md`) — Community 2
-- **Precision-First Tool Ordering** (`rag-cheat-sheet.md`) — Community 1
-- **Predictability** (`skills-glossary.md`) — Community 1
-- **Premature Completion** (`skills-glossary.md`) — Community 1
-- **Probes** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3
-- **Probes** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3
-- **Problem** (`open-spec-design.md`) — Community 10
-- **Production ML Deployment + Monitoring Starter** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **Productized Outcome-First Offerings** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **Programmatic Tool Calling** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 9
-- **Progressive Disclosure** (`github-copilot-copilot-instructions-best-practices.md`) — Community 0
-- **Progressive Disclosure** (`rag-cheat-sheet.md`) — Community 1
-- **Progressive Disclosure** (`skills-glossary.md`) — Community 1
-- **Quality Gate** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 0
-- **RAG Audit + Hardening** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **RAG Cheat Sheet for Claude Code / Copilot-style Agents** (`rag-cheat-sheet.md`) — Community 1
-- **RAG MVP** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **RFC 2119 Terms** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 0
-- **Ralph Agent Loop** (`agentic-engineering-concepts.md`) — Community 5
-- **ReAct** (`agentic-engineering-concepts.md`) — Community 9
-- **Relevance** (`skills-glossary.md`) — Community 1
-- **Repository Instructions** (`github-copilot-copilot-instructions-best-practices.md`) — Community 0
-- **Repository Topology** (`github-copilot-copilot-instructions-best-practices.md`) — Community 0
-- **Restart Instructions** (`state-persistence-template-claude-handoff.md`) — Community 2
-- **Retrieval-Grounded Copilot** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 7
-- **Retrieve Reason Plan Act Verify Commit Log** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 9
-- **Retry Rules** (`state-persistence-template-claude.md`) — Community 2
-- **Retry-Safe Coding Workflow** (`state-persistence-template-readme.md`) — Community 2
-- **Router Skill** (`skills-glossary.md`) — Community 1
-- **Runtime State** (`custom-skill-workflow-yaml.md`) — Community 5
-- **SKILL.md** (`custom-skill-workflow-yaml.md`) — Community 0
-- **SSR vs ADR** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3
-- **ST-001 Example Result** (`state-persistence-template-claude-results-st-001.md`) — Community 2
-- **Security and Governance-by-Design** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 11
-- **Sediment** (`skills-glossary.md`) — Community 1
-- **Sequential Flow** (`agent-patterns.md`) — Community 0
-- **Single Source of Truth** (`skills-glossary.md`) — Community 1
-- **Skill Call Checkpointing** (`improve-agent-robustness-and-resumability.md`) — Community 5
-- **Spec → Design → Task: Mapping Guide** (`open-spec-spec-design-task-mapping.md`) — Community 12
-- **Split & Merge Pattern** (`agent-patterns.md`) — Community 13
-- **Standardized Connectors for Tools and Data** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 9
-- **State Persistence** (`agentic-engineering-concepts.md`) — Community 5
-- **TASKS.md Template** (`state-persistence-template-tasks.md`) — Community 2
-- **Targeted Validation** (`github-copilot-copilot-instructions-best-practices.md`) — Community 0
-- **Task Fingerprint** (`improve-agent-robustness-and-resumability.md`) — Community 5
-- **Thin Endpoints** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **Tool Calling and Controlled Execution Loops** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 7
-- **Two-Step Close** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **Upwork AI & Machine Learning Project Catalog** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **Upwork AI Buyers and What a Senior Developer Can Sell Them** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **Upwork Chatbot Development Jobs Page** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **Upwork Cost to Hire: Machine Learning Engineers** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 4
-- **User-Invoked Skill** (`skills-glossary.md`) — Community 1
-- **UserRegistrationService.RegisterAsync** (`open-spec-spec-design-task-mapping-example2.md`) — Community 8
-- **Variable Standard** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 0
-- **Verification Receipts** (`improve-agent-robustness-and-resumability.md`) — Community 0
-- **Verification Rules** (`state-persistence-template-claude.md`) — Community 2
-- **Vertical Slice Architecture** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 6
-- **Workflow Agent** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 7
-- **Workflow Orchestration vs Open-Ended Agents** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 5
-- **Workflow Standard** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 0
-- **Working Memory Checkpoint** (`state-persistence-template-progress.md`) — Community 2
-- **code-review Agent** (`copilot-built-in-agents.md`) — Community 18
-- **explore Agent** (`copilot-built-in-agents.md`) — Community 19
-- **failures.md Template** (`state-persistence-template-claude-failures.md`) — Community 2
-- **findReferences** (`lsp-tools-reference.md`) — Community 0
-- **goToDefinition** (`lsp-tools-reference.md`) — Community 0
-- **goToImplementation** (`lsp-tools-reference.md`) — Community 0
-- **handoff.md Template** (`state-persistence-template-claude-handoff.md`) — Community 2
-- **outgoingCalls** (`lsp-tools-reference.md`) — Community 0
-- **research Agent** (`copilot-built-in-agents.md`) — Community 20
-- **task Agent** (`copilot-built-in-agents.md`) — Community 21
-- **workflow.schema.json** (`custom-skill-workflow-yaml.md`) — Community 0
-- **workflow.yaml** (`custom-skill-workflow-yaml.md`) — Community 0
+- **.claude/results/** (`state-persistence-template-tasks.md`) — Community 5: State persistence
+- **[DATE/TIME] <TASK-ID>** (`state-persistence-template-claude-failures.md`) — Community 5: State persistence
+- **A decision flow to route buyers into your best offer** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 2: Business & research
+- **Adapt reasoning** (`react-prompting.adoc`) — Community 1: Prompting & reasoning
+- **Added initial abstraction placeholder.** (`state-persistence-template-claude-results-st-001.md`) — Community 5: State persistence
+- **Affaan Mustafa** (`skills-influencers.adoc`) — Community 7: General knowledge
+- **Affraan Mustafa** (`skills-influencers.adoc`) — Community 7: General knowledge
+- **Agent A** (`agent-patterns.md`) — Community 0: Agents & orchestration
+- **Agent Harness** (`agentic-engineering-glossary.md`) — Community 1: Prompting & reasoning
+- **Agent Patterns** (`agent-patterns.md`) — Community 0: Agents & orchestration
+- **Agent Teams** (`agent-patterns.md`) — Community 0: Agents & orchestration
+- **Agent, Skill, and Plugin Authoring Standard** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 6: Skills & instructions
+- **Agentic Coding** (`you-are-not-ready-agentic-coding-in-2026.adoc`) — Community 3: Architecture & specs
+- **Agentic Engineering Concepts** (`agentic-engineering-concepts.md`) — Community 1: Prompting & reasoning
+- **Agentic Engineering Concepts** (`agentic-engineering-glossary.md`) — Community 1: Prompting & reasoning
+- **AI Agents With Custom Skills and Integrations for Business Productivity** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 2: Business & research
+- **AI App Generation** (`vibe-coding-tools.adoc`) — Community 1: Prompting & reasoning
+- **AI Application** (`ai-tools-sdlc.adoc`) — Community 0: Agents & orchestration
+- **AI systems and agent integrations** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 2: Business & research
+- **AI Systems and Agent Integrations for Cross-Industry Business Value** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 2: Business & research
+- **Ai Tools Sdlc** (`ai-tools-sdlc.adoc`) — Community 0: Agents & orchestration
+- **Architecture** (`karpathy-llm-wiki-knowledge-base.md`) — Community 6: Skills & instructions
+- **Architecture patterns that show up across industries** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 2: Business & research
+- **Architecture patterns, controls, and “agent manifests”** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 2: Business & research
+- **Architecture Style** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 3: Architecture & specs
+- **Before ending session** (`state-persistence-template-claude-handoff.md`) — Community 5: State persistence
+- **Before making changes** (`state-persistence-template-claude-handoff.md`) — Community 5: State persistence
+- **Best practices** (`github-copilot-copilot-instructions-best-practices.md`) — Community 4: Tools & lsp
+- **Business Analysts** (`ai-tools-sdlc.adoc`) — Community 0: Agents & orchestration
+- **Call APIs** (`react-prompting.adoc`) — Community 1: Prompting & reasoning
+- **Chain of thought** (`agentic-engineering-concepts.md`) — Community 1: Prompting & reasoning
+- **Chain of thought** (`agentic-engineering-glossary.md`) — Community 1: Prompting & reasoning
+- **Chosen architecture** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 3: Architecture & specs
+- **Claude Agent Template Pack** (`state-persistence-template-readme.md`) — Community 5: State persistence
+- **CLAUDE.md** (`state-persistence-template-claude.md`) — Community 5: State persistence
+- **CLAUDE.md** (`state-persistence-template-readme.md`) — Community 5: State persistence
+- **Coding Rules** (`state-persistence-template-claude.md`) — Community 5: State persistence
+- **Common architecture patterns** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 2: Business & research
+- **Common problems businesses hire AI freelancers to solve on Upwork** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 2: Business & research
+- **compressed PRD** (`compression-output-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Concept: Lines of Inquiry → Probes → Coverage Checklist** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3: Architecture & specs
+- **Connection Map** (`open-spec-spec-design-task-mapping-example1.md`) — Community 3: Architecture & specs
+- **Connection Map** (`open-spec-spec-design-task-mapping-example2.md`) — Community 3: Architecture & specs
+- **Context engineering** (`agentic-engineering-concepts.md`) — Community 1: Prompting & reasoning
+- **Context engineering** (`agentic-engineering-glossary.md`) — Community 1: Prompting & reasoning
+- **Context Pointer** (`skills-glossary.md`) — Community 1: Prompting & reasoning
+- **Copilot Instructions** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 3: Architecture & specs
+- **Core Architecture Decisions** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 3: Architecture & specs
+- **Core Capabilities** (`ai-tools-sdlc.adoc`) — Community 0: Agents & orchestration
+- **Core layers** (`karpathy-llm-wiki-knowledge-base.md`) — Community 6: Skills & instructions
+- **Coverage checklist** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3: Architecture & specs
+- **Coverage checklist** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3: Architecture & specs
+- **Create a healthy recipe where carrots are one of the main ingredients.** (`prompt-style-scenarious.adoc`) — Community 1: Prompting & reasoning
+- **Create a recipe with the banana are one of the main ingredients.** (`prompt-style-scenarious.adoc`) — Community 1: Prompting & reasoning
+- **Cross-cutting controls** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 2: Business & research
+- **Cross-industry use case catalog** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 2: Business & research
+- **csharp-ls = "an alternative C# language server"** (`dotnet-lsp.adoc`) — Community 4: Tools & lsp
+- **Current Decisions** (`state-persistence-template-progress.md`) — Community 5: State persistence
+- **Current Focus** (`state-persistence-readme.adoc`) — Community 5: State persistence
+- **Current Focus** (`state-persistence-template-progress.md`) — Community 5: State persistence
+- **Custom Skill `workflow.yaml`** (`custom-skill-workflow-yaml.md`) — Community 4: Tools & lsp
+- **Description** (`skills-glossary.md`) — Community 1: Prompting & reasoning
+- **Design Decision (design.md)** (`open-spec-spec-design-task-mapping-example1.md`) — Community 3: Architecture & specs
+- **Design Decision (design.md)** (`open-spec-spec-design-task-mapping-example2.md`) — Community 3: Architecture & specs
+- **disable-model-invocation: true** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3: Architecture & specs
+- **dnx roslyn-language-server --stdio** (`dotnet-lsp.adoc`) — Community 4: Tools & lsp
+- **Do not think of dnx as a language server.** (`dotnet-lsp.adoc`) — Community 4: Tools & lsp
+- **documentSymbol** (`lsp-tools-reference.md`) — Community 4: Tools & lsp
+- **Done** (`state-persistence-readme.adoc`) — Community 5: State persistence
+- **Done** (`state-persistence-template-progress.md`) — Community 5: State persistence
+- **Engineering Managers** (`ai-tools-sdlc.adoc`) — Community 0: Agents & orchestration
+- **Everything Claude Code** (`skills-influencers.adoc`) — Community 7: General knowledge
+- **Example 1: Password Security** (`open-spec-spec-design-task-mapping-example2.md`) — Community 3: Architecture & specs
+- **Example 2: E-Commerce Loyalty Discount** (`open-spec-spec-design-task-mapping-example1.md`) — Community 3: Architecture & specs
+- **Example `workflow.yaml`** (`custom-skill-workflow-yaml.md`) — Community 4: Tools & lsp
+- **Example: Payment Processing Design** (`open-spec-design.md`) — Community 3: Architecture & specs
+- **Examples: <optional example to copy>** (`ai-steering-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Executive summary** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 2: Business & research
+- **Executive summary** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 2: Business & research
+- **Executive summary** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 2: Business & research
+- **explicit behavior rules** (`compression-output-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Failed Attempts** (`state-persistence-readme.adoc`) — Community 5: State persistence
+- **Failed Attempts** (`state-persistence-template-progress.md`) — Community 5: State persistence
+- **failures.md** (`state-persistence-template-claude-failures.md`) — Community 5: State persistence
+- **Feedback loop** (`agentic-engineering-concepts.md`) — Community 1: Prompting & reasoning
+- **Feedback loop** (`agentic-engineering-glossary.md`) — Community 1: Prompting & reasoning
+- **Files Changed** (`state-persistence-template-claude-results-st-001.md`) — Community 5: State persistence
+- **Final answer** (`react-prompting.adoc`) — Community 1: Prompting & reasoning
+- **findReferences** (`lsp-tools-reference.md`) — Community 4: Tools & lsp
+- **Firebase Studio** (`vibe-coding-tools.adoc`) — Community 1: Prompting & reasoning
+- **Follow-up** (`state-persistence-template-claude-results-st-001.md`) — Community 5: State persistence
+- **Garry Tan** (`skills-influencers.adoc`) — Community 7: General knowledge
+- **Gary Tan — Gtack** (`skills-influencers.adoc`) — Community 7: General knowledge
+- **GitHub Copilot** (`copilot-built-in-agents.md`) — Community 3: Architecture & specs
+- **GitHub Copilot built-in agents** (`copilot-built-in-agents.md`) — Community 3: Architecture & specs
+- **GitHub Copilot Repository Instructions** (`github-copilot-copilot-instructions-best-practices.md`) — Community 4: Tools & lsp
+- **Glossary — Building Great Skills** (`skills-glossary.md`) — Community 1: Prompting & reasoning
+- **Goal** (`improve-agent-robustness-and-resumability.md`) — Community 5: State persistence
+- **Goals / Non-Goals** (`open-spec-design.md`) — Community 3: Architecture & specs
+- **Google Cloud** (`vibe-coding-tools.adoc`) — Community 1: Prompting & reasoning
+- **goToDefinition** (`lsp-tools-reference.md`) — Community 4: Tools & lsp
+- **grep_search** (`rag-cheat-sheet.md`) — Community 3: Architecture & specs
+- **Grill Design** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3: Architecture & specs
+- **handoff.md** (`state-persistence-template-claude-handoff.md`) — Community 5: State persistence
+- **Headless** (`agent-patterns.md`) — Community 0: Agents & orchestration
+- **high-density PRD** (`compression-output-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **hover** (`lsp-tools-reference.md`) — Community 4: Tools & lsp
+- **How It Is Used** (`open-spec-design.md`) — Community 3: Architecture & specs
+- **https://github.com/affaan-m/ECC** (`skills-influencers.adoc`) — Community 7: General knowledge
+- **If a new Claude session starts, do this first:** (`state-persistence-template-claude-handoff.md`) — Community 5: State persistence
+- **If blocked, explain why in PROGRESS.md.** (`state-persistence-template-tasks.md`) — Community 5: State persistence
+- **IN PROGRESS** (`state-persistence-template-tasks.md`) — Community 5: State persistence
+- **Include cooking steps, ingredients, cooking time, and nutrition information.** (`prompt-style-readme.adoc`) — Community 1: Prompting & reasoning
+- **Include cooking steps, ingredients, cooking time, and nutrition information.** (`prompt-style-scenarious.adoc`) — Community 1: Prompting & reasoning
+- **Included Files** (`state-persistence-template-readme.md`) — Community 5: State persistence
+- **Installing guardrails** (`agentic-engineering-concepts.md`) — Community 1: Prompting & reasoning
+- **Installing guardrails** (`agentic-engineering-glossary.md`) — Community 1: Prompting & reasoning
+- **Invocation** (`skills-glossary.md`) — Community 1: Prompting & reasoning
+- **IPaymentService** (`output-design-decision.adoc`) — Community 3: Architecture & specs
+- **Karpathy LLM Wiki: Knowledge-Base Skill Comparison** (`karpathy-llm-wiki-knowledge-base.md`) — Community 6: Skills & instructions
+- **Karpathy's LLM Wiki Pattern** (`karpathy-llm-wiki-knowledge-base.md`) — Community 6: Skills & instructions
+- **Learned** (`state-persistence-template-claude-results-st-001.md`) — Community 5: State persistence
+- **Line of inquiry: Architecture (ARCHITECTURE.md + SSR/ADR)** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3: Architecture & specs
+- **Line of inquiry: Glossary (CONTEXT.md)** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3: Architecture & specs
+- **Lines of inquiry** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3: Architecture & specs
+- **Lines of inquiry** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3: Architecture & specs
+- **Long-horizon LLMs optimized for agentic workflows** (`you-are-not-ready-agentic-coding-in-2026.adoc`) — Community 3: Architecture & specs
+- **LSP Tools Reference** (`lsp-tools-reference.md`) — Community 4: Tools & lsp
+- **Main operations** (`karpathy-llm-wiki-knowledge-base.md`) — Community 6: Skills & instructions
+- **Managing the docs** (`skills-lines-of-inquiry-probes-checklist-skill-example.md`) — Community 3: Architecture & specs
+- **Model-Invoked** (`skills-glossary.md`) — Community 1: Prompting & reasoning
+- **Multi-agent orchestration concepts (“Gas Town”)** (`you-are-not-ready-agentic-coding-in-2026.adoc`) — Community 3: Architecture & specs
+- **Next Step** (`state-persistence-template-progress.md`) — Community 5: State persistence
+- **Observe results** (`react-prompting.adoc`) — Community 1: Prompting & reasoning
+- **Output Rules** (`state-persistence-template-claude.md`) — Community 5: State persistence
+- **Persistent task memory systems (“Beats”)** (`you-are-not-ready-agentic-coding-in-2026.adoc`) — Community 3: Architecture & specs
+- **Predictability** (`skills-glossary.md`) — Community 1: Prompting & reasoning
+- **Prefer vertical slices.** (`ai-steering-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Preserve dependencies between issues.** (`ai-steering-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Preventing doom loops** (`agentic-engineering-concepts.md`) — Community 1: Prompting & reasoning
+- **Primary Paradigm** (`vibe-coding-tools.adoc`) — Community 1: Prompting & reasoning
+- **Prioritization matrix** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 2: Business & research
+- **Problem** (`improve-agent-robustness-and-resumability.md`) — Community 5: State persistence
+- **Product Owners** (`ai-tools-sdlc.adoc`) — Community 0: Agents & orchestration
+- **PROGRESS.md** (`state-persistence-readme.adoc`) — Community 5: State persistence
+- **PROGRESS.md** (`state-persistence-template-claude-handoff.md`) — Community 5: State persistence
+- **PROGRESS.md** (`state-persistence-template-progress.md`) — Community 5: State persistence
+- **PROGRESS.md** (`state-persistence-template-readme.md`) — Community 5: State persistence
+- **PROGRESS.md** (`state-persistence-template-tasks.md`) — Community 5: State persistence
+- **Project Invariants** (`state-persistence-template-claude.md`) — Community 5: State persistence
+- **Project Overview** (`vertical-slices-archutecture-copilot-instructions.md`) — Community 3: Architecture & specs
+- **Proposed design** (`improve-agent-robustness-and-resumability.md`) — Community 5: State persistence
+- **Purpose** (`github-copilot-copilot-instructions-best-practices.md`) — Community 4: Tools & lsp
+- **Purpose** (`state-persistence-template-claude-failures.md`) — Community 5: State persistence
+- **Purpose** (`state-persistence-template-claude.md`) — Community 5: State persistence
+- **Python SDK** (`vibe-coding-tools.adoc`) — Community 1: Prompting & reasoning
+- **RAG cheat sheet for Claude Code / Copilot-style agents** (`rag-cheat-sheet.md`) — Community 3: Architecture & specs
+- **React Prompting** (`react-prompting.adoc`) — Community 1: Prompting & reasoning
+- **Recommended Structure** (`custom-skill-workflow-yaml.md`) — Community 4: Tools & lsp
+- **Recommended Workflow** (`state-persistence-template-readme.md`) — Community 5: State persistence
+- **rename** (`lsp-tools-reference.md`) — Community 4: Tools & lsp
+- **Representative ecosystem components used throughout the catalog** (`ai-system-bussiness-integrations-deep-research-report.md`) — Community 2: Business & research
+- **Required `SKILL.md` Instructions** (`custom-skill-workflow-yaml.md`) — Community 4: Tools & lsp
+- **Requirement (spec.md)** (`open-spec-spec-design-task-mapping-example1.md`) — Community 3: Architecture & specs
+- **Requirement (spec.md)** (`open-spec-spec-design-task-mapping-example2.md`) — Community 3: Architecture & specs
+- **Research approach and assumptions** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 2: Business & research
+- **Responsibility Split** (`custom-skill-workflow-yaml.md`) — Community 4: Tools & lsp
+- **Resume Rule** (`state-persistence-template-claude-handoff.md`) — Community 5: State persistence
+- **Retry Rules** (`state-persistence-template-claude.md`) — Community 5: State persistence
+- **Reusable template for future "grilling"-style skills** (`skills-lines-of-inquiry-probes-checklist.md`) — Community 3: Architecture & specs
+- **Risks / Blockers** (`state-persistence-template-progress.md`) — Community 5: State persistence
+- **Role** (`instructions-standards-agent-skill-plugin-authoring-standard.md`) — Community 6: Skills & instructions
+- **Rollback strategy** (`ai-steering-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **roslyn-language-server = "the Microsoft/Roslyn-style C# language server"** (`dotnet-lsp.adoc`) — Community 4: Tools & lsp
+- **Rules** (`state-persistence-template-tasks.md`) — Community 5: State persistence
+- **Run Prompt** (`prompt-style-scenarious.adoc`) — Community 1: Prompting & reasoning
+- **SecureString** (`open-spec-spec-design-task-mapping-example2.md`) — Community 3: Architecture & specs
+- **semantic_search** (`rag-cheat-sheet.md`) — Community 3: Architecture & specs
+- **Sequential Flow** (`agent-patterns.md`) — Community 0: Agents & orchestration
+- **short + structured + useful for implementation** (`ai-steering-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Short summary** (`compression-output-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Spec → Design → Task: Mapping Guide** (`open-spec-spec-design-task-mapping.md`) — Community 3: Architecture & specs
+- **Specific AI services and productized offerings you can sell** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 2: Business & research
+- **Split & Merge** (`agent-patterns.md`) — Community 0: Agents & orchestration
+- **ST-001.md** (`state-persistence-template-claude-results-st-001.md`) — Community 5: State persistence
+- **Status Values** (`state-persistence-template-tasks.md`) — Community 5: State persistence
+- **Step 1 — The Requirement (spec.md)** (`open-spec-spec-design-task-mapping.md`) — Community 3: Architecture & specs
+- **Step 2 — The Design Decision (design.md)** (`open-spec-spec-design-task-mapping.md`) — Community 3: Architecture & specs
+- **Step 3 — The Tasks (tasks.md)** (`open-spec-spec-design-task-mapping.md`) — Community 3: Architecture & specs
+- **Summary** (`custom-skill-workflow-yaml.md`) — Community 4: Tools & lsp
+- **Summary** (`karpathy-llm-wiki-knowledge-base.md`) — Community 6: Skills & instructions
+- **Take actions using tools** (`react-prompting.adoc`) — Community 1: Prompting & reasoning
+- **Task (tasks.md)** (`open-spec-spec-design-task-mapping-example1.md`) — Community 3: Architecture & specs
+- **Task (tasks.md)** (`open-spec-spec-design-task-mapping-example2.md`) — Community 3: Architecture & specs
+- **TASKS.md** (`state-persistence-readme.adoc`) — Community 5: State persistence
+- **TASKS.md** (`state-persistence-template-claude-handoff.md`) — Community 5: State persistence
+- **TASKS.md** (`state-persistence-template-readme.md`) — Community 5: State persistence
+- **TASKS.md** (`state-persistence-template-tasks.md`) — Community 5: State persistence
+- **Template** (`state-persistence-template-claude-failures.md`) — Community 5: State persistence
+- **The Failure Mode Without Context** (`open-spec-design.md`) — Community 3: Architecture & specs
+- **The Mapping Structure** (`open-spec-spec-design-task-mapping.md`) — Community 3: Architecture & specs
+- **The Operator** (`agent-patterns.md`) — Community 0: Agents & orchestration
+- **The Pattern in One Line** (`open-spec-spec-design-task-mapping-example1.md`) — Community 3: Architecture & specs
+- **The Principle** (`open-spec-spec-design-task-mapping.md`) — Community 3: Architecture & specs
+- **The Test** (`open-spec-design.md`) — Community 3: Architecture & specs
+- **The Three Parts of Context** (`open-spec-design.md`) — Community 3: Architecture & specs
+- **Think about a problem** (`react-prompting.adoc`) — Community 1: Prompting & reasoning
+- **Think step by step.** (`chain-of-thought-cot-prompting.adoc`) — Community 1: Prompting & reasoning
+- **Total document must not exceed 200–300 words** (`compression-output-best-practices.adoc`) — Community 1: Prompting & reasoning
+- **Typical project scopes, deliverables, timelines, and pricing ranges on Upwork** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 2: Business & research
+- **Upwork AI Buyers and What a Senior Developer Can Sell Them** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 2: Business & research
+- **Upwork demand patterns and the businesses most likely to buy senior AI development** (`upwork-ai-system-job-types-deep-research-report.md`) — Community 2: Business & research
+- **Use service to handle orders** (`output-design-decision.adoc`) — Community 3: Architecture & specs
+- **Use try/catch, logging, async/await, null checks...** (`output-design-decision.adoc`) — Community 3: Architecture & specs
+- **User-Invoked** (`skills-glossary.md`) — Community 1: Prompting & reasoning
+- **Value Added** (`ai-tools-sdlc.adoc`) — Community 0: Agents & orchestration
+- **Variations** (`prompt-style-readme.adoc`) — Community 1: Prompting & reasoning
+- **Verification Rules** (`state-persistence-template-claude.md`) — Community 5: State persistence
+- **Very High** (`vibe-coding-tools.adoc`) — Community 1: Prompting & reasoning
+- **Vibe Coding Tools** (`vibe-coding-tools.adoc`) — Community 1: Prompting & reasoning
+- **What an AI agent with custom skills looks like** (`ai-agents-skills-bussines-areas-deep-research-report.md`) — Community 2: Business & research
+- **What Changed** (`state-persistence-template-claude-results-st-001.md`) — Community 5: State persistence
+- **What Is Context in a Design Document** (`open-spec-design.md`) — Community 3: Architecture & specs
+- **Why** (`state-persistence-template-claude-results-st-001.md`) — Community 5: State persistence
+- **Why `mini-context-graph` Is the Best Copilot Skill** (`karpathy-llm-wiki-knowledge-base.md`) — Community 6: Skills & instructions
+- **Why Each Bold Term Matters** (`open-spec-spec-design-task-mapping-example1.md`) — Community 3: Architecture & specs
+- **Why Each Bold Term Matters** (`open-spec-spec-design-task-mapping-example2.md`) — Community 3: Architecture & specs
+- **Worked Example: Loyalty Discount** (`open-spec-spec-design-task-mapping.md`) — Community 3: Architecture & specs
+- **Workflow** (`custom-skill-workflow-yaml.md`) — Community 4: Tools & lsp
+- **Workflow debugging** (`you-are-not-ready-agentic-coding-in-2026.adoc`) — Community 3: Architecture & specs
+- **You Are Not Ready** (`you-are-not-ready-agentic-coding-in-2026.adoc`) — Community 3: Architecture & specs
+- **You Are Not Ready Agentic Coding In 2026** (`you-are-not-ready-agentic-coding-in-2026.adoc`) — Community 3: Architecture & specs
+- **| ST-003 | Add tests for disk full fallback | TODO |** (`state-persistence-readme.adoc`) — Community 5: State persistence
+- **| Variations | |** (`prompt-style-readme.adoc`) — Community 1: Prompting & reasoning
+- **}** (`prompt-style-readme.adoc`) — Community 1: Prompting & reasoning

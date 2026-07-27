@@ -1,109 +1,69 @@
-# Community 2
+# Community 2 — Business & research
 
-**16 nodes**
+- Nodes: 21
+- Top hubs: `AI Agents With Custom Skills and Integrations for Business Productivity`, `AI Systems and Agent Integrations for Cross-Industry Business Value`, `Upwork AI Buyers and What a Senior Developer Can Sell Them`, `Executive summary`, `A decision flow to route buyers into your best offer`, `AI systems and agent integrations`, `Architecture patterns that show up across industries`, `Architecture patterns, controls, and “agent manifests”`
 
 ## Nodes
-### Anti-Doom-Loop Memory
-- **File:** `state-persistence-template-claude-failures.md`
-- **Type:** rationale
-
-### Atomic Task Tracker
-- **File:** `state-persistence-template-tasks.md`
-- **Type:** concept
-- **Links:**
-  - semantically_similar_to → Coverage Checklist
-
-### CLAUDE.md Template
-- **File:** `state-persistence-template-claude.md`
-- **Type:** document
-- **Links:**
-  - references → failures.md Template
-  - references → ST-001 Example Result
-  - references → Persistent Project Rules
-  - references → Retry Rules
-  - references → Verification Rules
-  - references → PROGRESS.md Template
-  - references → TASKS.md Template
-
-### Claude Agent Template Pack
-- **File:** `state-persistence-template-readme.md`
-- **Type:** document
-- **Links:**
-  - references → failures.md Template
-  - references → handoff.md Template
-  - references → ST-001 Example Result
-  - references → CLAUDE.md Template
-  - references → PROGRESS.md Template
-  - references → Retry-Safe Coding Workflow
-  - references → TASKS.md Template
-
-### Completed Task Output
-- **File:** `state-persistence-template-claude-results-st-001.md`
-- **Type:** concept
-
-### PROGRESS.md Template
-- **File:** `state-persistence-template-progress.md`
-- **Type:** document
-- **Links:**
-  - references → Working Memory Checkpoint
-  - references → TASKS.md Template
-
-### Persistent Project Rules
-- **File:** `state-persistence-template-claude.md`
-- **Type:** concept
-- **Links:**
-  - conceptually_related_to → Retry Rules
-  - conceptually_related_to → Verification Rules
-
-### Restart Instructions
-- **File:** `state-persistence-template-claude-handoff.md`
-- **Type:** concept
-
-### Retry Rules
-- **File:** `state-persistence-template-claude.md`
-- **Type:** concept
-
-### Retry-Safe Coding Workflow
-- **File:** `state-persistence-template-readme.md`
-- **Type:** rationale
-- **Links:**
-  - conceptually_related_to → Working Memory Checkpoint
-  - conceptually_related_to → Atomic Task Tracker
-
-### ST-001 Example Result
-- **File:** `state-persistence-template-claude-results-st-001.md`
-- **Type:** document
-- **Links:**
-  - references → Completed Task Output
-
-### TASKS.md Template
-- **File:** `state-persistence-template-tasks.md`
-- **Type:** document
-- **Links:**
-  - references → ST-001 Example Result
-  - references → Atomic Task Tracker
-
-### Verification Rules
-- **File:** `state-persistence-template-claude.md`
-- **Type:** concept
-
-### Working Memory Checkpoint
-- **File:** `state-persistence-template-progress.md`
-- **Type:** rationale
-
-### failures.md Template
-- **File:** `state-persistence-template-claude-failures.md`
-- **Type:** document
-- **Links:**
-  - references → Anti-Doom-Loop Memory
-
-### handoff.md Template
-- **File:** `state-persistence-template-claude-handoff.md`
-- **Type:** document
-- **Links:**
-  - references → failures.md Template
-  - references → CLAUDE.md Template
-  - references → Restart Instructions
-  - references → ST-001 Example Result
-  - references → PROGRESS.md Template
-  - references → TASKS.md Template
+- **A decision flow to route buyers into your best offer** — `raw/upwork-ai-system-job-types-deep-research-report.md`
+  - Connections: 3
+  - Related: Upwork AI Buyers and What a Senior Developer Can Sell Them, Typical project scopes, deliverables, timelines, and pricing ranges on Upwork, Specific AI services and productized offerings you can sell
+- **AI Agents With Custom Skills and Integrations for Business Productivity** — `raw/ai-agents-skills-bussines-areas-deep-research-report.md`
+  - Connections: 39
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, Architecture patterns, controls, and “agent manifests”, Common architecture patterns, Cross-cutting controls
+- **AI systems and agent integrations** — `raw/ai-system-bussiness-integrations-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Systems and Agent Integrations for Cross-Industry Business Value, Architecture patterns that show up across industries, Executive summary
+- **AI Systems and Agent Integrations for Cross-Industry Business Value** — `raw/ai-system-bussiness-integrations-deep-research-report.md`
+  - Connections: 39
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI systems and agent integrations, Architecture patterns that show up across industries
+- **Architecture patterns that show up across industries** — `raw/ai-system-bussiness-integrations-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Systems and Agent Integrations for Cross-Industry Business Value, AI systems and agent integrations, Representative ecosystem components used throughout the catalog
+- **Architecture patterns, controls, and “agent manifests”** — `raw/ai-agents-skills-bussines-areas-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, Common architecture patterns, What an AI agent with custom skills looks like
+- **Common architecture patterns** — `raw/ai-agents-skills-bussines-areas-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, Architecture patterns, controls, and “agent manifests”, Cross-cutting controls
+- **Common problems businesses hire AI freelancers to solve on Upwork** — `raw/upwork-ai-system-job-types-deep-research-report.md`
+  - Connections: 3
+  - Related: Upwork AI Buyers and What a Senior Developer Can Sell Them, Specific AI services and productized offerings you can sell, Upwork demand patterns and the businesses most likely to buy senior AI development
+- **Cross-cutting controls** — `raw/ai-agents-skills-bussines-areas-deep-research-report.md`
+  - Connections: 2
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, Common architecture patterns
+- **Cross-industry use case catalog** — `raw/ai-system-bussiness-integrations-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Systems and Agent Integrations for Cross-Industry Business Value, Prioritization matrix, Representative ecosystem components used throughout the catalog
+- **Executive summary** — `raw/ai-agents-skills-bussines-areas-deep-research-report.md`
+  - Connections: 4
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, Research approach and assumptions, Executive summary, Executive summary
+- **Executive summary** — `raw/ai-system-bussiness-integrations-deep-research-report.md`
+  - Connections: 3
+  - Related: Executive summary, AI Systems and Agent Integrations for Cross-Industry Business Value, AI systems and agent integrations
+- **Executive summary** — `raw/upwork-ai-system-job-types-deep-research-report.md`
+  - Connections: 3
+  - Related: Executive summary, Upwork AI Buyers and What a Senior Developer Can Sell Them, Upwork demand patterns and the businesses most likely to buy senior AI development
+- **Prioritization matrix** — `raw/ai-system-bussiness-integrations-deep-research-report.md`
+  - Connections: 2
+  - Related: AI Systems and Agent Integrations for Cross-Industry Business Value, Cross-industry use case catalog
+- **Representative ecosystem components used throughout the catalog** — `raw/ai-system-bussiness-integrations-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Systems and Agent Integrations for Cross-Industry Business Value, Architecture patterns that show up across industries, Cross-industry use case catalog
+- **Research approach and assumptions** — `raw/ai-agents-skills-bussines-areas-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, Executive summary, What an AI agent with custom skills looks like
+- **Specific AI services and productized offerings you can sell** — `raw/upwork-ai-system-job-types-deep-research-report.md`
+  - Connections: 3
+  - Related: Upwork AI Buyers and What a Senior Developer Can Sell Them, Common problems businesses hire AI freelancers to solve on Upwork, A decision flow to route buyers into your best offer
+- **Typical project scopes, deliverables, timelines, and pricing ranges on Upwork** — `raw/upwork-ai-system-job-types-deep-research-report.md`
+  - Connections: 2
+  - Related: Upwork AI Buyers and What a Senior Developer Can Sell Them, A decision flow to route buyers into your best offer
+- **Upwork AI Buyers and What a Senior Developer Can Sell Them** — `raw/upwork-ai-system-job-types-deep-research-report.md`
+  - Connections: 38
+  - Related: Agent Patterns, Agentic Engineering Concepts, Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, AI Systems and Agent Integrations for Cross-Industry Business Value, Ai Tools Sdlc
+- **Upwork demand patterns and the businesses most likely to buy senior AI development** — `raw/upwork-ai-system-job-types-deep-research-report.md`
+  - Connections: 3
+  - Related: Upwork AI Buyers and What a Senior Developer Can Sell Them, Executive summary, Common problems businesses hire AI freelancers to solve on Upwork
+- **What an AI agent with custom skills looks like** — `raw/ai-agents-skills-bussines-areas-deep-research-report.md`
+  - Connections: 3
+  - Related: AI Agents With Custom Skills and Integrations for Business Productivity, Research approach and assumptions, Architecture patterns, controls, and “agent manifests”
