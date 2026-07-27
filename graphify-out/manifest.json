@@ -218,5 +218,10 @@
     "mtime": 1785152223.8537898,
     "ast_hash": "fb428dd8a50d7b0b9977814dc26c0663",
     "semantic_hash": "fb428dd8a50d7b0b9977814dc26c0663"
+  },
+  "raw/best-practices-for-using-github-copilot.md": {
+    "mtime": 1785153413.9451568,
+    "ast_hash": "6dc1987f10311d8e300c6a4c5039e59e",
+    "semantic_hash": "6dc1987f10311d8e300c6a4c5039e59e"
   }
 }
