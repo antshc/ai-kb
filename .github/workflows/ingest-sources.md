@@ -31,9 +31,10 @@ pre-agent-steps:
   - name: Install Graphify CLI
     shell: bash
     run: |
-      graphify_venv="${RUNNER_TEMP}/graphify-venv"
+      graphify_venv="${GITHUB_WORKSPACE}/.graphify-venv"
       python3 -m venv "$graphify_venv"
       "$graphify_venv/bin/python" -m pip install --disable-pip-version-check --no-cache-dir graphifyy==0.9.27
+      echo "/.graphify-venv/" >> "$GITHUB_WORKSPACE/.git/info/exclude"
       echo "$graphify_venv/bin" >> "$GITHUB_PATH"
       "$graphify_venv/bin/graphify" --help >/dev/null
 ---

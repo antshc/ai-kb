@@ -5,7 +5,10 @@ on:
     branches:
       - main
     paths:
-      - graphify-out/graph.html
+      - graphify-out/**
+  pull_request:
+    types:
+      - closed
   workflow_dispatch:
 
 permissions:
@@ -19,6 +22,11 @@ concurrency:
 
 jobs:
   deploy:
+    if: >-
+      github.event_name != 'pull_request' ||
+      (github.event.pull_request.merged == true &&
+      (contains(github.event.pull_request.labels.*.name, 'graphify') ||
+      startsWith(github.event.pull_request.head.ref, 'automated-ingest/')))
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -26,6 +34,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha || github.sha }}
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
