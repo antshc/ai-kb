@@ -1131,4 +1131,4 @@ Create and manage Skills in Claude Code
 
 Upload and use Skills programmatically
 
-<!-- Graphify ingestion trigger: pipeline dependency setup -->
+<!-- Graphify ingestion trigger: pipeline dependency setup; retrigger -->
