@@ -8,12 +8,23 @@ on:
 engine: copilot
 permissions:
   contents: read
+concurrency:
+  group: graphify-ingestion
+  cancel-in-progress: false
 safe-outputs:
   create-pull-request:
     max: 1
     title-prefix: "[graphify] "
     labels:
       - graphify
+    base-branch: main
+    allowed-branches:
+      - automated-ingest/*
+    preserve-branch-name: true
+    recreate-ref: true
+    draft: false
+    fallback-as-issue: false
+    github-token-for-extra-empty-commit: ${{ secrets.GH_AW_CI_TRIGGER_TOKEN }}
     allowed-files:
       - graphify-out/**
 ---
@@ -42,9 +53,9 @@ corpus.
    configured backend.
 4. Validate `graphify-out/graph.json` as JSON and verify generated source paths
    stay under `raw/`.
-5. Request at most one PR containing only intentional changes under
-   `graphify-out/`. Include changed raw paths and validation results in the PR
-   body.
+5. Request exactly one non-draft PR using the `create_pull_request` safe output.
+   Use the stable branch name `automated-ingest/graphify`, target `main`, and
+   include changed raw paths and validation results in the PR body.
 
 The workflow must never request a PR that changes `raw/`, repository
 instructions, project skills, or workflow files.
