@@ -420,3 +420,6 @@ FodyWeavers.xsd
 # Graphify local-only output
 graphify-out/cache/
 graphify-out/cost.json
+graphify-out/.graphify_*
+graphify-out/stat-index.json
+raw/graphify-out/
