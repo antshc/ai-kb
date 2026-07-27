@@ -14,10 +14,12 @@
 3. Use `graphify-out/wiki/index.md` for broad navigation when it exists.
 4. Local ingestion is user-triggered only. Do not run Graphify automatically
    after edits, commits, or file changes. When the user explicitly requests a
-   local refresh, set `GRAPHIFY_OUT=graphify-out` and invoke
-   `/graphify raw --update --wiki`; for headless CLI use
-   `graphify extract raw --out .` with the configured backend. GitHub Actions
-   performs automatic ingestion after a push to `main` changes `raw/**`.
+   local refresh, run the Codex `/graphify raw --update --wiki` workflow from
+   the repository root. For a shell/headless CLI, use `graphify extract raw
+   --out .` from the repository root with the configured backend; do not run
+   the `graphify raw ...` CLI form because it can place generated state under
+   `raw/graphify-out/`. GitHub Actions performs automatic ingestion after a
+   push to `main` changes `raw/**`.
 5. Never modify files under `raw/` during extraction or graph maintenance.
 
 ## Generated-file rules

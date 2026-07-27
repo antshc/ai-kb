@@ -1,0 +1,191 @@
+# Prompt Variations for Generating a Healthy Carrot Recipe (High-Protein / Low-Carb)
+
+## Compact Prompt (Minimal Prompt)
+
+```text
+Create a healthy high-protein, low-carb recipe where carrots are one of the main ingredients.
+
+Avoid refined carbohydrates.
+Use lean protein sources and healthy fats.
+Include cooking steps, ingredients, cooking time, and nutrition information.
+```
+
+## Table Output Prompt
+
+```text
+Generate a healthy carrot-based recipe that is high in protein and low in carbohydrates.
+
+Constraints:
+- Lean protein sources
+- No refined carbohydrates
+- Healthy cooking techniques
+
+Return the result in a table with the following columns:
+
+| Section | Content |
+|--------|--------|
+| Title | |
+| Description | |
+| Ingredients | |
+| Cooking Steps | |
+| Cooking Time | |
+| Nutrition | |
+| Health Tips | |
+| Variations | |
+```
+
+## Standard Instruction Prompt (Baseline)
+
+```text
+You are a professional chef and nutrition expert specializing in healthy, high-protein, low-carbohydrate meals.
+
+Create a healthy recipe where carrots are one of the main ingredients.
+
+Constraints:
+- High protein
+- Low carbohydrate
+- Avoid refined carbs such as white flour, sugar, and pasta
+- Prefer lean protein sources (chicken breast, fish, eggs, tofu, Greek yogurt, cottage cheese)
+- Use healthy fats like olive oil, avocado oil, nuts, or seeds
+- Use healthy cooking methods (roasting, grilling, baking, steaming, sautéing)
+
+Output format:
+1. Recipe title
+2. Short description
+3. Ingredients with metric quantities
+4. Step-by-step instructions
+5. Cooking time and temperature
+6. Nutrition estimate per serving (protein, carbs, fat, calories)
+7. Tips to improve healthiness
+8. Optional variations
+```
+
+## Role + Goal Prompt (Persona Style)
+
+```text
+Role: Professional chef and clinical nutritionist.
+
+Goal: Design a healthy dish centered around carrots.
+
+Dietary rules:
+- High protein
+- Low carbohydrate
+- No refined sugars or white flour
+- Lean protein sources preferred
+- Healthy fats allowed
+- Balanced flavor using herbs and spices
+
+Produce a detailed recipe suitable for a home cook.
+
+Structure the output as:
+Title
+Description
+Ingredients (metric)
+Cooking steps
+Cooking time
+Nutrition per serving
+Health tips
+Variations
+```
+
+## Structured JSON Prompt (Machine-Readable)
+
+```json
+You are a chef and nutrition specialist.
+
+Generate a healthy carrot-based recipe that is high in protein and low in carbohydrates.
+
+Constraints:
+- No refined carbs
+- Lean proteins preferred
+- Healthy fats allowed
+- Healthy cooking techniques
+
+Return the result in JSON with the following structure:
+
+{
+  "recipe_title": "",
+  "description": "",
+  "ingredients": [
+    {"name": "", "quantity": "", "unit": ""}
+  ],
+  "steps": [],
+  "cooking_time_minutes": "",
+  "temperature_celsius": "",
+  "nutrition_per_serving": {
+    "protein_g": "",
+    "carbs_g": "",
+    "fat_g": "",
+    "calories": ""
+  },
+  "health_tips": [],
+  "variations": []
+}
+```
+
+## Few-Shot Prompt (Example-Driven)
+
+```text
+You are a healthy recipe generator.
+
+Example recipe format:
+
+Title: High-Protein Zucchini Chicken Bowl
+
+Description:
+A light roasted vegetable bowl with grilled chicken.
+
+Ingredients:
+- 200 g chicken breast
+- 150 g zucchini
+- 1 tbsp olive oil
+- garlic
+- salt
+- pepper
+
+Instructions:
+1. Roast zucchini at 200°C for 20 minutes.
+2. Grill chicken breast.
+3. Combine and serve.
+
+Nutrition:
+Protein: 35 g
+Carbs: 8 g
+Fat: 10 g
+Calories: 280
+
+---
+
+Now generate a similar recipe using carrots as a main ingredient.
+
+Constraints:
+- High protein
+- Low carbs
+- No refined carbohydrates
+- Healthy cooking methods
+```
+
+## Step-Reasoning Prompt (Chain-of-Thought Style)
+
+```text
+You are a chef and nutrition expert.
+
+Task:
+Create a healthy carrot-based recipe that is high in protein and low in carbohydrates.
+
+First:
+1. Identify suitable protein sources.
+2. Choose cooking techniques that preserve nutrients.
+3. Combine carrots with protein and healthy fats.
+
+Then produce the recipe with:
+
+- Title
+- Description
+- Ingredients (metric)
+- Cooking steps
+- Cooking time and temperature
+- Nutrition estimate per serving
+- Health tips
+- Variations
+```

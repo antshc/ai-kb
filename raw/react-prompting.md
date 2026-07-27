@@ -1,0 +1,166 @@
+# ReAct Prompting (Reason + Act)
+
+## Overview
+
+ReAct (Reason + Act) is a prompting framework for building AI agents that:
+
+- Think about a problem
+- Take actions using tools
+- Observe results
+- Adapt reasoning
+- Repeat until the goal is achieved
+
+It transforms language models from static Q&A systems into dynamic, tool-using agents.
+
+---
+
+## Core Loop (Easy to Remember)
+
+> Think → Act → Observe → Repeat
+
+Or simplified:
+
+- 🧠 Think
+- 🛠 Act
+- 👀 Observe
+- 🔁 Adjust
+
+This loop continues until the objective is completed.
+
+---
+
+## What Makes ReAct Different?
+
+### Traditional LLM Behavior
+
+- Input → Output
+- One-shot reasoning
+- No external interaction
+- Static answers
+
+### ReAct Agent Behavior
+
+- Input
+- Internal reasoning
+- Tool usage (API / search / database / code)
+- Observation of results
+- Updated reasoning
+- Final answer
+
+It enables multi-step, adaptive problem solving.
+
+---
+
+## Why ReAct Matters
+
+### 1. Live Data Access
+
+The agent can:
+
+- Call APIs
+- Search the web
+- Query databases
+- Execute code
+- Access internal systems
+
+This reduces hallucination and improves accuracy.
+
+### 2. Multi-Step Reasoning
+
+Instead of guessing, the agent:
+
+- Gathers evidence
+- Compares sources
+- Validates results
+- Refines its conclusion
+
+### 3. Real-Time Adaptability
+
+If a tool returns unexpected data:
+
+- The agent re-evaluates
+- Adjusts its plan
+- Tries alternative approaches
+
+This makes the system robust and goal-driven.
+
+---
+
+## Example: Travel Pricing Agent
+
+### User Question
+
+"What is the average 4-star hotel price in Lisbon for August 2025?"
+
+### ReAct Flow
+
+1. 🧠 Thought:
+   I need hotel pricing data for 4-star hotels in Lisbon in August 2025.
+
+2. 🛠 Action:
+   Query Booking.com API.
+
+3. 👀 Observation:
+   Retrieve a list of hotel prices.
+
+4. 🧠 Thought:
+   One source may not be sufficient. Compare with another source.
+
+5. 🛠 Action:
+   Query Expedia API.
+
+6. 👀 Observation:
+   Retrieve additional pricing data.
+
+7. 🧠 Thought:
+   Compute the average and compare distributions.
+
+8. 🛠 Action:
+   Calculate average price.
+
+9. 📤 Final Answer:
+   Return average price with a short summary and confidence note.
+
+---
+
+## Where ReAct Is Used
+
+ReAct powers many modern AI systems:
+
+- AI assistants that call APIs
+- Enterprise internal bots
+- Workflow automation systems
+- Multi-step reasoning pipelines
+- Developer coding agents
+- CLI-based AI tools
+
+It is the foundation of many "agent mode" implementations.
+
+---
+
+## Mental Model
+
+> ReAct = Structured Thinking + Tool Usage Loop
+
+Or even shorter:
+
+> Reason + Act = Intelligent Agent
+
+---
+
+## Short Recall Version
+
+ReAct is a prompting framework where a model cycles through:
+
+- Thought (reasoning)
+- Action (tool usage)
+- Observation (result)
+- Repeat until completion
+
+It enables:
+
+- Live data access
+- Multi-step logic
+- Adaptive decision-making
+
+ReAct turns language models into dynamic, tool-using agents.

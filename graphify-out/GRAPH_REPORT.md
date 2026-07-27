@@ -1,190 +1,231 @@
-# Graph Report - .  (2026-07-27)
+# Graph Report - raw  (2026-07-27)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- Corpus is ~42,798 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 234 nodes · 815 edges · 33 communities (24 shown, 9 thin omitted)
-- Extraction: 0% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- 159 nodes · 70 edges · 91 communities (22 shown, 69 thin omitted)
+- Extraction: 50% EXTRACTED · 50% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
-## Graph Freshness
-- Built from commit: `6e7cfd3d`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
-
 ## Community Hubs (Navigation)
-- Agent Teams
-- Chain of thought
-- Executive summary
-- Connection Map
-- Example `workflow.yaml`
-- AI Agents With Custom Skills and Integrations for Business Productivity
-- Custom Skill `workflow.yaml`
-- Affaan Mustafa
-- Lines of inquiry
-- ST-001.md
-- AI Application
-- Goals / Non-Goals
-- Step 1 — The Requirement (spec.md)
-- Call APIs
-- Description
-- Done
-- Firebase Studio
-- Long-horizon LLMs optimized for agentic workflows
-- Examples: <optional example to copy>
-- findReferences
-- compressed PRD
-- Include cooking steps, ingredients, cooking time, and nutrition information.
-- Architecture Style
-- csharp-ls = "an alternative C# language server"
-- Goal
-- Use service to handle orders
-- grep_search
-- Short summary
-- dnx roslyn-language-server --stdio
-- IPaymentService
-- }
-- Create a recipe with the banana are one of the main ingredients.
-- Run Prompt
+- Knowledge Community 0
+- Knowledge Community 1
+- Knowledge Community 2
+- Knowledge Community 3
+- Knowledge Community 4
+- Knowledge Community 5
+- Knowledge Community 6
+- Knowledge Community 7
+- Knowledge Community 8
+- Knowledge Community 9
+- Knowledge Community 10
+- Knowledge Community 11
+- Knowledge Community 12
+- Knowledge Community 13
+- Knowledge Community 14
+- Knowledge Community 15
+- Knowledge Community 16
+- Knowledge Community 17
+- Knowledge Community 18
+- Knowledge Community 19
+- Knowledge Community 20
+- Knowledge Community 21
+- Knowledge Community 22
+- Knowledge Community 23
+- Knowledge Community 24
+- Knowledge Community 25
+- Knowledge Community 26
+- Knowledge Community 27
+- Knowledge Community 28
+- Knowledge Community 29
+- Knowledge Community 30
+- Knowledge Community 31
+- Knowledge Community 32
+- Knowledge Community 33
+- Knowledge Community 34
+- Knowledge Community 35
+- Knowledge Community 36
+- Knowledge Community 37
+- Knowledge Community 38
+- Knowledge Community 39
+- Knowledge Community 40
+- Knowledge Community 41
+- Knowledge Community 42
+- Knowledge Community 43
+- Knowledge Community 44
+- Knowledge Community 45
+- Knowledge Community 46
+- Knowledge Community 47
+- Knowledge Community 48
+- Knowledge Community 49
+- Knowledge Community 50
+- Knowledge Community 51
+- Knowledge Community 52
+- Knowledge Community 53
+- Knowledge Community 54
+- Knowledge Community 55
+- Knowledge Community 56
+- Knowledge Community 57
+- Knowledge Community 58
+- Knowledge Community 59
+- Knowledge Community 60
+- Knowledge Community 61
+- Knowledge Community 62
+- Knowledge Community 63
+- Knowledge Community 64
+- Knowledge Community 65
+- Knowledge Community 66
+- Knowledge Community 67
+- Knowledge Community 68
+- Knowledge Community 69
+- Knowledge Community 70
+- Knowledge Community 71
+- Knowledge Community 72
+- Knowledge Community 73
+- Knowledge Community 74
+- Knowledge Community 75
+- Knowledge Community 76
+- Knowledge Community 77
+- Knowledge Community 78
+- Knowledge Community 79
+- Knowledge Community 80
+- Knowledge Community 81
+- Knowledge Community 82
+- Knowledge Community 83
+- Knowledge Community 84
+- Knowledge Community 85
+- Knowledge Community 86
+- Knowledge Community 87
+- Knowledge Community 88
+- Knowledge Community 89
+- Knowledge Community 90
 
 ## God Nodes (most connected - your core abstractions)
-1. `AI Agents With Custom Skills and Integrations for Business Productivity` - 39 edges
-2. `AI Systems and Agent Integrations for Cross-Industry Business Value` - 39 edges
-3. `Glossary — Building Great Skills` - 38 edges
-4. `Upwork AI Buyers and What a Senior Developer Can Sell Them` - 38 edges
-5. `Custom Skill `workflow.yaml`` - 38 edges
-6. `CLAUDE.md` - 38 edges
-7. `disable-model-invocation: true` - 37 edges
-8. `Ai Tools Sdlc` - 36 edges
-9. `Agentic Engineering Concepts` - 36 edges
-10. `Agentic Engineering Concepts` - 36 edges
+1. `Role Goal Context Constraints Output` - 3 edges
+2. `Validation Gates` - 3 edges
+3. `Retry-Safe Workflow` - 3 edges
+4. `Sequential Flow` - 2 edges
+5. `Agent Teams` - 2 edges
+6. `Installing Guardrails` - 2 edges
+7. `Retrieval-Grounded Copilot` - 2 edges
+8. `Controlled Tool Loop` - 2 edges
+9. `Workflow Orchestration` - 2 edges
+10. `Governance by Design` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Agent Patterns` --EXTRACTED--> `Agentic Engineering Concepts`  [0.95]
-  raw/agent-patterns.md → raw/agentic-engineering-glossary.md
-- `Agent Patterns` --EXTRACTED--> `AI Agents With Custom Skills and Integrations for Business Productivity`  [0.95]
-  raw/agent-patterns.md → raw/ai-agents-skills-bussines-areas-deep-research-report.md
-- `Agent Patterns` --EXTRACTED--> `AI Systems and Agent Integrations for Cross-Industry Business Value`  [0.95]
-  raw/agent-patterns.md → raw/ai-system-bussiness-integrations-deep-research-report.md
-- `Agent Patterns` --EXTRACTED--> `CLAUDE.md`  [0.88]
-  raw/agent-patterns.md → raw/state-persistence-template-claude.md
-- `Agent Patterns` --EXTRACTED--> `failures.md`  [0.73]
-  raw/agent-patterns.md → raw/state-persistence-template-claude-failures.md
+- `Phase Dependencies` --semantically_similar_to--> `Sequential Flow`  [EXTRACTED] [semantically similar]
+  custom-skill-workflow-yaml.md → agent-patterns.md
+- `Agent Teams` --conceptually_related_to--> `Agents Consilium`  [INFERRED]
+  agent-patterns.md → agentic-engineering-glossary.md
+- `Headless Agents` --semantically_similar_to--> `Away From Keyboard`  [EXTRACTED] [semantically similar]
+  agent-patterns.md → agentic-engineering-glossary.md
+- `State Persistence` --semantically_similar_to--> `Runtime State`  [EXTRACTED] [semantically similar]
+  agentic-engineering-concepts.md → custom-skill-workflow-yaml.md
+- `Human In The Loop` --semantically_similar_to--> `Human Approval Gates`  [EXTRACTED] [semantically similar]
+  agentic-engineering-glossary.md → ai-agents-skills-bussines-areas-deep-research-report.md
 
-## Communities (33 total, 9 thin omitted)
+## Communities (91 total, 69 thin omitted)
 
-### Community 0 - "Agent Teams"
-Cohesion: 0.33
-Nodes (6): Agent A, Agent Teams, Headless, Sequential Flow, Split & Merge, The Operator
-
-### Community 1 - "Chain of thought"
-Cohesion: 0.27
-Nodes (10): Chain of thought, Context engineering, Feedback loop, Installing guardrails, Preventing doom loops, Agent Harness, Chain of thought, Context engineering (+2 more)
-
-### Community 2 - "Executive summary"
-Cohesion: 0.25
-Nodes (8): Executive summary, Executive summary, A decision flow to route buyers into your best offer, Common problems businesses hire AI freelancers to solve on Upwork, Executive summary, Specific AI services and productized offerings you can sell, Typical project scopes, deliverables, timelines, and pricing ranges on Upwork, Upwork demand patterns and the businesses most likely to buy senior AI development
-
-### Community 3 - "Connection Map"
-Cohesion: 0.23
-Nodes (12): Connection Map, Design Decision (design.md), Requirement (spec.md), Task (tasks.md), The Pattern in One Line, Why Each Bold Term Matters, Connection Map, Design Decision (design.md) (+4 more)
-
-### Community 4 - "Example `workflow.yaml`"
-Cohesion: 0.17
-Nodes (12): Example `workflow.yaml`, Recommended Structure, Required `SKILL.md` Instructions, Responsibility Split, Summary, Workflow, Architecture, Core layers (+4 more)
-
-### Community 5 - "AI Agents With Custom Skills and Integrations for Business Productivity"
-Cohesion: 0.08
-Nodes (53): Agentic Engineering Concepts, AI Agents With Custom Skills and Integrations for Business Productivity, Architecture patterns, controls, and “agent manifests”, Common architecture patterns, Cross-cutting controls, Research approach and assumptions, What an AI agent with custom skills looks like, AI Systems and Agent Integrations for Cross-Industry Business Value (+45 more)
-
-### Community 6 - "Custom Skill `workflow.yaml`"
-Cohesion: 0.81
-Nodes (26): Agent Patterns, Agentic Engineering Concepts, Ai Tools Sdlc, Think step by step., GitHub Copilot built-in agents, GitHub Copilot, Custom Skill `workflow.yaml`, GitHub Copilot Repository Instructions (+18 more)
-
-### Community 7 - "Affaan Mustafa"
-Cohesion: 0.33
-Nodes (6): Affaan Mustafa, Affraan Mustafa, Everything Claude Code, Garry Tan, Gary Tan — Gtack, https://github.com/affaan-m/ECC
-
-### Community 8 - "Lines of inquiry"
-Cohesion: 0.25
-Nodes (9): Coverage checklist, Lines of inquiry, Reusable template for future "grilling"-style skills, Coverage checklist, Grill Design, Line of inquiry: Architecture (ARCHITECTURE.md + SSR/ADR), Line of inquiry: Glossary (CONTEXT.md), Lines of inquiry (+1 more)
-
-### Community 9 - "ST-001.md"
-Cohesion: 0.52
-Nodes (7): ST-001.md, Added initial abstraction placeholder., Files Changed, Follow-up, Learned, What Changed, Why
-
-### Community 10 - "AI Application"
-Cohesion: 0.33
-Nodes (6): AI Application, Business Analysts, Core Capabilities, Engineering Managers, Product Owners, Value Added
-
-### Community 11 - "Goals / Non-Goals"
-Cohesion: 0.33
-Nodes (6): Example: Payment Processing Design, Goals / Non-Goals, How It Is Used, The Failure Mode Without Context, The Test, The Three Parts of Context
-
-### Community 12 - "Step 1 — The Requirement (spec.md)"
-Cohesion: 0.33
-Nodes (6): Step 1 — The Requirement (spec.md), Step 2 — The Design Decision (design.md), Step 3 — The Tasks (tasks.md), The Mapping Structure, The Principle, Worked Example: Loyalty Discount
-
-### Community 13 - "Call APIs"
-Cohesion: 0.33
-Nodes (6): Adapt reasoning, Call APIs, Final answer, Observe results, Take actions using tools, Think about a problem
-
-### Community 14 - "Description"
-Cohesion: 0.33
-Nodes (6): Context Pointer, Description, Invocation, Model-Invoked, Predictability, User-Invoked
-
-### Community 15 - "Done"
-Cohesion: 0.47
-Nodes (6): Current Focus, Done, Failed Attempts, Current Focus, Done, Failed Attempts
-
-### Community 16 - "Firebase Studio"
-Cohesion: 0.33
-Nodes (6): AI App Generation, Firebase Studio, Google Cloud, Primary Paradigm, Python SDK, Very High
-
-### Community 17 - "Long-horizon LLMs optimized for agentic workflows"
-Cohesion: 0.33
-Nodes (6): Agentic Coding, Long-horizon LLMs optimized for agentic workflows, Multi-agent orchestration concepts (“Gas Town”), Persistent task memory systems (“Beats”), Workflow debugging, You Are Not Ready
-
-### Community 18 - "Examples: <optional example to copy>"
-Cohesion: 0.40
-Nodes (5): Examples: <optional example to copy>, Prefer vertical slices., Preserve dependencies between issues., Rollback strategy, short + structured + useful for implementation
-
-### Community 19 - "findReferences"
-Cohesion: 0.40
-Nodes (5): documentSymbol, findReferences, goToDefinition, hover, rename
-
-### Community 20 - "compressed PRD"
+### Community 0 - "Knowledge Community 0"
 Cohesion: 0.50
-Nodes (4): compressed PRD, explicit behavior rules, high-density PRD, Total document must not exceed 200–300 words
+Nodes (5): Installing Guardrails, Governance by Design, Engineering Validation, Code Review Agent, Validation Gates
 
-### Community 21 - "Include cooking steps, ingredients, cooking time, and nutrition information."
+### Community 1 - "Knowledge Community 1"
 Cohesion: 0.50
-Nodes (4): Include cooking steps, ingredients, cooking time, and nutrition information., | Variations | |, Create a healthy recipe where carrots are one of the main ingredients., Include cooking steps, ingredients, cooking time, and nutrition information.
+Nodes (4): Role Goal Context Constraints Output, Structured CoT, Compressed PRD, SKILL.md Controller
 
-### Community 22 - "Architecture Style"
+### Community 2 - "Knowledge Community 2"
 Cohesion: 0.50
-Nodes (4): Architecture Style, Chosen architecture, Core Architecture Decisions, Project Overview
+Nodes (4): Validation Requirements, Completeness Sweep, Verification Receipts, Authoring Quality Gate
 
-### Community 23 - "csharp-ls = "an alternative C# language server""
+### Community 3 - "Knowledge Community 3"
+Cohesion: 0.50
+Nodes (4): Retrieval Traps, Predictability, Retry-Safe Workflow, Resume Rule
+
+### Community 4 - "Knowledge Community 4"
+Cohesion: 0.50
+Nodes (4): Retry and state restoration rules, File-based persistence, Retry-safe coding workflow, Persistent state files
+
+### Community 5 - "Knowledge Community 5"
 Cohesion: 0.67
-Nodes (3): csharp-ls = "an alternative C# language server", Do not think of dnx as a language server., roslyn-language-server = "the Microsoft/Roslyn-style C# language server"
+Nodes (3): Agent Teams, Agents Consilium, Engineering Agents
+
+### Community 6 - "Knowledge Community 6"
+Cohesion: 1.00
+Nodes (3): Sequential Flow, Workflow Orchestration, Phase Dependencies
+
+### Community 7 - "Knowledge Community 7"
+Cohesion: 0.67
+Nodes (3): ReAct, Programmatic Tool Calling, Controlled Tool Loop
+
+### Community 8 - "Knowledge Community 8"
+Cohesion: 0.67
+Nodes (3): Retrieval-Grounded Copilot, RAG Knowledge Integration, Anti-Hallucination Rule
+
+### Community 9 - "Knowledge Community 9"
+Cohesion: 0.67
+Nodes (3): Knowledge Tools, Explore Agent, Research Agent
+
+### Community 10 - "Knowledge Community 10"
+Cohesion: 0.67
+Nodes (3): SDLC Optimization, Engineering Architecture Tags, Task Agent
+
+### Community 11 - "Knowledge Community 11"
+Cohesion: 0.67
+Nodes (3): roslyn-language-server, LSP Fallback, Semantic Navigation
+
+### Community 12 - "Knowledge Community 12"
+Cohesion: 0.67
+Nodes (3): Design Context, Spec Design Task Mapping, Compact Design Decision
+
+### Community 13 - "Knowledge Community 13"
+Cohesion: 0.67
+Nodes (3): Goals and Non-Goals, Design Implementation Anchor, Code Structure Flow
+
+### Community 14 - "Knowledge Community 14"
+Cohesion: 0.67
+Nodes (3): Prompt Variations, Prompt Style Comparison, Adaptive Reasoning
+
+### Community 15 - "Knowledge Community 15"
+Cohesion: 0.67
+Nodes (3): Agentic Retrieval, Think Act Observe Repeat, Tool Use
+
+### Community 16 - "Knowledge Community 16"
+Cohesion: 0.67
+Nodes (3): Completion Criterion, Coverage Checklist, Coverage Checklist
+
+### Community 17 - "Knowledge Community 17"
+Cohesion: 0.67
+Nodes (3): Inline Capture, Probes, Grill Design Skill
+
+### Community 18 - "Knowledge Community 18"
+Cohesion: 0.67
+Nodes (3): Failure State, Failure Log Template, Root Cause
+
+### Community 19 - "Knowledge Community 19"
+Cohesion: 0.67
+Nodes (3): Build test lint verification, Atomic resumable tasks, Deterministic guardrails
+
+### Community 20 - "Knowledge Community 20"
+Cohesion: 0.67
+Nodes (3): ST-001 current focus, Checkpoint workflow, Atomic task tracker
+
+### Community 21 - "Knowledge Community 21"
+Cohesion: 0.67
+Nodes (3): Productized AI offers, Thin endpoints and focused handlers, AI app generation tools
 
 ## Knowledge Gaps
-- **20 isolated node(s):** `Create a healthy recipe where carrots are one of the main ingredients.`, `Create a recipe with the banana are one of the main ingredients.`, `high-density PRD`, `Prefer vertical slices.`, `Run Prompt` (+15 more)
+- **99 isolated node(s):** `Operator Agent`, `Split and Merge`, `Headless Agents`, `Context Engineering`, `ReAct` (+94 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **69 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PROGRESS.md` connect `AI Agents With Custom Skills and Integrations for Business Productivity` to `Custom Skill `workflow.yaml``, `Done`?**
-  _High betweenness centrality (0.077) - this node is a cross-community bridge._
-- **Why does `AI Systems and Agent Integrations for Cross-Industry Business Value` connect `AI Agents With Custom Skills and Integrations for Business Productivity` to `ST-001.md`, `Executive summary`, `Custom Skill `workflow.yaml``?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
-- **Why does `AI Agents With Custom Skills and Integrations for Business Productivity` connect `AI Agents With Custom Skills and Integrations for Business Productivity` to `ST-001.md`, `Executive summary`, `Custom Skill `workflow.yaml``?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
-- **What connects `Create a healthy recipe where carrots are one of the main ingredients.`, `Create a recipe with the banana are one of the main ingredients.`, `high-density PRD` to the rest of the system?**
-  _20 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `AI Agents With Custom Skills and Integrations for Business Productivity` be split into smaller, more focused modules?**
-  _Cohesion score 0.0841799709724238 - nodes in this community are weakly interconnected._
+- **Are the 2 inferred relationships involving `Role Goal Context Constraints Output` (e.g. with `Structured CoT` and `SKILL.md Controller`) actually correct?**
+  _`Role Goal Context Constraints Output` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 2 inferred relationships involving `Retry-Safe Workflow` (e.g. with `Retrieval Traps` and `Predictability`) actually correct?**
+  _`Retry-Safe Workflow` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `Operator Agent`, `Split and Merge`, `Headless Agents` to the rest of the system?**
+  _99 weakly-connected nodes found - possible documentation gaps or missing edges._
