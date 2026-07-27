@@ -46,7 +46,7 @@ jobs:
         run: |
           set -euo pipefail
           export GRAPHIFY_OUT=graphify-out
-          graphify extract raw --out . --backend openai
+          graphify extract . --out . --backend openai
 
       - name: Remove local Graphify state
         shell: bash
