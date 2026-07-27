@@ -12,9 +12,12 @@
    `graphify query "<question>"`.
 2. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts.
 3. Use `graphify-out/wiki/index.md` for broad navigation when it exists.
-4. Set `GRAPHIFY_OUT=graphify-out` and invoke `/graphify raw --update --wiki`
-   after changes to `raw/`; for headless CLI use
-   `graphify extract raw --out .` with the configured backend.
+4. Local ingestion is user-triggered only. Do not run Graphify automatically
+   after edits, commits, or file changes. When the user explicitly requests a
+   local refresh, set `GRAPHIFY_OUT=graphify-out` and invoke
+   `/graphify raw --update --wiki`; for headless CLI use
+   `graphify extract raw --out .` with the configured backend. GitHub Actions
+   performs automatic ingestion after a push to `main` changes `raw/**`.
 5. Never modify files under `raw/` during extraction or graph maintenance.
 
 ## Generated-file rules

@@ -14,28 +14,14 @@ graphify-out/                Generated graph, report, visualization, and wiki
 
 ## Usage
 
-Install Graphify with the package manager of your choice if `graphify` is not
-already available, then build the corpus from the repository root:
+Ask Codex or Copilot explicitly:
 
-```powershell
-$env:GRAPHIFY_OUT = "graphify-out"
-graphify extract raw --out . --wiki
-```
+- “Ingest `raw/` and update the Graphify knowledge base.”
+- “Refresh Graphify lessons if stale.”
+- “Search the knowledge base for `<question>`.”
 
-Update the graph after raw documents change:
-
-```powershell
-$env:GRAPHIFY_OUT = "graphify-out"
-graphify extract raw --out . --update --wiki
-```
-
-Query the generated graph:
-
-```powershell
-graphify query "<question>"
-graphify path "<concept-a>" "<concept-b>"
-graphify explain "<concept>"
-```
+No local auto-ingestion. GitHub Actions ingests after pushes to `main` changing
+`raw/**`.
 
 Graphify output is generated and reviewable. Do not edit `raw/` during graph
 generation, and do not commit `graphify-out/cache/` or `graphify-out/cost.json`.
