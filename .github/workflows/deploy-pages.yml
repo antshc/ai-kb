@@ -31,7 +31,11 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Validate graph source
-        run: test -f graphify-out/graph.html
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s graphify-out/graph.html
+          ! grep -Fq 'const LEGEND = [];' graphify-out/graph.html
 
       - name: Prepare deployment artifact
         shell: bash

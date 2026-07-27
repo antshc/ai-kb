@@ -47,7 +47,40 @@ jobs:
           set -euo pipefail
           export GRAPHIFY_OUT=graphify-out
           graphify extract . --out . --backend openai
-          graphify export html
+
+          # `graphify export html` renders an empty legend when the labels
+          # sidecar is absent. Keep the generated labels, but fill any gaps
+          # from graph.json so every community is always represented.
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          out = Path("graphify-out")
+          graph = json.loads((out / "graph.json").read_text(encoding="utf-8"))
+          labels_path = out / ".graphify_labels.json"
+          labels = {}
+          if labels_path.exists():
+              labels = json.loads(labels_path.read_text(encoding="utf-8"))
+          community_ids = sorted({
+              int(node["community"])
+              for node in graph["nodes"]
+              if node.get("community") is not None
+          })
+          for cid in community_ids:
+              labels.setdefault(str(cid), f"Community {cid}")
+          labels_path.write_text(json.dumps(labels, ensure_ascii=False), encoding="utf-8")
+          PY
+
+          graphify export html --graph graphify-out/graph.json \
+            --labels graphify-out/.graphify_labels.json
+
+          python3 - <<'PY'
+          from pathlib import Path
+
+          html = Path("graphify-out/graph.html").read_text(encoding="utf-8")
+          if "const LEGEND = [];" in html:
+              raise SystemExit("graph.html contains an empty community legend")
+          PY
 
       - name: Remove local Graphify state
         shell: bash
