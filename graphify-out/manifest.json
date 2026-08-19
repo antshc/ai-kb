@@ -223,5 +223,10 @@
     "mtime": 1785153413.9451568,
     "ast_hash": "6dc1987f10311d8e300c6a4c5039e59e",
     "semantic_hash": "6dc1987f10311d8e300c6a4c5039e59e"
+  },
+  "raw/graphify-installation-and-configuration-lessons.md": {
+    "mtime": 1785155833.7135003,
+    "ast_hash": "293edd58d265b919d884d59fd29b8b27",
+    "semantic_hash": "293edd58d265b919d884d59fd29b8b27"
   }
 }
