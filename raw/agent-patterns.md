@@ -192,3 +192,163 @@ Risk:
 - may change too much
 - needs logging, limits, rollback
 - should avoid destructive actions unless explicitly allowed
+
+---
+
+# Multi-Agent Orchestration Patterns
+
+## 1. Classify-and-Act
+
+A classifier decides **what kind of task this is** and routes it to the appropriate specialist agent.
+
+```text
+Task → Classifier → Agent A / Agent B / Agent C
+```
+
+Example:
+
+- Bug → Debugging agent
+- Feature → Coding agent
+- Documentation → Docs agent
+
+Best for: tasks that fall into clear categories.
+
+---
+
+## 2. Fanout-and-Synthesize
+
+Send the task to **multiple agents in parallel**, then combine their results.
+
+```text
+Task → Agent A ─┐
+     → Agent B ─┼→ Synthesizer → Final result
+     → Agent C ─┘
+```
+
+Example:
+
+- Agent A → architecture
+- Agent B → security
+- Agent C → performance
+- Synthesizer → combined recommendation
+
+Best for: research, design, and broad analysis.
+
+---
+
+## 3. Adversarial Verification
+
+One agent produces the work while other agents **challenge and verify it**.
+
+```text
+Worker → Verifier A
+       → Verifier B
+       → Verifier C
+```
+
+Example:
+
+A coding agent implements a change while reviewers independently check:
+
+- Correctness
+- Security
+- Edge cases
+
+Best for: increasing reliability and catching mistakes.
+
+---
+
+## 4. Generate-and-Filter
+
+Generate **multiple candidate solutions**, then filter or score them using explicit criteria.
+
+```text
+Generators → Candidates → Filter → Best candidates
+```
+
+Example:
+
+Generate several API designs and evaluate them for:
+
+- Simplicity
+- Backward compatibility
+- Performance
+- Maintainability
+
+Best for: large solution spaces where you want to choose the best candidate.
+
+---
+
+## 5. Tournament
+
+Multiple solutions compete through **pairwise comparisons** until one wins.
+
+```text
+A vs B ─┐
+        ├→ Winners → Final Judge → Winner
+C vs D ─┘
+```
+
+Example:
+
+Instead of ranking 10 architecture proposals at once:
+
+1. Compare A vs B
+2. Compare C vs D
+3. Compare the winners
+4. Select the final winner
+
+Best for: situations where relative comparison is easier than absolute scoring.
+
+---
+
+## 6. Loop Until Done
+
+An agent repeatedly works, evaluates progress, and continues until the stopping condition is satisfied.
+
+```text
+Agent → New findings?
+          ↓ yes
+        Continue
+          ↓ no
+         Done
+```
+
+Example:
+
+1. Inspect service
+2. Discover dependency
+3. Inspect dependency
+4. Discover another dependency
+5. Continue until no relevant dependencies remain
+
+Best for: exploration, debugging, implementation, and iterative problem solving.
+
+---
+
+## Cheat Sheet
+
+| Pattern | Main Idea |
+|---|---|
+| Classify-and-Act | Route |
+| Fanout-and-Synthesize | Parallelize + combine |
+| Adversarial Verification | Challenge + verify |
+| Generate-and-Filter | Generate many + select |
+| Tournament | Compete + eliminate |
+| Loop Until Done | Iterate until complete |
+
+## Composition Example
+
+These patterns can be combined:
+
+```text
+Classify
+  ↓
+Coding Agent
+  ↓
+Adversarial Review
+  ↓
+Loop Until Tests Pass
+  ↓
+Done
+```
