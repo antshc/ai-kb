@@ -4,6 +4,50 @@
   "graph": {
     "hyperedges": [
       {
+        "id": "three_compartment_model",
+        "label": "Three-Compartment Model of Stage Specification",
+        "nodes": [
+          "raw_ai_dlc_workflows_20_specification_stage_definition_spec",
+          "raw_ai_dlc_workflows_20_specification_stage_verification_spec",
+          "raw_ai_dlc_workflows_20_specification_stage_learning_spec"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md"
+      },
+      {
+        "id": "orchestrator_functions",
+        "label": "Orchestrator Essential Functions",
+        "nodes": [
+          "raw_ai_dlc_workflows_20_specification_orchestrator_goal_ownership",
+          "raw_ai_dlc_workflows_20_specification_orchestrator_workflow_composition",
+          "raw_ai_dlc_workflows_20_specification_orchestrator_routing_observability_control",
+          "raw_ai_dlc_workflows_20_specification_orchestrator_abstraction_boundary",
+          "raw_ai_dlc_workflows_20_specification_orchestrator_cross_stage_invariants"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md"
+      },
+      {
+        "id": "multi_agent_orchestration_patterns",
+        "label": "Multi-Agent Orchestration Patterns",
+        "nodes": [
+          "raw_agent_patterns_multi_agent_orchestration_pattern_1_classify_and_act",
+          "raw_agent_patterns_multi_agent_orchestration_pattern_2_fanout_and_synthesize",
+          "raw_agent_patterns_multi_agent_orchestration_pattern_3_adversarial_verification",
+          "raw_agent_patterns_multi_agent_orchestration_pattern_4_generate_and_filter",
+          "raw_agent_patterns_multi_agent_orchestration_pattern_5_tournament",
+          "raw_agent_patterns_multi_agent_orchestration_pattern_6_loop_until_done"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "raw/agent-patterns.md"
+      },
+      {
         "id": "copilot_tools_usage",
         "label": "GitHub Copilot Tools Usage",
         "nodes": [
@@ -15,33 +59,6 @@
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
         "source_file": "raw/best-practices-for-using-github-copilot.md"
-      },
-      {
-        "id": "agent_patterns_sequence_operator_split_merge",
-        "label": "Agent Patterns Sequence",
-        "nodes": [
-          "raw_agent_patterns_sequential_flow",
-          "raw_agent_patterns_operator",
-          "raw_agent_patterns_split_merge"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "raw/agent-patterns.md"
-      },
-      {
-        "id": "agent_patterns_operator_split_merge_agent_teams_headless",
-        "label": "Agent Patterns Operator to Headless",
-        "nodes": [
-          "raw_agent_patterns_operator",
-          "raw_agent_patterns_split_merge",
-          "raw_agent_patterns_agent_teams",
-          "raw_agent_patterns_headless"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "raw/agent-patterns.md"
       },
       {
         "id": "ai_agents_business_use_cases",
@@ -118,58 +135,6 @@
   },
   "nodes": [
     {
-      "label": "Pattern #1 \u2014 Sequential Flow",
-      "file_type": "document",
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "pattern #1 \u2014 sequential flow",
-      "id": "raw_agent_patterns_sequential_flow"
-    },
-    {
-      "label": "Pattern #3 \u2014 Split & Merge",
-      "file_type": "document",
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "pattern #3 \u2014 split & merge",
-      "id": "raw_agent_patterns_split_merge"
-    },
-    {
-      "label": "Pattern #4 \u2014 Agent Teams",
-      "file_type": "document",
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "pattern #4 \u2014 agent teams",
-      "id": "raw_agent_patterns_agent_teams"
-    },
-    {
-      "label": "Pattern #5 \u2014 Headless",
-      "file_type": "document",
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "pattern #5 \u2014 headless",
-      "id": "raw_agent_patterns_headless"
-    },
-    {
       "label": "Context Engineering",
       "file_type": "concept",
       "source_file": "raw/agentic-engineering-concepts.md",
@@ -178,7 +143,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 14,
       "norm_label": "context engineering",
       "id": "raw_agentic_engineering_concepts_context_engineering"
     },
@@ -191,7 +156,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 12,
       "norm_label": "react",
       "id": "raw_agentic_engineering_concepts_react"
     },
@@ -204,7 +169,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "multi-agent coding",
       "id": "raw_agentic_engineering_concepts_multi_agent_coding"
     },
@@ -217,7 +182,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 19,
       "norm_label": "state persistence",
       "id": "raw_agentic_engineering_concepts_state_persistence"
     },
@@ -230,7 +195,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 22,
       "norm_label": "agents consilium",
       "id": "raw_agentic_engineering_glossary_agents_consilium"
     },
@@ -243,7 +208,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 21,
       "norm_label": "agent harness",
       "id": "raw_agentic_engineering_glossary_agent_harness"
     },
@@ -256,7 +221,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 23,
       "norm_label": "hitl (human in the loop)",
       "id": "raw_agentic_engineering_glossary_hitl"
     },
@@ -269,7 +234,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 20,
       "norm_label": "afk (away from keyboard)",
       "id": "raw_agentic_engineering_glossary_afk"
     },
@@ -282,7 +247,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 28,
       "norm_label": "ai steering",
       "id": "raw_ai_steering_best_practices_steering"
     },
@@ -295,7 +260,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 57,
       "norm_label": "predictability",
       "id": "raw_skills_glossary_predictability"
     },
@@ -308,7 +273,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "information hierarchy",
       "id": "raw_skills_glossary_information_hierarchy"
     },
@@ -321,7 +286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 7,
       "norm_label": "completion criterion",
       "id": "raw_skills_glossary_completion_criterion"
     },
@@ -334,7 +299,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 7,
       "norm_label": "negation (failure mode)",
       "id": "raw_skills_glossary_negation"
     },
@@ -347,7 +312,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 7,
       "norm_label": "duplication (failure mode)",
       "id": "raw_skills_glossary_duplication"
     },
@@ -360,22 +325,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "grill design skill",
       "id": "raw_skills_lines_of_inquiry_probes_checklist_skill_example_grill_design"
-    },
-    {
-      "label": "Pattern #2 \u2014 The Operator",
-      "file_type": "document",
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "pattern #2 \u2014 the operator",
-      "id": "raw_agent_patterns_operator"
     },
     {
       "label": "Feedback Loop",
@@ -386,7 +338,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 15,
       "norm_label": "feedback loop",
       "id": "raw_agentic_engineering_concepts_feedback_loop"
     },
@@ -399,7 +351,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 11,
       "norm_label": "chain of thought",
       "id": "raw_agentic_engineering_concepts_chain_of_thought"
     },
@@ -412,7 +364,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "preventing doom loops",
       "id": "raw_agentic_engineering_concepts_preventing_doom_loops"
     },
@@ -425,7 +377,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 18,
       "norm_label": "ralph agent loop",
       "id": "raw_agentic_engineering_concepts_ralph_agent_loop"
     },
@@ -438,7 +390,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 24,
       "norm_label": "hooks",
       "id": "raw_agentic_engineering_glossary_hooks"
     },
@@ -451,7 +403,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "sales meeting-to-follow-up agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_sales_meeting_to_follow_up_agent"
     },
@@ -464,7 +416,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "customer support agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_customer_support_agent"
     },
@@ -477,7 +429,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 25,
       "norm_label": "finance/accounting close copilot",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_finance_accounting_close_copilot"
     },
@@ -490,7 +442,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 27,
       "norm_label": "legal contract agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_legal_contract_agent"
     },
@@ -503,7 +455,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 26,
       "norm_label": "hr agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_hr_agent"
     },
@@ -516,7 +468,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 0,
       "norm_label": "product/engineering agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_product_engineering_agent"
     },
@@ -529,7 +481,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 0,
       "norm_label": "marketing agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_marketing_agent"
     },
@@ -542,7 +494,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 0,
       "norm_label": "operations/supply chain agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_operations_supply_chain_agent"
     },
@@ -555,7 +507,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 0,
       "norm_label": "rfp/proposal response agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_rfp_proposal_response_agent"
     },
@@ -568,7 +520,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 0,
       "norm_label": "accounts payable invoice-to-pay agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_accounts_payable_invoice_to_pay_agent"
     },
@@ -581,7 +533,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 0,
       "norm_label": "ediscovery + privilege-log drafting agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_ediscovery_privilege_log_drafting_agent"
     },
@@ -594,7 +546,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "itsm runbook remediation agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_itsm_runbook_remediation_agent"
     },
@@ -607,7 +559,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "soc alert triage + containment agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_soc_alert_triage_containment_agent"
     },
@@ -620,7 +572,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "healthcare clinical documentation + prior authorization agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_healthcare_clinical_documentation_prior_auth_agent"
     },
@@ -633,7 +585,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "education ai tutor + teacher assistant agent",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_education_ai_tutor_teacher_assistant_agent"
     },
@@ -646,7 +598,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "retail store associate + inventory copilot",
       "id": "raw_ai_agents_skills_bussines_areas_deep_research_report_retail_store_associate_inventory_copilot"
     },
@@ -659,7 +611,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 29,
       "norm_label": "ai steering methods",
       "id": "raw_ai_steering_best_practices_steering_methods"
     },
@@ -672,7 +624,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 30,
       "norm_label": "ai systems and agent integrations",
       "id": "raw_ai_system_bussiness_integrations_deep_research_report_ai_systems"
     },
@@ -685,7 +637,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 31,
       "norm_label": "architecture patterns",
       "id": "raw_ai_system_bussiness_integrations_deep_research_report_architecture_patterns"
     },
@@ -698,7 +650,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 34,
       "norm_label": "security and governance",
       "id": "raw_ai_system_bussiness_integrations_deep_research_report_security_governance"
     },
@@ -711,7 +663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 32,
       "norm_label": "ecosystem components",
       "id": "raw_ai_system_bussiness_integrations_deep_research_report_ecosystem_components"
     },
@@ -724,7 +676,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 33,
       "norm_label": "measurement and metrics",
       "id": "raw_ai_system_bussiness_integrations_deep_research_report_measurement_metrics"
     },
@@ -737,7 +689,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 35,
       "norm_label": "ai token cost optimization best practices",
       "id": "raw_ai_token_cost_optimization_best_practices"
     },
@@ -750,7 +702,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "genai in engineering: tool landscape and sdlc optimization",
       "id": "raw_ai_tools_sdlc"
     },
@@ -763,7 +715,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 11,
       "norm_label": "chain-of-thought (cot) prompting",
       "id": "raw_chain_of_thought_cot_prompting"
     },
@@ -776,7 +728,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 37,
       "norm_label": "copilot prd compression best practices",
       "id": "raw_compression_output_best_practices"
     },
@@ -789,7 +741,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 38,
       "norm_label": "github copilot built-in agents",
       "id": "raw_copilot_built_in_agents"
     },
@@ -802,7 +754,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 39,
       "norm_label": "custom skill workflow.yaml",
       "id": "raw_custom_skill_workflow_yaml"
     },
@@ -815,7 +767,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 40,
       "norm_label": "c# lsp servers: csharp-ls vs roslyn-language-server vs dnx",
       "id": "raw_dotnet_lsp"
     },
@@ -828,7 +780,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 41,
       "norm_label": "github copilot repository instructions",
       "id": "raw_github_copilot_copilot_instructions_best_practices"
     },
@@ -841,7 +793,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 42,
       "norm_label": "improve agent robustness and resumability",
       "id": "raw_improve_agent_robustness_and_resumability"
     },
@@ -854,7 +806,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 41,
+      "community": 43,
       "norm_label": "agent, skill, and plugin authoring standard",
       "id": "raw_instructions_standards_agent_skill_plugin_authoring_standard"
     },
@@ -867,7 +819,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 44,
       "norm_label": "karpathy llm wiki: knowledge-base skill comparison",
       "id": "raw_karpathy_llm_wiki_knowledge_base"
     },
@@ -880,7 +832,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 45,
       "norm_label": "lsp tools reference",
       "id": "raw_lsp_tools_reference"
     },
@@ -893,7 +845,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 46,
       "norm_label": "what is context in a design document",
       "id": "raw_open_spec_design"
     },
@@ -906,7 +858,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 48,
       "norm_label": "example 2: e-commerce loyalty discount",
       "id": "raw_open_spec_spec_design_task_mapping_example1"
     },
@@ -919,7 +871,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 49,
       "norm_label": "example 1: password security",
       "id": "raw_open_spec_spec_design_task_mapping_example2"
     },
@@ -932,7 +884,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 47,
       "norm_label": "spec \u2192 design \u2192 task: mapping guide",
       "id": "raw_open_spec_spec_design_task_mapping"
     },
@@ -945,7 +897,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 50,
       "norm_label": "compact openspec design decisions (copilot-friendly)",
       "id": "raw_output_design_decision"
     },
@@ -958,7 +910,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 51,
       "norm_label": "claude agent skill authoring best practices",
       "id": "raw_platform_claude_com_docs_en_agents_and_tools_agent_skills_best_practices"
     },
@@ -971,7 +923,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 52,
       "norm_label": "prompt variations for generating a healthy carrot recipe",
       "id": "raw_prompt_style_readme"
     },
@@ -984,7 +936,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 53,
       "norm_label": "scenarios: exploring llm behavior with different prompt types",
       "id": "raw_prompt_style_scenarious"
     },
@@ -997,7 +949,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 54,
       "norm_label": "rag cheat sheet for claude code / copilot-style agents",
       "id": "raw_rag_cheat_sheet"
     },
@@ -1010,7 +962,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 12,
       "norm_label": "react prompting (reason + act)",
       "id": "raw_react_prompting"
     },
@@ -1023,7 +975,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "model-invoked skill",
       "id": "raw_skills_glossary_model_invoked"
     },
@@ -1036,7 +988,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "user-invoked skill",
       "id": "raw_skills_glossary_user_invoked"
     },
@@ -1049,7 +1001,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "description (skill trigger)",
       "id": "raw_skills_glossary_description"
     },
@@ -1062,7 +1014,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "context pointer",
       "id": "raw_skills_glossary_context_pointer"
     },
@@ -1075,7 +1027,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "context load",
       "id": "raw_skills_glossary_context_load"
     },
@@ -1088,7 +1040,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "cognitive load",
       "id": "raw_skills_glossary_cognitive_load"
     },
@@ -1101,7 +1053,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "router skill",
       "id": "raw_skills_glossary_router_skill"
     },
@@ -1114,7 +1066,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "granularity",
       "id": "raw_skills_glossary_granularity"
     },
@@ -1127,7 +1079,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "steps",
       "id": "raw_skills_glossary_steps"
     },
@@ -1140,7 +1092,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "reference",
       "id": "raw_skills_glossary_reference"
     },
@@ -1153,7 +1105,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "external reference",
       "id": "raw_skills_glossary_external_reference"
     },
@@ -1166,7 +1118,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "co-location",
       "id": "raw_skills_glossary_co_location"
     },
@@ -1179,7 +1131,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "sprawl (failure mode)",
       "id": "raw_skills_glossary_sprawl"
     },
@@ -1192,7 +1144,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 55,
       "norm_label": "branch",
       "id": "raw_skills_glossary_branch"
     },
@@ -1205,7 +1157,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 7,
       "norm_label": "leading word",
       "id": "raw_skills_glossary_leading_word"
     },
@@ -1218,7 +1170,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 7,
       "norm_label": "legwork",
       "id": "raw_skills_glossary_legwork"
     },
@@ -1231,7 +1183,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "post-completion steps",
       "id": "raw_skills_glossary_post_completion_steps"
     },
@@ -1244,7 +1196,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 7,
       "norm_label": "premature completion (failure mode)",
       "id": "raw_skills_glossary_premature_completion"
     },
@@ -1257,7 +1209,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 7,
       "norm_label": "single source of truth",
       "id": "raw_skills_glossary_single_source_of_truth"
     },
@@ -1270,7 +1222,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 58,
       "norm_label": "relevance",
       "id": "raw_skills_glossary_relevance"
     },
@@ -1283,7 +1235,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 59,
       "norm_label": "sediment (failure mode)",
       "id": "raw_skills_glossary_sediment"
     },
@@ -1296,7 +1248,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 54,
+      "community": 56,
       "norm_label": "no-op (failure mode)",
       "id": "raw_skills_glossary_no_op"
     },
@@ -1309,7 +1261,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "lines of inquiry \u2192 probes \u2192 coverage checklist",
       "id": "raw_skills_lines_of_inquiry_probes_checklist"
     },
@@ -1322,7 +1274,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "how claude agent coding saves progress between retries",
       "id": "raw_state_persistence_readme"
     },
@@ -1335,7 +1287,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "failures.md template",
       "id": "raw_state_persistence_template_claude_failures"
     },
@@ -1348,7 +1300,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "handoff.md template",
       "id": "raw_state_persistence_template_claude_handoff"
     },
@@ -1361,7 +1313,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "st-001.md example result file",
       "id": "raw_state_persistence_template_claude_results_st_001"
     },
@@ -1374,7 +1326,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "claude.md template",
       "id": "raw_state_persistence_template_claude"
     },
@@ -1387,7 +1339,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "progress.md template",
       "id": "raw_state_persistence_template_progress"
     },
@@ -1400,7 +1352,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 61,
       "norm_label": "claude agent template pack readme",
       "id": "raw_state_persistence_template_readme"
     },
@@ -1413,7 +1365,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "tasks.md template",
       "id": "raw_state_persistence_template_tasks"
     },
@@ -1426,7 +1378,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 62,
       "norm_label": "upwork ai buyers and what a senior developer can sell them",
       "id": "raw_upwork_ai_system_job_types_deep_research_report"
     },
@@ -1439,7 +1391,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 63,
       "norm_label": "copilot instructions for vertical slice architecture project",
       "id": "raw_vertical_slices_archutecture_copilot_instructions"
     },
@@ -1452,7 +1404,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 64,
       "norm_label": "vibe coding tools comparison",
       "id": "raw_vibe_coding_tools"
     },
@@ -1465,7 +1417,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 65,
       "norm_label": "you are not ready \u2013 agentic coding in 2026",
       "id": "raw_you_are_not_ready_agentic_coding_in_2026"
     },
@@ -1478,7 +1430,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 60,
       "norm_label": "trending skills libraries",
       "id": "raw_skills_influencers"
     },
@@ -1491,7 +1443,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "github copilot",
       "id": "raw_bestpracticesforusinggithubcopilot_githubcopilot"
     },
@@ -1504,7 +1456,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "copilot inline suggestions",
       "id": "raw_bestpracticesforusinggithubcopilot_copilotinline"
     },
@@ -1517,7 +1469,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "copilot chat",
       "id": "raw_bestpracticesforusinggithubcopilot_copilotchat"
     },
@@ -1530,7 +1482,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "prompt engineering",
       "id": "raw_bestpracticesforusinggithubcopilot_promptengineering"
     },
@@ -1543,7 +1495,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "checking copilot's work",
       "id": "raw_bestpracticesforusinggithubcopilot_checkingcopilotwork"
     },
@@ -1556,7 +1508,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "guiding copilot towards helpful outputs",
       "id": "raw_bestpracticesforusinggithubcopilot_guidingcopilot"
     },
@@ -1569,9 +1521,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons",
-      "community": 0,
-      "norm_label": "graphify installation and configuration lessons"
+      "community": 1,
+      "norm_label": "graphify installation and configuration lessons",
+      "id": "raw_graphify_installation_and_configuration_lessons"
     },
     {
       "label": "graphifyy Package",
@@ -1582,9 +1534,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_graphifyy",
-      "community": 0,
-      "norm_label": "graphifyy package"
+      "community": 1,
+      "norm_label": "graphifyy package",
+      "id": "raw_graphify_installation_and_configuration_lessons_graphifyy"
     },
     {
       "label": "graphify Command",
@@ -1595,9 +1547,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_graphify",
-      "community": 0,
-      "norm_label": "graphify command"
+      "community": 1,
+      "norm_label": "graphify command",
+      "id": "raw_graphify_installation_and_configuration_lessons_graphify"
     },
     {
       "label": "graphify-mcp Command",
@@ -1608,9 +1560,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_graphify_mcp",
-      "community": 0,
-      "norm_label": "graphify-mcp command"
+      "community": 1,
+      "norm_label": "graphify-mcp command",
+      "id": "raw_graphify_installation_and_configuration_lessons_graphify_mcp"
     },
     {
       "label": "COPILOT_GITHUB_TOKEN",
@@ -1621,9 +1573,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_copilot_github_token",
-      "community": 0,
-      "norm_label": "copilot_github_token"
+      "community": 1,
+      "norm_label": "copilot_github_token",
+      "id": "raw_graphify_installation_and_configuration_lessons_copilot_github_token"
     },
     {
       "label": "OPENAI_API_KEY",
@@ -1634,9 +1586,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_openai_api_key",
-      "community": 0,
-      "norm_label": "openai_api_key"
+      "community": 1,
+      "norm_label": "openai_api_key",
+      "id": "raw_graphify_installation_and_configuration_lessons_openai_api_key"
     },
     {
       "label": "GEMINI_API_KEY",
@@ -1647,9 +1599,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_gemini_api_key",
-      "community": 0,
-      "norm_label": "gemini_api_key"
+      "community": 1,
+      "norm_label": "gemini_api_key",
+      "id": "raw_graphify_installation_and_configuration_lessons_gemini_api_key"
     },
     {
       "label": "GOOGLE_API_KEY",
@@ -1660,9 +1612,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_google_api_key",
-      "community": 0,
-      "norm_label": "google_api_key"
+      "community": 1,
+      "norm_label": "google_api_key",
+      "id": "raw_graphify_installation_and_configuration_lessons_google_api_key"
     },
     {
       "label": "ANTHROPIC_API_KEY",
@@ -1673,9 +1625,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_anthropic_api_key",
-      "community": 0,
-      "norm_label": "anthropic_api_key"
+      "community": 1,
+      "norm_label": "anthropic_api_key",
+      "id": "raw_graphify_installation_and_configuration_lessons_anthropic_api_key"
     },
     {
       "label": "claude-sonnet-4.6 Model",
@@ -1686,9 +1638,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_claude_sonnet_4_6",
-      "community": 0,
-      "norm_label": "claude-sonnet-4.6 model"
+      "community": 1,
+      "norm_label": "claude-sonnet-4.6 model",
+      "id": "raw_graphify_installation_and_configuration_lessons_claude_sonnet_4_6"
     },
     {
       "label": "raw Directory",
@@ -1699,9 +1651,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_raw_directory",
-      "community": 0,
-      "norm_label": "raw directory"
+      "community": 1,
+      "norm_label": "raw directory",
+      "id": "raw_graphify_installation_and_configuration_lessons_raw_directory"
     },
     {
       "label": "graphify-out Directory",
@@ -1712,9 +1664,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_graphify_out_directory",
-      "community": 0,
-      "norm_label": "graphify-out directory"
+      "community": 1,
+      "norm_label": "graphify-out directory",
+      "id": "raw_graphify_installation_and_configuration_lessons_graphify_out_directory"
     },
     {
       "label": "manifest.json",
@@ -1725,52 +1677,493 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_graphify_installation_and_configuration_lessons_manifest_json",
-      "community": 0,
-      "norm_label": "manifest.json"
+      "community": 1,
+      "norm_label": "manifest.json",
+      "id": "raw_graphify_installation_and_configuration_lessons_manifest_json"
+    },
+    {
+      "label": "AI-DLC Workflows 2.0",
+      "file_type": "document",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "community": 3,
+      "norm_label": "ai-dlc workflows 2.0"
+    },
+    {
+      "label": "Principle 1 - Human Judgement Insights Can Be Distilled into Machines",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_1_human_judgement_insights_can_be_distilled_into_machines",
+      "community": 3,
+      "norm_label": "principle 1 - human judgement insights can be distilled into machines"
+    },
+    {
+      "label": "Principle 2 - Every Intent Starts Ambiguous",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_2_every_intent_starts_ambiguous",
+      "community": 3,
+      "norm_label": "principle 2 - every intent starts ambiguous"
+    },
+    {
+      "label": "Principle 3 - AI as a Self-Correcting Solver with a Safety Net",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_3_ai_as_a_self_correcting_solver_with_a_safety_net",
+      "community": 3,
+      "norm_label": "principle 3 - ai as a self-correcting solver with a safety net"
+    },
+    {
+      "label": "Principle 4 - The Three-Compartment Model",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_4_the_three_compartment_model",
+      "community": 3,
+      "norm_label": "principle 4 - the three-compartment model"
+    },
+    {
+      "label": "Principle 5 - Every SDLC Stage Fits the Two-Compartment Construct",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_5_every_sdlc_stage_fits_the_two_compartment_construct",
+      "community": 3,
+      "norm_label": "principle 5 - every sdlc stage fits the two-compartment construct"
+    },
+    {
+      "label": "Principle 6 - Staged Decomposition Over Single-Shot Compression",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_6_staged_decomposition_over_single_shot_compression",
+      "community": 3,
+      "norm_label": "principle 6 - staged decomposition over single-shot compression"
+    },
+    {
+      "label": "Principle 7 - Autonomous Development in Safe Increments",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_7_autonomous_development_in_safe_increments",
+      "community": 3,
+      "norm_label": "principle 7 - autonomous development in safe increments"
+    },
+    {
+      "label": "Principle 8 - Extensibility",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_8_extensibility",
+      "community": 3,
+      "norm_label": "principle 8 - extensibility"
+    },
+    {
+      "label": "Principle 9 - Learning from Practice (Compound Engineering)",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_principle_9_learning_from_practice_compound_engineering",
+      "community": 3,
+      "norm_label": "principle 9 - learning from practice (compound engineering)"
+    },
+    {
+      "label": "Stage Specification",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_stage_specification",
+      "community": 5,
+      "norm_label": "stage specification"
+    },
+    {
+      "label": "Definition Spec (What goes in and what comes out)",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_stage_definition_spec",
+      "community": 5,
+      "norm_label": "definition spec (what goes in and what comes out)"
+    },
+    {
+      "label": "Verification Spec (How we know the output is right)",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_stage_verification_spec",
+      "community": 5,
+      "norm_label": "verification spec (how we know the output is right)"
+    },
+    {
+      "label": "Learning Spec (What runtime experience teaches us)",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_stage_learning_spec",
+      "community": 5,
+      "norm_label": "learning spec (what runtime experience teaches us)"
+    },
+    {
+      "label": "Generate-Verify-Learn",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_generate_verify_learn",
+      "community": 5,
+      "norm_label": "generate-verify-learn"
+    },
+    {
+      "label": "Inferential Verification Rules (LLM instructions)",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_inferential_verification_rules",
+      "community": 5,
+      "norm_label": "inferential verification rules (llm instructions)"
+    },
+    {
+      "label": "Computational Verifications (Executables)",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_computational_verifications",
+      "community": 5,
+      "norm_label": "computational verifications (executables)"
+    },
+    {
+      "label": "Orchestrator Definition",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_definition",
+      "community": 9,
+      "norm_label": "orchestrator definition"
+    },
+    {
+      "label": "Orchestrator Goal Ownership",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_goal_ownership",
+      "community": 9,
+      "norm_label": "orchestrator goal ownership"
+    },
+    {
+      "label": "Orchestrator Workflow Composition",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_workflow_composition",
+      "community": 9,
+      "norm_label": "orchestrator workflow composition"
+    },
+    {
+      "label": "Orchestrator Routing, Observability, and Control",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_routing_observability_control",
+      "community": 9,
+      "norm_label": "orchestrator routing, observability, and control"
+    },
+    {
+      "label": "Orchestrator Abstraction Boundary",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_abstraction_boundary",
+      "community": 9,
+      "norm_label": "orchestrator abstraction boundary"
+    },
+    {
+      "label": "Orchestrator Cross-Stage Invariants",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_cross_stage_invariants",
+      "community": 9,
+      "norm_label": "orchestrator cross-stage invariants"
+    },
+    {
+      "label": "Package Manager",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_package_manager",
+      "community": 3,
+      "norm_label": "package manager"
+    },
+    {
+      "label": "Implementation Guidelines",
+      "file_type": "concept",
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_ai_dlc_workflows_20_specification_implementation_guidelines",
+      "community": 3,
+      "norm_label": "implementation guidelines"
+    },
+    {
+      "label": "Agent Patterns",
+      "file_type": "document",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_agent_patterns",
+      "community": 2,
+      "norm_label": "agent patterns"
+    },
+    {
+      "label": "Pattern 1 - Sequential Flow",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_pattern_1_sequential_flow",
+      "community": 2,
+      "norm_label": "pattern 1 - sequential flow"
+    },
+    {
+      "label": "Pattern 2 - The Operator",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_pattern_2_the_operator",
+      "community": 2,
+      "norm_label": "pattern 2 - the operator"
+    },
+    {
+      "label": "Pattern 3 - Split & Merge",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_pattern_3_split_merge",
+      "community": 2,
+      "norm_label": "pattern 3 - split & merge"
+    },
+    {
+      "label": "Pattern 4 - Agent Teams",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_pattern_4_agent_teams",
+      "community": 2,
+      "norm_label": "pattern 4 - agent teams"
+    },
+    {
+      "label": "Pattern 5 - Headless",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_pattern_5_headless",
+      "community": 2,
+      "norm_label": "pattern 5 - headless"
+    },
+    {
+      "label": "Multi-Agent Orchestration Pattern 1 - Classify-and-Act",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_1_classify_and_act",
+      "community": 2,
+      "norm_label": "multi-agent orchestration pattern 1 - classify-and-act"
+    },
+    {
+      "label": "Multi-Agent Orchestration Pattern 2 - Fanout-and-Synthesize",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_2_fanout_and_synthesize",
+      "community": 2,
+      "norm_label": "multi-agent orchestration pattern 2 - fanout-and-synthesize"
+    },
+    {
+      "label": "Multi-Agent Orchestration Pattern 3 - Adversarial Verification",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_3_adversarial_verification",
+      "community": 2,
+      "norm_label": "multi-agent orchestration pattern 3 - adversarial verification"
+    },
+    {
+      "label": "Multi-Agent Orchestration Pattern 4 - Generate-and-Filter",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_4_generate_and_filter",
+      "community": 2,
+      "norm_label": "multi-agent orchestration pattern 4 - generate-and-filter"
+    },
+    {
+      "label": "Multi-Agent Orchestration Pattern 5 - Tournament",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_5_tournament",
+      "community": 2,
+      "norm_label": "multi-agent orchestration pattern 5 - tournament"
+    },
+    {
+      "label": "Multi-Agent Orchestration Pattern 6 - Loop Until Done",
+      "file_type": "concept",
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_6_loop_until_done",
+      "community": 2,
+      "norm_label": "multi-agent orchestration pattern 6 - loop until done"
     }
   ],
   "links": [
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "raw_agent_patterns_sequential_flow",
-      "target": "raw_agent_patterns_operator"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "raw_agent_patterns_operator",
-      "target": "raw_agent_patterns_split_merge"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "raw_agent_patterns_split_merge",
-      "target": "raw_agent_patterns_agent_teams"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/agent-patterns.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "raw_agent_patterns_agent_teams",
-      "target": "raw_agent_patterns_headless"
-    },
     {
       "relation": "semantically_similar_to",
       "confidence": "EXTRACTED",
@@ -2360,9 +2753,403 @@
       "weight": 1.0,
       "source": "raw_graphify_installation_and_configuration_lessons",
       "target": "raw_graphify_installation_and_configuration_lessons_raw_directory"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_implementation_guidelines"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_orchestrator_definition"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_package_manager"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_1_human_judgement_insights_can_be_distilled_into_machines"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_2_every_intent_starts_ambiguous"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_3_ai_as_a_self_correcting_solver_with_a_safety_net"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_4_the_three_compartment_model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_5_every_sdlc_stage_fits_the_two_compartment_construct"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_6_staged_decomposition_over_single_shot_compression"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_7_autonomous_development_in_safe_increments"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_8_extensibility"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_principle_9_learning_from_practice_compound_engineering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
+      "target": "raw_ai_dlc_workflows_20_specification_stage_specification"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_generate_verify_learn",
+      "target": "raw_ai_dlc_workflows_20_specification_stage_specification"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_stage_specification",
+      "target": "raw_ai_dlc_workflows_20_specification_stage_definition_spec"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_stage_specification",
+      "target": "raw_ai_dlc_workflows_20_specification_stage_learning_spec"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_stage_specification",
+      "target": "raw_ai_dlc_workflows_20_specification_stage_verification_spec"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_generate_verify_learn",
+      "target": "raw_ai_dlc_workflows_20_specification_computational_verifications"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_generate_verify_learn",
+      "target": "raw_ai_dlc_workflows_20_specification_inferential_verification_rules"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_orchestrator_definition",
+      "target": "raw_ai_dlc_workflows_20_specification_orchestrator_abstraction_boundary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_orchestrator_definition",
+      "target": "raw_ai_dlc_workflows_20_specification_orchestrator_cross_stage_invariants"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_orchestrator_definition",
+      "target": "raw_ai_dlc_workflows_20_specification_orchestrator_goal_ownership"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_orchestrator_definition",
+      "target": "raw_ai_dlc_workflows_20_specification_orchestrator_routing_observability_control"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_ai_dlc_workflows_20_specification_orchestrator_definition",
+      "target": "raw_ai_dlc_workflows_20_specification_orchestrator_workflow_composition"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_multi_agent_orchestration_pattern_1_classify_and_act"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_multi_agent_orchestration_pattern_2_fanout_and_synthesize"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_multi_agent_orchestration_pattern_3_adversarial_verification"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_multi_agent_orchestration_pattern_4_generate_and_filter"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_multi_agent_orchestration_pattern_5_tournament"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_multi_agent_orchestration_pattern_6_loop_until_done"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_pattern_1_sequential_flow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_pattern_2_the_operator"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_pattern_3_split_merge"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_pattern_4_agent_teams"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_agent_patterns_agent_patterns",
+      "target": "raw_agent_patterns_pattern_5_headless"
     }
   ],
   "hyperedges": [
+    {
+      "id": "three_compartment_model",
+      "label": "Three-Compartment Model of Stage Specification",
+      "nodes": [
+        "raw_ai_dlc_workflows_20_specification_stage_definition_spec",
+        "raw_ai_dlc_workflows_20_specification_stage_verification_spec",
+        "raw_ai_dlc_workflows_20_specification_stage_learning_spec"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md"
+    },
+    {
+      "id": "orchestrator_functions",
+      "label": "Orchestrator Essential Functions",
+      "nodes": [
+        "raw_ai_dlc_workflows_20_specification_orchestrator_goal_ownership",
+        "raw_ai_dlc_workflows_20_specification_orchestrator_workflow_composition",
+        "raw_ai_dlc_workflows_20_specification_orchestrator_routing_observability_control",
+        "raw_ai_dlc_workflows_20_specification_orchestrator_abstraction_boundary",
+        "raw_ai_dlc_workflows_20_specification_orchestrator_cross_stage_invariants"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/AI-DLC-Workflows-2.0-Specification.md"
+    },
+    {
+      "id": "multi_agent_orchestration_patterns",
+      "label": "Multi-Agent Orchestration Patterns",
+      "nodes": [
+        "raw_agent_patterns_multi_agent_orchestration_pattern_1_classify_and_act",
+        "raw_agent_patterns_multi_agent_orchestration_pattern_2_fanout_and_synthesize",
+        "raw_agent_patterns_multi_agent_orchestration_pattern_3_adversarial_verification",
+        "raw_agent_patterns_multi_agent_orchestration_pattern_4_generate_and_filter",
+        "raw_agent_patterns_multi_agent_orchestration_pattern_5_tournament",
+        "raw_agent_patterns_multi_agent_orchestration_pattern_6_loop_until_done"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/agent-patterns.md"
+    },
     {
       "id": "copilot_tools_usage",
       "label": "GitHub Copilot Tools Usage",
@@ -2375,33 +3162,6 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "raw/best-practices-for-using-github-copilot.md"
-    },
-    {
-      "id": "agent_patterns_sequence_operator_split_merge",
-      "label": "Agent Patterns Sequence",
-      "nodes": [
-        "raw_agent_patterns_sequential_flow",
-        "raw_agent_patterns_operator",
-        "raw_agent_patterns_split_merge"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/agent-patterns.md"
-    },
-    {
-      "id": "agent_patterns_operator_split_merge_agent_teams_headless",
-      "label": "Agent Patterns Operator to Headless",
-      "nodes": [
-        "raw_agent_patterns_operator",
-        "raw_agent_patterns_split_merge",
-        "raw_agent_patterns_agent_teams",
-        "raw_agent_patterns_headless"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/agent-patterns.md"
     },
     {
       "id": "ai_agents_business_use_cases",
@@ -2475,5 +3235,5 @@
       "source_file": "raw/skills-glossary.md"
     }
   ],
-  "built_at_commit": "f77cc4c3ac5e728bfa961b821b23662c0c2847d6"
+  "built_at_commit": "c78c48d6c3675d8c01c2c6a9aac45379ee6dc14d"
 }
