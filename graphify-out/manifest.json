@@ -1,8 +1,8 @@
 {
   "raw/agent-patterns.md": {
-    "mtime": 1785152223.8517897,
-    "ast_hash": "2d5c1cd7921709b55145268e201819cf",
-    "semantic_hash": "2d5c1cd7921709b55145268e201819cf"
+    "mtime": 1787132627.6748586,
+    "ast_hash": "a6e68fa3e41cebdd57a292305ce7a087",
+    "semantic_hash": "a6e68fa3e41cebdd57a292305ce7a087"
   },
   "raw/agentic-engineering-concepts.md": {
     "mtime": 1785152223.8528907,
@@ -228,5 +228,10 @@
     "mtime": 1785155833.7135003,
     "ast_hash": "293edd58d265b919d884d59fd29b8b27",
     "semantic_hash": "293edd58d265b919d884d59fd29b8b27"
+  },
+  "raw/AI-DLC-Workflows-2.0-Specification.md": {
+    "mtime": 1787132627.6748586,
+    "ast_hash": "dd356356828c52e3787155f04fee7ee9",
+    "semantic_hash": "dd356356828c52e3787155f04fee7ee9"
   }
 }
