@@ -233,5 +233,10 @@
     "mtime": 1787132627.6748586,
     "ast_hash": "dd356356828c52e3787155f04fee7ee9",
     "semantic_hash": "dd356356828c52e3787155f04fee7ee9"
+  },
+  "raw/self-improving-agents.md": {
+    "mtime": 1788030969.013268,
+    "ast_hash": "82b7d683d9801a84bc976ec0715829ac",
+    "semantic_hash": "82b7d683d9801a84bc976ec0715829ac"
   }
 }
