@@ -4,6 +4,19 @@
   "graph": {
     "hyperedges": [
       {
+        "id": "raw_selfimprovingagents_fix_failure_matching",
+        "label": "Match the fix to the kind of failure",
+        "nodes": [
+          "raw_selfimprovingagents_memory",
+          "raw_selfimprovingagents_harness",
+          "raw_selfimprovingagents_model"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "raw/self-improving-agents.md"
+      },
+      {
         "id": "three_compartment_model",
         "label": "Three-Compartment Model of Stage Specification",
         "nodes": [
@@ -260,7 +273,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 60,
       "norm_label": "predictability",
       "id": "raw_skills_glossary_predictability"
     },
@@ -1144,7 +1157,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 58,
       "norm_label": "branch",
       "id": "raw_skills_glossary_branch"
     },
@@ -1222,7 +1235,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 61,
       "norm_label": "relevance",
       "id": "raw_skills_glossary_relevance"
     },
@@ -1235,7 +1248,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 62,
       "norm_label": "sediment (failure mode)",
       "id": "raw_skills_glossary_sediment"
     },
@@ -1248,7 +1261,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 59,
       "norm_label": "no-op (failure mode)",
       "id": "raw_skills_glossary_no_op"
     },
@@ -1352,7 +1365,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 64,
       "norm_label": "claude agent template pack readme",
       "id": "raw_state_persistence_template_readme"
     },
@@ -1378,7 +1391,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 65,
       "norm_label": "upwork ai buyers and what a senior developer can sell them",
       "id": "raw_upwork_ai_system_job_types_deep_research_report"
     },
@@ -1391,7 +1404,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 66,
       "norm_label": "copilot instructions for vertical slice architecture project",
       "id": "raw_vertical_slices_archutecture_copilot_instructions"
     },
@@ -1404,7 +1417,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 64,
+      "community": 67,
       "norm_label": "vibe coding tools comparison",
       "id": "raw_vibe_coding_tools"
     },
@@ -1417,7 +1430,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 68,
       "norm_label": "you are not ready \u2013 agentic coding in 2026",
       "id": "raw_you_are_not_ready_agentic_coding_in_2026"
     },
@@ -1430,7 +1443,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 63,
       "norm_label": "trending skills libraries",
       "id": "raw_skills_influencers"
     },
@@ -1690,9 +1703,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20",
       "community": 3,
-      "norm_label": "ai-dlc workflows 2.0"
+      "norm_label": "ai-dlc workflows 2.0",
+      "id": "raw_ai_dlc_workflows_20_specification_aidlc_workflows_20"
     },
     {
       "label": "Principle 1 - Human Judgement Insights Can Be Distilled into Machines",
@@ -1703,9 +1716,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_1_human_judgement_insights_can_be_distilled_into_machines",
       "community": 3,
-      "norm_label": "principle 1 - human judgement insights can be distilled into machines"
+      "norm_label": "principle 1 - human judgement insights can be distilled into machines",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_1_human_judgement_insights_can_be_distilled_into_machines"
     },
     {
       "label": "Principle 2 - Every Intent Starts Ambiguous",
@@ -1716,9 +1729,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_2_every_intent_starts_ambiguous",
       "community": 3,
-      "norm_label": "principle 2 - every intent starts ambiguous"
+      "norm_label": "principle 2 - every intent starts ambiguous",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_2_every_intent_starts_ambiguous"
     },
     {
       "label": "Principle 3 - AI as a Self-Correcting Solver with a Safety Net",
@@ -1729,9 +1742,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_3_ai_as_a_self_correcting_solver_with_a_safety_net",
       "community": 3,
-      "norm_label": "principle 3 - ai as a self-correcting solver with a safety net"
+      "norm_label": "principle 3 - ai as a self-correcting solver with a safety net",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_3_ai_as_a_self_correcting_solver_with_a_safety_net"
     },
     {
       "label": "Principle 4 - The Three-Compartment Model",
@@ -1742,9 +1755,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_4_the_three_compartment_model",
       "community": 3,
-      "norm_label": "principle 4 - the three-compartment model"
+      "norm_label": "principle 4 - the three-compartment model",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_4_the_three_compartment_model"
     },
     {
       "label": "Principle 5 - Every SDLC Stage Fits the Two-Compartment Construct",
@@ -1755,9 +1768,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_5_every_sdlc_stage_fits_the_two_compartment_construct",
       "community": 3,
-      "norm_label": "principle 5 - every sdlc stage fits the two-compartment construct"
+      "norm_label": "principle 5 - every sdlc stage fits the two-compartment construct",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_5_every_sdlc_stage_fits_the_two_compartment_construct"
     },
     {
       "label": "Principle 6 - Staged Decomposition Over Single-Shot Compression",
@@ -1768,9 +1781,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_6_staged_decomposition_over_single_shot_compression",
       "community": 3,
-      "norm_label": "principle 6 - staged decomposition over single-shot compression"
+      "norm_label": "principle 6 - staged decomposition over single-shot compression",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_6_staged_decomposition_over_single_shot_compression"
     },
     {
       "label": "Principle 7 - Autonomous Development in Safe Increments",
@@ -1781,9 +1794,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_7_autonomous_development_in_safe_increments",
       "community": 3,
-      "norm_label": "principle 7 - autonomous development in safe increments"
+      "norm_label": "principle 7 - autonomous development in safe increments",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_7_autonomous_development_in_safe_increments"
     },
     {
       "label": "Principle 8 - Extensibility",
@@ -1794,9 +1807,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_8_extensibility",
       "community": 3,
-      "norm_label": "principle 8 - extensibility"
+      "norm_label": "principle 8 - extensibility",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_8_extensibility"
     },
     {
       "label": "Principle 9 - Learning from Practice (Compound Engineering)",
@@ -1807,9 +1820,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_principle_9_learning_from_practice_compound_engineering",
       "community": 3,
-      "norm_label": "principle 9 - learning from practice (compound engineering)"
+      "norm_label": "principle 9 - learning from practice (compound engineering)",
+      "id": "raw_ai_dlc_workflows_20_specification_principle_9_learning_from_practice_compound_engineering"
     },
     {
       "label": "Stage Specification",
@@ -1820,9 +1833,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_stage_specification",
       "community": 5,
-      "norm_label": "stage specification"
+      "norm_label": "stage specification",
+      "id": "raw_ai_dlc_workflows_20_specification_stage_specification"
     },
     {
       "label": "Definition Spec (What goes in and what comes out)",
@@ -1833,9 +1846,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_stage_definition_spec",
       "community": 5,
-      "norm_label": "definition spec (what goes in and what comes out)"
+      "norm_label": "definition spec (what goes in and what comes out)",
+      "id": "raw_ai_dlc_workflows_20_specification_stage_definition_spec"
     },
     {
       "label": "Verification Spec (How we know the output is right)",
@@ -1846,9 +1859,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_stage_verification_spec",
       "community": 5,
-      "norm_label": "verification spec (how we know the output is right)"
+      "norm_label": "verification spec (how we know the output is right)",
+      "id": "raw_ai_dlc_workflows_20_specification_stage_verification_spec"
     },
     {
       "label": "Learning Spec (What runtime experience teaches us)",
@@ -1859,9 +1872,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_stage_learning_spec",
       "community": 5,
-      "norm_label": "learning spec (what runtime experience teaches us)"
+      "norm_label": "learning spec (what runtime experience teaches us)",
+      "id": "raw_ai_dlc_workflows_20_specification_stage_learning_spec"
     },
     {
       "label": "Generate-Verify-Learn",
@@ -1872,9 +1885,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_generate_verify_learn",
       "community": 5,
-      "norm_label": "generate-verify-learn"
+      "norm_label": "generate-verify-learn",
+      "id": "raw_ai_dlc_workflows_20_specification_generate_verify_learn"
     },
     {
       "label": "Inferential Verification Rules (LLM instructions)",
@@ -1885,9 +1898,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_inferential_verification_rules",
       "community": 5,
-      "norm_label": "inferential verification rules (llm instructions)"
+      "norm_label": "inferential verification rules (llm instructions)",
+      "id": "raw_ai_dlc_workflows_20_specification_inferential_verification_rules"
     },
     {
       "label": "Computational Verifications (Executables)",
@@ -1898,9 +1911,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_computational_verifications",
       "community": 5,
-      "norm_label": "computational verifications (executables)"
+      "norm_label": "computational verifications (executables)",
+      "id": "raw_ai_dlc_workflows_20_specification_computational_verifications"
     },
     {
       "label": "Orchestrator Definition",
@@ -1911,9 +1924,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_definition",
       "community": 9,
-      "norm_label": "orchestrator definition"
+      "norm_label": "orchestrator definition",
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_definition"
     },
     {
       "label": "Orchestrator Goal Ownership",
@@ -1924,9 +1937,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_goal_ownership",
       "community": 9,
-      "norm_label": "orchestrator goal ownership"
+      "norm_label": "orchestrator goal ownership",
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_goal_ownership"
     },
     {
       "label": "Orchestrator Workflow Composition",
@@ -1937,9 +1950,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_workflow_composition",
       "community": 9,
-      "norm_label": "orchestrator workflow composition"
+      "norm_label": "orchestrator workflow composition",
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_workflow_composition"
     },
     {
       "label": "Orchestrator Routing, Observability, and Control",
@@ -1950,9 +1963,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_routing_observability_control",
       "community": 9,
-      "norm_label": "orchestrator routing, observability, and control"
+      "norm_label": "orchestrator routing, observability, and control",
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_routing_observability_control"
     },
     {
       "label": "Orchestrator Abstraction Boundary",
@@ -1963,9 +1976,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_abstraction_boundary",
       "community": 9,
-      "norm_label": "orchestrator abstraction boundary"
+      "norm_label": "orchestrator abstraction boundary",
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_abstraction_boundary"
     },
     {
       "label": "Orchestrator Cross-Stage Invariants",
@@ -1976,9 +1989,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_cross_stage_invariants",
       "community": 9,
-      "norm_label": "orchestrator cross-stage invariants"
+      "norm_label": "orchestrator cross-stage invariants",
+      "id": "raw_ai_dlc_workflows_20_specification_orchestrator_cross_stage_invariants"
     },
     {
       "label": "Package Manager",
@@ -1989,9 +2002,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_package_manager",
       "community": 3,
-      "norm_label": "package manager"
+      "norm_label": "package manager",
+      "id": "raw_ai_dlc_workflows_20_specification_package_manager"
     },
     {
       "label": "Implementation Guidelines",
@@ -2002,9 +2015,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_ai_dlc_workflows_20_specification_implementation_guidelines",
       "community": 3,
-      "norm_label": "implementation guidelines"
+      "norm_label": "implementation guidelines",
+      "id": "raw_ai_dlc_workflows_20_specification_implementation_guidelines"
     },
     {
       "label": "Agent Patterns",
@@ -2015,9 +2028,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_agent_patterns",
       "community": 2,
-      "norm_label": "agent patterns"
+      "norm_label": "agent patterns",
+      "id": "raw_agent_patterns_agent_patterns"
     },
     {
       "label": "Pattern 1 - Sequential Flow",
@@ -2028,9 +2041,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_pattern_1_sequential_flow",
       "community": 2,
-      "norm_label": "pattern 1 - sequential flow"
+      "norm_label": "pattern 1 - sequential flow",
+      "id": "raw_agent_patterns_pattern_1_sequential_flow"
     },
     {
       "label": "Pattern 2 - The Operator",
@@ -2041,9 +2054,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_pattern_2_the_operator",
       "community": 2,
-      "norm_label": "pattern 2 - the operator"
+      "norm_label": "pattern 2 - the operator",
+      "id": "raw_agent_patterns_pattern_2_the_operator"
     },
     {
       "label": "Pattern 3 - Split & Merge",
@@ -2054,9 +2067,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_pattern_3_split_merge",
       "community": 2,
-      "norm_label": "pattern 3 - split & merge"
+      "norm_label": "pattern 3 - split & merge",
+      "id": "raw_agent_patterns_pattern_3_split_merge"
     },
     {
       "label": "Pattern 4 - Agent Teams",
@@ -2067,9 +2080,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_pattern_4_agent_teams",
       "community": 2,
-      "norm_label": "pattern 4 - agent teams"
+      "norm_label": "pattern 4 - agent teams",
+      "id": "raw_agent_patterns_pattern_4_agent_teams"
     },
     {
       "label": "Pattern 5 - Headless",
@@ -2080,9 +2093,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_pattern_5_headless",
       "community": 2,
-      "norm_label": "pattern 5 - headless"
+      "norm_label": "pattern 5 - headless",
+      "id": "raw_agent_patterns_pattern_5_headless"
     },
     {
       "label": "Multi-Agent Orchestration Pattern 1 - Classify-and-Act",
@@ -2093,9 +2106,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_1_classify_and_act",
       "community": 2,
-      "norm_label": "multi-agent orchestration pattern 1 - classify-and-act"
+      "norm_label": "multi-agent orchestration pattern 1 - classify-and-act",
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_1_classify_and_act"
     },
     {
       "label": "Multi-Agent Orchestration Pattern 2 - Fanout-and-Synthesize",
@@ -2106,9 +2119,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_2_fanout_and_synthesize",
       "community": 2,
-      "norm_label": "multi-agent orchestration pattern 2 - fanout-and-synthesize"
+      "norm_label": "multi-agent orchestration pattern 2 - fanout-and-synthesize",
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_2_fanout_and_synthesize"
     },
     {
       "label": "Multi-Agent Orchestration Pattern 3 - Adversarial Verification",
@@ -2119,9 +2132,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_3_adversarial_verification",
       "community": 2,
-      "norm_label": "multi-agent orchestration pattern 3 - adversarial verification"
+      "norm_label": "multi-agent orchestration pattern 3 - adversarial verification",
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_3_adversarial_verification"
     },
     {
       "label": "Multi-Agent Orchestration Pattern 4 - Generate-and-Filter",
@@ -2132,9 +2145,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_4_generate_and_filter",
       "community": 2,
-      "norm_label": "multi-agent orchestration pattern 4 - generate-and-filter"
+      "norm_label": "multi-agent orchestration pattern 4 - generate-and-filter",
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_4_generate_and_filter"
     },
     {
       "label": "Multi-Agent Orchestration Pattern 5 - Tournament",
@@ -2145,9 +2158,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_5_tournament",
       "community": 2,
-      "norm_label": "multi-agent orchestration pattern 5 - tournament"
+      "norm_label": "multi-agent orchestration pattern 5 - tournament",
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_5_tournament"
     },
     {
       "label": "Multi-Agent Orchestration Pattern 6 - Loop Until Done",
@@ -2158,9 +2171,48 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_6_loop_until_done",
       "community": 2,
-      "norm_label": "multi-agent orchestration pattern 6 - loop until done"
+      "norm_label": "multi-agent orchestration pattern 6 - loop until done",
+      "id": "raw_agent_patterns_multi_agent_orchestration_pattern_6_loop_until_done"
+    },
+    {
+      "label": "Memory",
+      "file_type": "document",
+      "source_file": "raw/self-improving-agents.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_selfimprovingagents_memory",
+      "community": 56,
+      "norm_label": "memory"
+    },
+    {
+      "label": "Harness",
+      "file_type": "document",
+      "source_file": "raw/self-improving-agents.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_selfimprovingagents_harness",
+      "community": 55,
+      "norm_label": "harness"
+    },
+    {
+      "label": "Model",
+      "file_type": "document",
+      "source_file": "raw/self-improving-agents.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_selfimprovingagents_model",
+      "community": 57,
+      "norm_label": "model"
     }
   ],
   "links": [
@@ -3107,6 +3159,19 @@
   ],
   "hyperedges": [
     {
+      "id": "raw_selfimprovingagents_fix_failure_matching",
+      "label": "Match the fix to the kind of failure",
+      "nodes": [
+        "raw_selfimprovingagents_memory",
+        "raw_selfimprovingagents_harness",
+        "raw_selfimprovingagents_model"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/self-improving-agents.md"
+    },
+    {
       "id": "three_compartment_model",
       "label": "Three-Compartment Model of Stage Specification",
       "nodes": [
@@ -3235,5 +3300,5 @@
       "source_file": "raw/skills-glossary.md"
     }
   ],
-  "built_at_commit": "c78c48d6c3675d8c01c2c6a9aac45379ee6dc14d"
+  "built_at_commit": "e69ecf74fe86609dc4a758f6f0cef567ffa030e2"
 }
