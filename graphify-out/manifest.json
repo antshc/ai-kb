@@ -233,5 +233,15 @@
     "mtime": 1787132627.6748586,
     "ast_hash": "dd356356828c52e3787155f04fee7ee9",
     "semantic_hash": "dd356356828c52e3787155f04fee7ee9"
+  },
+  "raw/ai-citations-best-practices.md": {
+    "mtime": 1789899367.4191375,
+    "ast_hash": "d96b819ca8d6f14613d772ce249b7172",
+    "semantic_hash": "d96b819ca8d6f14613d772ce249b7172"
+  },
+  "raw/self-improving-agents.md": {
+    "mtime": 1789899367.419836,
+    "ast_hash": "82b7d683d9801a84bc976ec0715829ac",
+    "semantic_hash": "82b7d683d9801a84bc976ec0715829ac"
   }
 }
